@@ -1,0 +1,164 @@
+
+
+---
+- name: Informe Diagnostico
+
+  hosts: Pruebas
+
+  become: true
+
+  gather_facts: false
+
+  serial: 1
+
+  tasks:
+
+    - name: Obtener informacion del sistema operativo
+  
+      command: hostnamectl
+     
+      register: host_info 
+     
+      tags: hostname
+
+    - name: Extraer informacion de Host
+      set_fact:
+              hostname: "{{ host_info.stdout_lines | select('search', 'Static hostname') | first | regex_replace('.*:\\s+', '')}}"
+              virtualization: "{{ host_info.stdout_lines | select('search', 'Virtualization') | first | regex_replace('.*:\\s+', '')}}"
+              operaSystem: "{{ host_info.stdout_lines | select('search', 'Operating System') | first | regex_replace('.*:\\s+', '')}}"
+              kernel: "{{ host_info.stdout_lines | select('search', 'Kernel') | first | regex_replace('.*:\\s+', '')}}"
+              architecture: "{{ host_info.stdout_lines | select('search', 'Architecture') | first | regex_replace('.*:\\s+', '')}}"
+
+      tags: hostnameE
+
+    - name: Informacion memoria
+      shell: |
+        echo "=== Informacion de memoria ==="
+        free -hm
+
+      register: mem_info
+
+      tags: memInfo
+
+    - name: Verificar uso de memoria
+      shell: |
+              result=$(awk '
+              /MemTotal/ {total=$2}
+              /MemAvailable/ {available=$2}
+              /SwapTotal/ {swaptotal=$2}
+              /SwapFree/ {swapfree=$2}
+              END {
+                      used_ram = total - available;
+                      percent_ram = (used_ram/total)*100;
+
+                      if (percent_ram > 85) {
+                              printf "Alerta RAM: %.1f%% usada\n", percent_ram
+                      }
+                      if (swaptotal > 85) {
+                              used_swap = swaptotal - swapfree;
+                              percent_swap = (used_swap/swaptotal)*100;
+                              if (percent_swap > 85){
+                                      printf "Alerta Swap: %.1f%% usada\n", percent_swap
+                              }
+                      }
+              }' /proc/meminfo)
+              if [ -n "$result" ]; then
+              echo "Memoria No okey"
+              echo "$result"
+              else
+              echo "Memoria okey" 
+              fi
+      register: mem_status
+      tags: memPorcentaje
+
+
+    - name: Verificar uso de disco
+      shell: |
+              result=$(df -hT | awk 'NR>1 && $6+0 > 85 {
+              
+                      print " ALERTA: " $1 " esta al " $6 " de uso"
+                      
+                      print " Tipo: " $2 " | Montado en: " $7
+                      
+                      print " Tamaño: " $3 " | Usado: " $4 " | Libre: " $5 
+
+                      print " ---------------------------------------"
+              
+              }')
+              if [ -n "$result" ]; then 
+              echo "Se reportan los siguientes fylesystems que superan el umbral del 85%"
+
+              echo "$result"
+              else
+              echo "Correcto Todos los fylesystems estan por debajo del 85%"
+              fi
+      
+      register: fs_status
+
+      tags: discoIn
+
+    - name: Obtener informacion de Networking
+      shell: |
+         nmcli -f GENERAL.DEVICE,GENERAL.TYPE,GENERAL.STATE,IP4.ADDRESS device show
+
+      register: infoNet
+
+      tags: ipInfo
+
+    - name:  Informacion actualizaciones de seguridad
+      shell: dnf updateinfo list updates --security
+
+      register: info_security
+
+      changed_when: false
+
+      tags: infoSecurity
+    
+    - name: Guardar informe 
+
+      delegate_to: localhost
+
+      run_once: false
+
+      lineinfile:
+
+         path: "/home/ansible/scriptAnsible/InformeIdiger/InformeDiagnosticoIdiger.txt"
+
+         create: yes
+
+         line: |
+    
+           ====== Host: {{       hostname     }} ======
+           ====== IP:   {{ inventory_hostname }} ======
+           
+                 ----- Informacion Sistema Operativo -----
+                    
+           {{ " Static hostname: " ~ hostname }}
+           {{ " Virtualization: " ~ virtualization }}
+           {{ " Operating System: " ~ operaSystem }}
+           {{ " Kernel: " ~ kernel }} 
+           {{ " Architecture: " ~ architecture }}
+
+                 ----- Informacion RAM del Servidor -----
+                      
+           {{ mem_info.stdout }}
+            -----
+           {{ mem_status.stdout }}
+
+                 ---- Informacion Espacio de Disco -----
+
+           {{ fs_status.stdout }}
+
+                 ----- IPs version IPv4 Configuradas -----
+
+           {{ infoNet.stdout }}
+
+                 ----- Actualizaciones de seguridad Disponibles -----
+
+           {{ info_security.stdout }}
+
+                 ----- Aplicar las Actualizaciones encontradas -----
+
+                   
+           ----------------------------------------------------
+      tags: informe
