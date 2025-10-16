@@ -1,0 +1,9 @@
+---
+- name: Prueba de conectividad completa
+  hosts: Pruebas
+  tasks:
+    - name: Verificar que podemos controlar los hosts
+      ansible.builtin.ping:
+    
+    - name: Obtener información del sistema
+      ansible.builtin.setup:
