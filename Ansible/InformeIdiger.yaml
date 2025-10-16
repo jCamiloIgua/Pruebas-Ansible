@@ -3,7 +3,7 @@
 ---
 - name: Informe Diagnostico
 
-  hosts: 172.20.16.23
+  hosts: Pruebas
 
   become: true
 
