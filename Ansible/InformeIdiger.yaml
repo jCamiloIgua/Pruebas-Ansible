@@ -116,7 +116,7 @@
     
     - name: Guardar informe 
 
-      delegate_to: 172.20.16.20
+      delegate_to: localhost
 
       run_once: false
 
