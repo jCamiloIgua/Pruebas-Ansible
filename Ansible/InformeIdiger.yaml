@@ -3,7 +3,7 @@
 ---
 - name: Informe Diagnostico
 
-  hosts: 172.20.16.24
+  hosts: 172.20.16.23
 
   become: true
 
