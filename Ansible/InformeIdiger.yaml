@@ -3,7 +3,7 @@
 ---
 - name: Informe Diagnostico
 
-  hosts: Pruebas
+  hosts: Pruebas1
 
   become: true
 
