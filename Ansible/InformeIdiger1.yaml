@@ -170,7 +170,7 @@
         - name: Copiar archivo a repositorio
           shell: |
                   cp /home/ansible/scriptAnsible/InformeIdiger/InformeDiagnosticoIdiger.txt \
-                  "var/lib/awx/projects/_6__awx_pruebas/Ansible/ResultadosInformes/Informe_{{ ansible_date_time.epoch }}.txt"
+                  "var/lib/awx/projects/_6__awx_pruebas/Ansible/ResultadosInformes/Informe.txt"
           delegate_to: localhost
           run_once: true
 
@@ -178,7 +178,7 @@
           shell: |
                   cd /var/lib/awx/projects/_6__awx_pruebas/Ansible/
                   git add ResultadosInformes/
-                  git diff --staged --quiet || git commit -m "Informe sistema - {{ ansible_date_time.iso8601 }}"
+                  git diff --staged --quiet || git commit -m "Informe sistema"
                   git push origin main
           delegate_to: localhost
           run_once: true
