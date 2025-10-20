@@ -3,11 +3,13 @@
 ---
 - name: Informe Diagnostico
 
-  hosts: Pruebas1
+  hosts: "{{ groups['Pruebas1'] | sort }}"
 
   become: true
 
   gather_facts: false
+
+  order: sorted
 
   serial: 1
 
