@@ -169,7 +169,8 @@
       block:
         - name: Copiar archivo a repositorio
           shell: |
-                  cp /home/ansible/scriptAnsible/InformeIdiger/InformeDiagnosticoIdiger.txt \
+          
+            cmd: cp /home/ansible/scriptAnsible/InformeIdiger/InformeDiagnosticoIdiger.txt \
                   "var/lib/awx/projects/_6__awx_pruebas/Ansible/ResultadosInformes/Informe.txt"
           delegate_to: localhost
           run_once: true
