@@ -1,6 +1,0 @@
----
-- name: Prueba de conectividad completa
-  hosts: Pruebas
-  tasks:
-       ansible.builtin.ping:
-    
