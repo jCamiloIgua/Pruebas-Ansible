@@ -9,6 +9,8 @@
 
   gather_facts: false
 
+  order: sorted  # Orden alfabetico numerico
+
   serial: 1
 
   tasks:
