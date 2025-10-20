@@ -170,7 +170,7 @@
         - name: Copiar archivo a repositorio
           copy:
             src: "/home/ansible/scriptAnsible/InformeIdiger/InformeDiagnosticoIdiger.txt"
-            dest: "var/lib/awx/projects/_6__awx_pruebas/Ansible/ResultadosInformes/Informe.txt"
+            dest: "/var/lib/awx/projects/_6__awx_pruebas/Ansible/ResultadosInformes/Informe.txt"
             mode: '0644'
           delegate_to: localhost
           run_once: true
