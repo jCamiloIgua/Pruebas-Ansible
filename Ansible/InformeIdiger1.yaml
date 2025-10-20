@@ -175,11 +175,12 @@
           delegate_to: localhost
           run_once: true
         - name: Hacer commit y push
-          shell: |
-                  cd /var/lib/awx/projects/_6__awx_pruebas/Ansible/
-                  git add ResultadosInformes/
-                  git diff --staged --quiet || git commit -m "Informe sistema"
-                  git push origin main
+          shell: 
+            cmd: |
+              cd /var/lib/awx/projects/_6__awx_pruebas/Ansible/
+              git add ResultadosInformes/
+              git diff --staged --quiet || git commit -m "Informe sistema"
+              git push origin main
           delegate_to: localhost
           run_once: true
       tags: carga
