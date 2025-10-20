@@ -165,20 +165,20 @@
            ----------------------------------------------------
       tags: informe
     - name: Copiar archivo a repositorio
-        copy:
-          src: "/home/ansible/scriptAnsible/InformeIdiger/InformeDiagnosticoIdiger.txt"
-          dest: "/var/lib/awx/projects/_6__awx_pruebas/Ansible/ResultadosInformes/Informe.txt"
-          mode: '0644'
-        delegate_to: localhost
-        run_once: true 
+      copy:
+        src: "/home/ansible/scriptAnsible/InformeIdiger/InformeDiagnosticoIdiger.txt"
+        dest: "/var/lib/awx/projects/_6__awx_pruebas/Ansible/ResultadosInformes/Informe.txt"
+        mode: '0644'
+      delegate_to: localhost
+      run_once: true 
     
     - name: Hacer commit y push
       shell: 
-      cmd: |
-        cd /var/lib/awx/projects/_6__awx_pruebas/Ansible/
-        git add ResultadosInformes/
-        git diff --staged --quiet || git commit -m "Informe sistema"
-        git push origin main
+        cmd: |
+          cd /var/lib/awx/projects/_6__awx_pruebas/Ansible/
+          git add ResultadosInformes/
+          git diff --staged --quiet || git commit -m "Informe sistema"
+          git push origin main
       delegate_to: localhost
       run_once: true
-    tags: carga
+      tags: carga
