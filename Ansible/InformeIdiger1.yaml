@@ -3,7 +3,7 @@
 ---
 - name: Informe Diagnostico
 
-  hosts: "{{ groups['Pruebas1'] | sort }}"
+  hosts: "{{ groups['Pruebas'] | sort }}"
 
   become: true
 
