@@ -5,11 +5,16 @@
   connection: local
   gather_facts: false
 
+  vars:
+     fecha_actual: "{{ lookup('pipe', 'date +%Y%m%d') }}" #formato fecha
+     nombre_archivo: "InformeIdiger_{{ fecha_actual }}.txt"
+     ruta_destino: "/var/lib/awx/projects/_6__awx_pruebas/Ansible/ResultadosInformes/{{ nombre_archivo }}"
+
   tasks:
     - name: Copiar archivo a repositorio
       copy:
         src: "/home/ansible/InformeIdiger/InformeDiagnosticoIdiger.txt"
-        dest: "/var/lib/awx/projects/_6__awx_pruebas/Ansible/ResultadosInformes/Informe1.txt"
+        dest: "{{ ruta_destino }}"
         mode: '0644'
       delegate_to: localhost
       run_once: true
@@ -20,7 +25,7 @@
         git config --global user.name "AWX"
         git config --global user.email "awx@localhost"
         git add .
-        git commit -m "Informe sistema"
+        git commit -m "Informe sistema {{ fecha_actual }}"
         git push origin main
       delegate_to: localhost
       run_once: true
