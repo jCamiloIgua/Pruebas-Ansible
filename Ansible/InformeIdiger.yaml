@@ -124,7 +124,7 @@
 
       lineinfile:
 
-         path: "/home/ansible/scriptAnsible/InformeIdiger/InformeDiagnosticoIdiger.txt"
+         path: "/home/ansible/InformeIdiger/InformeDiagnosticoIdiger.txt"
 
          create: yes
 
