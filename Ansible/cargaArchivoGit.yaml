@@ -6,7 +6,7 @@
   gather_facts: false
 
   vars:
-     fecha_actual: "{{ lookup('pipe', 'date +%Y%m%d') }}" #formato fecha
+     fecha_actual: "{{ lookup('pipe', 'date +%Y%m%d_%H%M%S') }}" #formato fecha
      nombre_archivo: "InformeIdiger_{{ fecha_actual }}.txt"
      ruta_destino: "/var/lib/awx/projects/_6__awx_pruebas/Ansible/ResultadosInformes/{{ nombre_archivo }}"
 
