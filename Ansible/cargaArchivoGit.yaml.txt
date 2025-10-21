@@ -1,0 +1,27 @@
+
+---
+- name: Copiar y subir informe al repositorio
+  hosts: localhost
+  connection: local
+  gather_facts: false
+
+  tasks:
+    - name: Copiar archivo a repositorio
+      copy:
+        src: "/home/ansible/scriptAnsible/InformeIdiger/InformeDiagnosticoIdiger.txt"
+        dest: "/var/lib/awx/projects/_6__awx_pruebas/Ansible/ResultadosInformes/Informe1.txt"
+        mode: '0644'
+      delegate_to: localhost
+      run_once: true
+
+    - name: Hacer commit y push
+      shell: |
+        cd /var/lib/awx/projects/_6__awx_pruebas/Ansible/ResultadosInformes/
+        git add .
+        git commit -m "Informe sistema"
+        git push origin main
+      delegate_to: localhost
+      run_once: true
+      tags:
+        - carga
+
