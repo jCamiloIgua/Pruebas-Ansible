@@ -188,7 +188,7 @@
           </head>
           <body>
               <h1>Informe Diagnostico Idiger - {{ fecha_actual }}</h1>
-              {% for informeGiro in ansible_stats.informes_consolidados %}
+              {% for informeGiro in informes_consolidados %}
                 {{ informeGiro }}
               {% endfor %}
           </body>
