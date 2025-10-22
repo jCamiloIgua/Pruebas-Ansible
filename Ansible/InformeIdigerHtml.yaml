@@ -158,7 +158,13 @@
         create: yes
         line: "{{ reporte_host }}"
       run_once: false
+
+    - name: Leer informes
+      delegate_to: localhost
+      run_once: true
+      shell: cat /tmp/informesTemporal.txt
       register: archivoFinal
+      changed_when: false
                 
     - name: Generar informe HTML
       delegate_to: localhost
