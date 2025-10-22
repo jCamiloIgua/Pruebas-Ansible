@@ -168,7 +168,7 @@
 
       
     - name: Mostrar datos acumulados
-      delegate: localhost
+      delegate_to: localhost
       run_once: true
       debug:
         var: ansible_stats.informes_consolidados
