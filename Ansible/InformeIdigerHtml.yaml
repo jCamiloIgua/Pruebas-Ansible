@@ -16,15 +16,6 @@
   vars:
     fecha_actual: "{{ lookup('pipe', 'date +%Y%m%d_%H%M%S') }}"
     ruta_html: "/home/ansible/InformeIdiger/InformeDiagnosticoIdiger.html"
-  
-    
-  pre_tasks:
-    - name: Inicializar variable informes
-      delegate_to: localhost
-      run_once: true
-      set_fact:
-        ansible_stats:
-         informes_consolidados: []
     
   tasks:
 
@@ -160,19 +151,15 @@
 
                 </div>
 
-    - name: Guardar reporte RAM
+    - name: Guardar reporte temporal
       delegate_to: localhost
-      set_stats:
-        data:
-          informes_consolidados: "{{ (ansible_stats.informes_consolidados | default([]) + [reporte_host] ) }}"
-
-      
-    - name: Mostrar datos acumulados
-      delegate_to: localhost
-      run_once: true
-      debug:
-        var: ansible_stats.informes_consolidados
-        
+      lineinfile:
+        path: "/tmp/informesTemporal.txt"
+        create: yes
+        line: "{{ reporte_host }}"
+      run_once: false
+      register: archivoFinal
+                
     - name: Generar informe HTML
       delegate_to: localhost
       run_once: true
@@ -194,9 +181,7 @@
           </head>
           <body>
               <h1>Informe Diagnostico Idiger - {{ fecha_actual }}</h1>
-              {% for informeGiro in ansible_stats.informes_consolidados %}
-                {{ informeGiro }}
-              {% endfor %}
+              {{ archivoFinal.stdout }}
           </body>
           </html>
       tags: informe
