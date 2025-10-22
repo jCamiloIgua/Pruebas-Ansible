@@ -16,15 +16,6 @@
   vars:
     fecha_actual: "{{ lookup('pipe', 'date +%Y%m%d_%H%M%S') }}"
     ruta_html: "/home/ansible/InformeIdiger/InformeDiagnosticoIdiger.html"
-    ruta_temp: "/tmp/informesTemporal.txt"
-
-  pre_tasks:
-    - name: Limpiar temporal 
-      delegate_to: localhost
-      run_once: true
-      file:
-        path: "{{ ruta_temp }}"
-        state: absent
     
   tasks:
 
