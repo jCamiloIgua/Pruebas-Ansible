@@ -18,6 +18,7 @@
         mode: '0644'
       delegate_to: localhost
       run_once: true
+      tags: copiarArchivo
 
     - name: Hacer commit y push
       shell: |
@@ -29,6 +30,13 @@
         git push origin main
       delegate_to: localhost
       run_once: true
-      tags:
-        - carga
+      tags: cargaArhivo
+
+    - name: Eliminar archivo local
+      file:
+        path: "/home/ansible/InformeIdiger/InformeDiagnosticoIdiger.txt"
+        state: absent
+      delegate_to: localhost
+      run_once: true
+      tags: limpiarLocal
 
