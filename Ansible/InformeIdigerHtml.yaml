@@ -154,7 +154,7 @@
     - name: Agregar reporte a lista
 
       set_fact:
-        informes_consolidados: "{{ (informes_consolidados | default([]) + [reporte_host] )}}"
+        informes_consolidados: "{{ (informes_consolidados | default([]) + [reporte_host] ) }}"
 
       delegate_to: localhost
       run_once: false
