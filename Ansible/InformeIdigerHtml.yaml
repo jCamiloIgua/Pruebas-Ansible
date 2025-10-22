@@ -169,7 +169,7 @@
 
     - name: Generar informe HTML
       delegate_to: localhost
-      run_once: true
+      run_once: false
 
       copy:
         dest: "{{ ruta_html }}"
