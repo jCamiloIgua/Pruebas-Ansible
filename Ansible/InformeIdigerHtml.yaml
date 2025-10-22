@@ -152,7 +152,7 @@
                 </div>
 
     - name: Guardar reporte RAM
-      delefate_to: localhost
+      delegate_to: localhost
       set_stats::
         data:
           informes_consolidados: "{{ (ansible_stats.informes_consolidados | default([]) + [reporte_host] ) }}"
