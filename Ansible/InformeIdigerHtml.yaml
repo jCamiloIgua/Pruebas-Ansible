@@ -154,7 +154,13 @@
                 <pre>{{ info_security.stdout }}</pre>
 
                 <h3>Aplicación de actualizaciones</h3>
-                <pre>{{ security_update.stdout }}</pre>
+                <pre>
+                {% if info_security.stdout | length > 0 %}
+                {{ security_update.stdout }}
+                {% else %}
+                No hay actualizaciones de seguridad pendientes
+                {% endif %}
+                </pre>
                 </div>
     - name: Guardar reporte temporal
       delegate_to: localhost
