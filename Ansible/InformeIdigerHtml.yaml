@@ -165,21 +165,16 @@
                 <pre>{{ info_security.stdout }}</pre>
 
                 <h3>Aplicación de actualizaciones</h3>
-                <pre>{{ security_update.stdout if security_update is defined else 'No
-                se aplicaron actualizaciones' }} </pre>
-                <pre>
+                <pre>               
                 ¿Se limpió cache?: {{ "true" if security_cache is defined else "false" }}
-
                 {% if security_cache is defined %}
-                {{ security_cache.stdout }}
+                {{ security_cache.stdout | default('') }}
                 {% elif security_update is defined %}
-                {{ security_update.stdout }}
+                {{ security_update.stdout | default('') }}
                 {% else %}
                 No se aplicaron actualizaciones
                 {% endif %}
                 </pre>
-                </div>
-
     - name: Guardar reporte temporal
       delegate_to: localhost
       lineinfile:
