@@ -128,17 +128,6 @@
       when: info_security.stdout | length > 0
       tags: aplicarActualizacion
 
-    - name: Limpiar cache reintento
-      shell: |
-        dnf clean all
-        dnf makecache
-        dnf update --security -y
-      register: security_cache
-      when:
-        - info_security.stdout | length > 0
-        - security_update is failed
-      tags: reintentarCache
-
     - name: Crear reporte individual
       set_fact:
         reporte_host: |
@@ -165,16 +154,8 @@
                 <pre>{{ info_security.stdout }}</pre>
 
                 <h3>Aplicación de actualizaciones</h3>
-                <pre>               
-                ¿Se limpió cache?: {{ "true" if security_cache is defined else "false" }}
-                {% if security_cache is defined %}
-                {{ security_cache.stdout | default('') }}
-                {% elif security_update is defined %}
-                {{ security_update.stdout | default('') }}
-                {% else %}
-                No se aplicaron actualizaciones
-                {% endif %}
-                </pre>
+                <pre>{{ security_update.stdout }}</pre>
+                </div>
     - name: Guardar reporte temporal
       delegate_to: localhost
       lineinfile:
