@@ -2,29 +2,21 @@
 
 ---
 - name: Informe Diagnostico
-
   hosts: "{{ groups['Actualizacion'] | sort }}"
-
   become: true
-
   gather_facts: false
-
   order: sorted  # Orden alfabetico numerico
-
   serial: 1
 
   vars:
     fecha_actual: "{{ lookup('pipe', 'date +%Y%m%d_%H%M%S') }}"
     ruta_html: "/tmp/InformeDiagnosticoIdiger.html"
-    
+  
   tasks:
 
     - name: Obtener informacion del sistema operativo
-  
       command: hostnamectl
-     
       register: host_info 
-     
       tags: hostname
 
     - name: Extraer informacion de Host
@@ -34,16 +26,13 @@
               operaSystem: "{{ host_info.stdout_lines | select('search', 'Operating System') | first | regex_replace('.*:\\s+', '')}}"
               kernel: "{{ host_info.stdout_lines | select('search', 'Kernel') | first | regex_replace('.*:\\s+', '')}}"
               architecture: "{{ host_info.stdout_lines | select('search', 'Architecture') | first | regex_replace('.*:\\s+', '')}}"
-
       tags: hostnameE
 
     - name: Informacion memoria
       shell: |
         echo "=== Informacion de memoria ==="
         free -hm
-
       register: mem_info
-
       tags: memInfo
 
     - name: Verificar uso de memoria
@@ -98,33 +87,25 @@
               else
               echo "Correcto Todos los fylesystems estan por debajo del 85%"
               fi
-      
       register: fs_status
-
       tags: discoIn
 
     - name: Obtener informacion de Networking
       shell: |
          nmcli -f GENERAL.DEVICE,GENERAL.TYPE,GENERAL.STATE,IP4.ADDRESS device show
-
       register: infoNet
-
       tags: ipInfo
 
     - name:  Informacion actualizaciones de seguridad
       shell: dnf updateinfo list updates --security
-
       register: info_security
-
       changed_when: false
-
       tags: infoSecurity
 
     - name: Aplicar actualizaciones de seguridad
       shell: |
         dnf update --security -y
       register: security_update
-      when: info_security.stdout | length > 0
       tags: aplicarActualizacion
 
     - name: Crear reporte individual
@@ -153,13 +134,7 @@
                 <pre>{{ info_security.stdout }}</pre>
 
                 <h3>Aplicación de actualizaciones</h3>
-                <pre>
-                {% if info_security.stdout | length > 0 %}
-                {{ security_update.stdout }}
-                {% else %}
-                No hay actualizaciones de seguridad pendientes
-                {% endif %}
-                </pre>
+                <pre>{{ security_update.stdout }}</pre>
                 </div>
     - name: Guardar reporte temporal
       delegate_to: localhost
