@@ -120,6 +120,11 @@
 
       tags: infoSecurity
 
+    - name: Aplicar actualizaciones de seguridad
+      shell: dnf update --security -y
+      register: security_update
+      when: info_security.stdout | length > 0
+      tags: aplicarActualizacion
 
     - name: Crear reporte individual
       set_fact:
@@ -147,8 +152,8 @@
                 <pre>{{ info_security.stdout }}</pre>
 
                 <h3>Aplicación de actualizaciones</h3>
-                <p>....</p>
-
+                <pre>{{ security_update.stdout if security_update is defined else 'No
+                se aplicaron actualizaciones' }} </pre>
                 </div>
 
     - name: Guardar reporte temporal
@@ -177,12 +182,12 @@
           <html lang="es">
           <head>
               <meta charset="UTF-8">
-              <tittle> Informe Diagnostico - {{ fecha_actual }}</title>
+              <title> Informe Diagnostico - {{ fecha_actual }}</title>
               <style>
                   body { font-family: Arial, sans-serif; margin: 20px; background: #fafafa; color: #333; }
                   h1, h2 {color: #0044cc; }
                   pre { background: #f4f4f4; padding: 10px; boder-radius: 6px; overflow-x: auto;
-                  .host-block { background: #fff; padding: 15px; boder-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+                  .host-block { background: #fff; padding: 15px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
              </style>
           </head>
           <body>
