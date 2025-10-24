@@ -103,7 +103,9 @@
       tags: infoSecurity
 
     - name: Aplicar actualizaciones de seguridad
-      shell: dnf update --security -y
+      shell: |
+        dnf update --security -y 2>&1 | grep -v -E "(Downloading|MB/s|kB/s|Verifying|Running transaction|\
+        ([0-9]+/[0-9]+\)|Running scriptlet|Preparing|Cleanup)"
       register: security_update
       tags: aplicarActualizacion
 
