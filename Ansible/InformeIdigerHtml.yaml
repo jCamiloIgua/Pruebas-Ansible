@@ -135,7 +135,7 @@
         dnf update --security -y
       register: security_cache
       when:
-        - info_security.stodout | length > 0
+        - info_security.stdout | length > 0
         - security_update is failed
       tags: reintentarCache
 
