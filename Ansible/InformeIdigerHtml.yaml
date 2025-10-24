@@ -103,8 +103,7 @@
       tags: infoSecurity
 
     - name: Aplicar actualizaciones de seguridad
-      shell: |
-        dnf update --security -y
+      shell: dnf update --security -y
       register: security_update
       tags: aplicarActualizacion
 
