@@ -121,7 +121,9 @@
       tags: infoSecurity
 
     - name: Aplicar actualizaciones de seguridad
-      shell: dnf update --security -y
+      shell: |
+        dnf clean all
+        dnf update --security -y
       register: security_update
       when: info_security.stdout | length > 0
       tags: aplicarActualizacion
