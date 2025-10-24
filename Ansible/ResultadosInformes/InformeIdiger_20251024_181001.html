@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Informe Diagnostico - 20251024_180938</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #fafafa; color: #333; }
+        h1, h2 {color: #0044cc; }
+        pre { background: #f4f4f4; padding: 10px; boder-radius: 6px; overflow-x: auto;
+        .host-block { background: #fff; padding: 15px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+   </style>
+</head>
+<body>
+    <h1>Informe Diagnostico Idiger - 20251024_180938</h1>
+    <div class="host-block">
+<h2>Host: vmP5</h2>
+<ul>
+  <li><b>Virtualización:</b> oracle</li>
+  <li><b>Sistema Operativo:</b> Oracle Linux Server 8.8</li>
+  <li><b>Kernel:</b> Linux 5.15.0-101.103.2.1.el8uek.x86_64</li>
+  <li><b>Arquitectura:</b> x86-64</li>
+</ul>
+
+<h3>Información Memoria</h3>
+<pre>=== Informacion de memoria ===
+              total        used        free      shared  buff/cache   available
+Mem:          1.1Gi       191Mi       305Mi        12Mi       667Mi       799Mi
+Swap:         3.7Gi        36Mi       3.7Gi</pre>
+<p>Memoria okey</p>
+
+<h3>Información espacio Disco</h3>
+<pre>Correcto Todos los fylesystems estan por debajo del 85%</pre>
+
+<h3>Información Red </h3>
+<pre>GENERAL.DEVICE:                         enp0s3
+GENERAL.TYPE:                           ethernet
+GENERAL.STATE:                          100 (connected)
+IP4.ADDRESS[1]:                         192.168.0.34/24
+
+GENERAL.DEVICE:                         enp0s8
+GENERAL.TYPE:                           ethernet
+GENERAL.STATE:                          30 (disconnected)
+
+GENERAL.DEVICE:                         lo
+GENERAL.TYPE:                           loopback
+GENERAL.STATE:                          10 (unmanaged)
+IP4.ADDRESS[1]:                         127.0.0.1/8</pre>
+
+<h3>Actualizaciones de seguridad</h3>
+<pre>Last metadata expiration check: 0:30:16 ago on Fri Oct 24 12:38:57 2025.</pre>
+
+<h3>Aplicación de actualizaciones</h3>
+<pre>
+Last metadata expiration check: 0:30:31 ago on Fri Oct 24 12:38:57 2025.
+Dependencies resolved.
+Nothing to do.
+Complete!
+</pre>
+</div>
+</body>
+</html>
