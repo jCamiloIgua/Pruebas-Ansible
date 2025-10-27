@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Informe Diagnostico - 20251027_141126</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #fafafa; color: #333; }
+        h1, h2 {color: #0044cc; }
+        pre { background: #f4f4f4; padding: 10px; boder-radius: 6px; overflow-x: auto;
+        .host-block { background: #fff; padding: 15px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+   </style>
+</head>
+<body>
+    <h1>Informe Diagnostico Idiger - 20251027_141126</h1>
+    <div class="host-block">
+<h2>Host: vmP3</h2>
+<ul>
+  <li><b>Virtualización:</b> oracle</li>
+  <li><b>Sistema Operativo:</b> Oracle Linux Server 8.8</li>
+  <li><b>Kernel:</b> Linux 5.15.0-101.103.2.1.el8uek.x86_64</li>
+  <li><b>Arquitectura:</b> x86-64</li>
+</ul>
+
+<h3>Información Memoria</h3>
+<pre>=== Informacion de memoria ===
+              total        used        free      shared  buff/cache   available
+Mem:          1.1Gi       195Mi       289Mi       7.0Mi       679Mi       820Mi
+Swap:         3.7Gi       0.0Ki       3.7Gi</pre>
+<p>Memoria okey</p>
+
+<h3>Información espacio Disco</h3>
+<pre>Correcto Todos los fylesystems estan por debajo del 85%</pre>
+
+<h3>Información Red </h3>
+<pre>GENERAL.DEVICE:                         enp0s3
+GENERAL.TYPE:                           ethernet
+GENERAL.STATE:                          100 (connected)
+IP4.ADDRESS[1]:                         192.168.0.32/24
+
+GENERAL.DEVICE:                         enp0s8
+GENERAL.TYPE:                           ethernet
+GENERAL.STATE:                          30 (disconnected)
+
+GENERAL.DEVICE:                         lo
+GENERAL.TYPE:                           loopback
+GENERAL.STATE:                          10 (unmanaged)
+IP4.ADDRESS[1]:                         127.0.0.1/8</pre>
+
+<h3>Actualizaciones de seguridad</h3>
+<pre>Last metadata expiration check: 0:00:24 ago on Mon Oct 27 08:57:29 2025.
+ELSA-2025-0288  Moderate/Sec.  NetworkManager-1:1.40.16-18.0.1.el8_10.x86_64
+ELSA-2025-20113 Critical/Sec.  NetworkManager-1:1.40.16-18.0.3.el8_10.x86_64
+ELSA-2025-0288  Moderate/Sec.  NetworkManager-libnm-1:1.40.16-18.0.1.el8_10.x86_64
+ELSA-2025-20113 Critical/Sec.  NetworkManager-libnm-1:1.40.16-18.0.3.el8_10.x86_64
+ELSA-2025-0288  Moderate/Sec.  NetworkManager-team-1:1.40.16-18.0.1.el8_10.x86_64
+ELSA-2025-20113 Critical/Sec.  NetworkManager-team-1:1.40.16-18.0.3.el8_10.x86_64
+ELSA-2025-0288  Moderate/Sec.  NetworkManager-tui-1:1.40.16-18.0.1.el8_10.x86_64
+ELSA-2025-20113 Critical/Sec.  NetworkManager-tui-1:1.40.16-18.0.3.el8_10.x86_64
+ELSA-2024-8922  Low/Sec.       bzip2-libs-1.0.6-27.0.1.el8_10.x86_64
+ELSA-2025-0733  Moderate/Sec.  bzip2-libs-1.0.6-28.el8_10.x86_64
+ELSA-2024-4249  Low/Sec.       c-ares-1.13.0-11.el8_10.x86_64
+ELSA-2023-3584  Important/Sec. c-ares-1.13.0-6.el8_8.2.x86_64
+ELSA-2023-7116  Moderate/Sec.  c-ares-1.13.0-8.el8.x86_64
+ELSA-2023-7207  Moderate/Sec.  c-ares-1.13.0-9.el8_9.1.x86_64
+ELSA-2023-3106  Moderate/Sec.  curl-7.61.1-30.el8_8.2.x86_64
+ELSA-2023-4523  Moderate/Sec.  curl-7.61.1-30.el8_8.3.x86_64
+ELSA-2024-1601  Moderate/Sec.  curl-7.61.1-33.el8_9.5.x86_64
+ELSA-2024-5654  Moderate/Sec.  curl-7.61.1-34.el8_10.2.x86_64
+ELSA-2023-4498  Moderate/Sec.  dbus-1:1.12.8-24.0.1.el8_8.1.x86_64
+ELSA-2023-4498  Moderate/Sec.  dbus-common-1:1.12.8-24.0.1.el8_8.1.noarch
+ELSA-2023-4498  Moderate/Sec.  dbus-daemon-1:1.12.8-24.0.1.el8_8.1.x86_64
+ELSA-2023-4498  Moderate/Sec.  dbus-libs-1:1.12.8-24.0.1.el8_8.1.x86_64
+ELSA-2023-4498  Moderate/Sec.  dbus-tools-1:1.12.8-24.0.1.el8_8.1.x86_64
+ELSA-2023-5252  Moderate/Sec.  dmidecode-1:3.3-4.el8_8.1.x86_64
+ELSA-2024-1615  Moderate/Sec.  expat-2.2.5-11.0.1.el8_9.1.x86_64
+ELSA-2024-6989  Moderate/Sec.  expat-2.2.5-15.0.1.el8_10.x86_64
+ELSA-2024-9502  Moderate/Sec.  expat-2.2.5-16.0.1.el8_10.x86_64
+ELSA-2025-3913  Moderate/Sec.  expat-2.2.5-17.0.1.el8_10.x86_64
+ELSA-2025-3421  Important/Sec. freetype-2.9.1-10.el8_10.x86_64
+ELSA-2025-11327 Moderate/Sec.  glib2-2.56.4-166.el8_10.x86_64
+ELSA-2023-12851 Important/Sec. glibc-2.28-225.0.4.el8.x86_64
+ELSA-2023-5455  Important/Sec. glibc-2.28-225.0.4.el8_8.6.x86_64
+ELSA-2024-2722  Important/Sec. glibc-2.28-236.0.1.el8_9.13.x86_64
+ELSA-2024-3269  Important/Sec. glibc-2.28-251.0.2.el8_10.1.x86_64
+ELSA-2024-3344  Important/Sec. glibc-2.28-251.0.2.el8_10.2.x86_64
+ELSA-2025-3828  Moderate/Sec.  glibc-2.28-251.0.3.el8_10.16.x86_64
+ELSA-2025-8686  Moderate/Sec.  glibc-2.28-251.0.3.el8_10.22.x86_64
+ELSA-2025-12980 Moderate/Sec.  glibc-2.28-251.0.3.el8_10.25.x86_64
+ELSA-2023-12851 Important/Sec. glibc-common-2.28-225.0.4.el8.x86_64
+ELSA-2023-5455  Important/Sec. glibc-common-2.28-225.0.4.el8_8.6.x86_64
+ELSA-2024-2722  Important/Sec. glibc-common-2.28-236.0.1.el8_9.13.x86_64
+ELSA-2024-3269  Important/Sec. glibc-common-2.28-251.0.2.el8_10.1.x86_64
+ELSA-2024-3344  Important/Sec. glibc-common-2.28-251.0.2.el8_10.2.x86_64
+ELSA-2025-3828  Moderate/Sec.  glibc-common-2.28-251.0.3.el8_10.16.x86_64
+ELSA-2025-8686  Moderate/Sec.  glibc-common-2.28-251.0.3.el8_10.22.x86_64
+ELSA-2025-12980 Moderate/Sec.  glibc-common-2.28-251.0.3.el8_10.25.x86_64
+ELSA-2023-12851 Important/Sec. glibc-gconv-extra-2.28-225.0.4.el8.x86_64
+ELSA-2023-5455  Important/Sec. glibc-gconv-extra-2.28-225.0.4.el8_8.6.x86_64
+ELSA-2024-2722  Important/Sec. glibc-gconv-extra-2.28-236.0.1.el8_9.13.x86_64
+ELSA-2024-3269  Important/Sec. glibc-gconv-extra-2.28-251.0.2.el8_10.1.x86_64
+ELSA-2024-3344  Important/Sec. glibc-gconv-extra-2.28-251.0.2.el8_10.2.x86_64
+ELSA-2025-3828  Moderate/Sec.  glibc-gconv-extra-2.28-251.0.3.el8_10.16.x86_64
+ELSA-2025-8686  Moderate/Sec.  glibc-gconv-extra-2.28-251.0.3.el8_10.22.x86_64
+ELSA-2025-12980 Moderate/Sec.  glibc-gconv-extra-2.28-251.0.3.el8_10.25.x86_64
+ELSA-2023-12851 Important/Sec. glibc-langpack-es-2.28-225.0.4.el8.x86_64
+ELSA-2023-5455  Important/Sec. glibc-langpack-es-2.28-225.0.4.el8_8.6.x86_64
+ELSA-2024-2722  Important/Sec. glibc-langpack-es-2.28-236.0.1.el8_9.13.x86_64
+ELSA-2024-3269  Important/Sec. glibc-langpack-es-2.28-251.0.2.el8_10.1.x86_64
+ELSA-2024-3344  Important/Sec. glibc-langpack-es-2.28-251.0.2.el8_10.2.x86_64
+ELSA-2025-3828  Moderate/Sec.  glibc-langpack-es-2.28-251.0.3.el8_10.16.x86_64
+ELSA-2025-8686  Moderate/Sec.  glibc-langpack-es-2.28-251.0.3.el8_10.22.x86_64
+ELSA-2025-12980 Moderate/Sec.  glibc-langpack-es-2.28-251.0.3.el8_10.25.x86_64
+ELSA-2024-3214  Moderate/Sec.  gmp-1:6.1.2-11.el8.x86_64
+ELSA-2025-4051  Moderate/Sec.  gnutls-3.6.16-8.el8_10.3.x86_64
+ELSA-2025-17415 Moderate/Sec.  gnutls-3.6.16-8.el8_10.4.x86_64
+ELSA-2024-0627  Moderate/Sec.  gnutls-3.6.16-8.el8_9.1.x86_64
+ELSA-2024-1784  Moderate/Sec.  gnutls-3.6.16-8.el8_9.3.x86_64
+ELSA-2024-0155  Moderate/Sec.  gnutls-3.6.16-8.el8_9.x86_64
+ELSA-2024-3184  Moderate/Sec.  grub2-common-1:2.02-156.0.1.el8.noarch
+ELSA-2025-3367  Important/Sec. grub2-common-1:2.02-164.0.2.el8_10.noarch
+ELSA-2024-3184  Moderate/Sec.  grub2-pc-1:2.02-156.0.1.el8.x86_64
+ELSA-2025-3367  Important/Sec. grub2-pc-1:2.02-164.0.2.el8_10.x86_64
+ELSA-2024-3184  Moderate/Sec.  grub2-pc-modules-1:2.02-156.0.1.el8.noarch
+ELSA-2025-3367  Important/Sec. grub2-pc-modules-1:2.02-164.0.2.el8_10.noarch
+ELSA-2024-3184  Moderate/Sec.  grub2-tools-1:2.02-156.0.1.el8.x86_64
+ELSA-2025-3367  Important/Sec. grub2-tools-1:2.02-164.0.2.el8_10.x86_64
+ELSA-2024-3184  Moderate/Sec.  grub2-tools-extra-1:2.02-156.0.1.el8.x86_64
+ELSA-2025-3367  Important/Sec. grub2-tools-extra-1:2.02-164.0.2.el8_10.x86_64
+ELSA-2024-3184  Moderate/Sec.  grub2-tools-minimal-1:2.02-156.0.1.el8.x86_64
+ELSA-2025-3367  Important/Sec. grub2-tools-minimal-1:2.02-164.0.2.el8_10.x86_64
+ELSA-2023-12655 Critical/Sec.  iwl100-firmware-999:39.31.5.1-999.20.el8.noarch
+ELSA-2023-12691 Critical/Sec.  iwl100-firmware-999:39.31.5.1-999.22.el8.noarch
+ELSA-2023-12714 Important/Sec. iwl100-firmware-999:39.31.5.1-999.25.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  iwl100-firmware-999:39.31.5.1-999.27.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  iwl100-firmware-999:39.31.5.1-999.34.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  iwl100-firmware-999:39.31.5.1-999.35.el8.noarch
+ELSA-2023-12655 Critical/Sec.  iwl1000-firmware-999:39.31.5.1-999.20.el8.noarch
+ELSA-2023-12691 Critical/Sec.  iwl1000-firmware-999:39.31.5.1-999.22.el8.noarch
+ELSA-2023-12714 Important/Sec. iwl1000-firmware-999:39.31.5.1-999.25.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  iwl1000-firmware-999:39.31.5.1-999.27.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  iwl1000-firmware-999:39.31.5.1-999.34.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  iwl1000-firmware-999:39.31.5.1-999.35.el8.noarch
+ELSA-2023-12655 Critical/Sec.  iwl105-firmware-999:18.168.6.1-999.20.el8.noarch
+ELSA-2023-12691 Critical/Sec.  iwl105-firmware-999:18.168.6.1-999.22.el8.noarch
+ELSA-2023-12714 Important/Sec. iwl105-firmware-999:18.168.6.1-999.25.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  iwl105-firmware-999:18.168.6.1-999.27.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  iwl105-firmware-999:18.168.6.1-999.34.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  iwl105-firmware-999:18.168.6.1-999.35.el8.noarch
+ELSA-2023-12655 Critical/Sec.  iwl135-firmware-999:18.168.6.1-999.20.el8.noarch
+ELSA-2023-12691 Critical/Sec.  iwl135-firmware-999:18.168.6.1-999.22.el8.noarch
+ELSA-2023-12714 Important/Sec. iwl135-firmware-999:18.168.6.1-999.25.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  iwl135-firmware-999:18.168.6.1-999.27.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  iwl135-firmware-999:18.168.6.1-999.34.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  iwl135-firmware-999:18.168.6.1-999.35.el8.noarch
+ELSA-2023-12655 Critical/Sec.  iwl2000-firmware-999:18.168.6.1-999.20.el8.noarch
+ELSA-2023-12691 Critical/Sec.  iwl2000-firmware-999:18.168.6.1-999.22.el8.noarch
+ELSA-2023-12714 Important/Sec. iwl2000-firmware-999:18.168.6.1-999.25.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  iwl2000-firmware-999:18.168.6.1-999.27.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  iwl2000-firmware-999:18.168.6.1-999.34.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  iwl2000-firmware-999:18.168.6.1-999.35.el8.noarch
+ELSA-2023-12655 Critical/Sec.  iwl2030-firmware-999:18.168.6.1-999.20.el8.noarch
+ELSA-2023-12691 Critical/Sec.  iwl2030-firmware-999:18.168.6.1-999.22.el8.noarch
+ELSA-2023-12714 Important/Sec. iwl2030-firmware-999:18.168.6.1-999.25.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  iwl2030-firmware-999:18.168.6.1-999.27.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  iwl2030-firmware-999:18.168.6.1-999.34.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  iwl2030-firmware-999:18.168.6.1-999.35.el8.noarch
+ELSA-2023-12655 Critical/Sec.  iwl3160-firmware-999:25.30.13.0-999.20.el8.noarch
+ELSA-2023-12691 Critical/Sec.  iwl3160-firmware-999:25.30.13.0-999.22.el8.noarch
+ELSA-2023-12714 Important/Sec. iwl3160-firmware-999:25.30.13.0-999.25.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  iwl3160-firmware-999:25.30.13.0-999.27.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  iwl3160-firmware-999:25.30.13.0-999.34.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  iwl3160-firmware-999:25.30.13.0-999.35.el8.noarch
+ELSA-2023-12655 Critical/Sec.  iwl5000-firmware-999:8.83.5.1_1-999.20.el8.noarch
+ELSA-2023-12691 Critical/Sec.  iwl5000-firmware-999:8.83.5.1_1-999.22.el8.noarch
+ELSA-2023-12714 Important/Sec. iwl5000-firmware-999:8.83.5.1_1-999.25.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  iwl5000-firmware-999:8.83.5.1_1-999.27.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  iwl5000-firmware-999:8.83.5.1_1-999.34.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  iwl5000-firmware-999:8.83.5.1_1-999.35.el8.noarch
+ELSA-2023-12655 Critical/Sec.  iwl5150-firmware-999:8.24.2.2-999.20.el8.noarch
+ELSA-2023-12691 Critical/Sec.  iwl5150-firmware-999:8.24.2.2-999.22.el8.noarch
+ELSA-2023-12714 Important/Sec. iwl5150-firmware-999:8.24.2.2-999.25.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  iwl5150-firmware-999:8.24.2.2-999.27.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  iwl5150-firmware-999:8.24.2.2-999.34.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  iwl5150-firmware-999:8.24.2.2-999.35.el8.noarch
+ELSA-2023-12655 Critical/Sec.  iwl6000-firmware-999:9.221.4.1-999.20.el8.noarch
+ELSA-2023-12691 Critical/Sec.  iwl6000-firmware-999:9.221.4.1-999.22.el8.noarch
+ELSA-2023-12714 Important/Sec. iwl6000-firmware-999:9.221.4.1-999.25.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  iwl6000-firmware-999:9.221.4.1-999.27.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  iwl6000-firmware-999:9.221.4.1-999.34.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  iwl6000-firmware-999:9.221.4.1-999.35.el8.noarch
+ELSA-2023-12655 Critical/Sec.  iwl6000g2a-firmware-999:18.168.6.1-999.20.el8.noarch
+ELSA-2023-12691 Critical/Sec.  iwl6000g2a-firmware-999:18.168.6.1-999.22.el8.noarch
+ELSA-2023-12714 Important/Sec. iwl6000g2a-firmware-999:18.168.6.1-999.25.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  iwl6000g2a-firmware-999:18.168.6.1-999.27.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  iwl6000g2a-firmware-999:18.168.6.1-999.34.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  iwl6000g2a-firmware-999:18.168.6.1-999.35.el8.noarch
+ELSA-2023-12655 Critical/Sec.  iwl6050-firmware-999:41.28.5.1-999.20.el8.noarch
+ELSA-2023-12691 Critical/Sec.  iwl6050-firmware-999:41.28.5.1-999.22.el8.noarch
+ELSA-2023-12714 Important/Sec. iwl6050-firmware-999:41.28.5.1-999.25.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  iwl6050-firmware-999:41.28.5.1-999.27.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  iwl6050-firmware-999:41.28.5.1-999.34.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  iwl6050-firmware-999:41.28.5.1-999.35.el8.noarch
+ELSA-2023-12655 Critical/Sec.  iwl7260-firmware-999:25.30.13.0-999.20.el8.noarch
+ELSA-2023-12691 Critical/Sec.  iwl7260-firmware-999:25.30.13.0-999.22.el8.noarch
+ELSA-2023-12714 Important/Sec. iwl7260-firmware-999:25.30.13.0-999.25.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  iwl7260-firmware-999:25.30.13.0-999.27.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  iwl7260-firmware-999:25.30.13.0-999.34.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  iwl7260-firmware-999:25.30.13.0-999.35.el8.noarch
+ELSA-2023-12655 Critical/Sec.  iwlax2xx-firmware-999:20230516-999.20.el8.noarch
+ELSA-2023-12691 Critical/Sec.  iwlax2xx-firmware-999:20230516-999.22.el8.noarch
+ELSA-2023-12714 Important/Sec. iwlax2xx-firmware-999:20230516-999.25.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  iwlax2xx-firmware-999:20230516-999.27.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  iwlax2xx-firmware-999:20240715-999.34.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  iwlax2xx-firmware-999:20241003-999.35.el8.noarch
+ELSA-2023-3349  Important/Sec. kernel-4.18.0-477.13.1.el8_8.x86_64
+ELSA-2023-3847  Moderate/Sec.  kernel-4.18.0-477.15.1.el8_8.x86_64
+ELSA-2023-4517  Important/Sec. kernel-4.18.0-477.21.1.el8_8.x86_64
+ELSA-2023-5244  Important/Sec. kernel-4.18.0-477.27.0.1.el8_8.x86_64
+ELSA-2023-12839 Important/Sec. kernel-4.18.0-477.27.1.el8_8.x86_64
+ELSA-2024-12069 Important/Sec. kernel-4.18.0-513.11.0.1.el8_9.x86_64
+ELSA-2024-12169 Important/Sec. kernel-4.18.0-513.18.0.1.el8_9.x86_64
+ELSA-2024-12187 Important/Sec. kernel-4.18.0-513.18.0.2.el8_9.x86_64
+ELSA-2024-12266 Important/Sec. kernel-4.18.0-513.18.1.0.1.el8_9.x86_64
+ELSA-2024-0897  Important/Sec. kernel-4.18.0-513.18.1.el8_9.x86_64
+ELSA-2024-1607  Important/Sec. kernel-4.18.0-513.24.1.el8_9.x86_64
+ELSA-2023-7077  Important/Sec. kernel-4.18.0-513.5.1.el8_9.x86_64
+ELSA-2023-7549  Important/Sec. kernel-4.18.0-513.9.1.el8_9.x86_64
+ELSA-2024-5101  Important/Sec. kernel-4.18.0-553.16.1.el8_10.x86_64
+ELSA-2024-7000  Important/Sec. kernel-4.18.0-553.22.1.el8_10.x86_64
+ELSA-2024-8856  Moderate/Sec.  kernel-4.18.0-553.27.1.el8_10.x86_64
+ELSA-2024-10281 Moderate/Sec.  kernel-4.18.0-553.30.1.el8_10.x86_64
+ELSA-2024-10943 Moderate/Sec.  kernel-4.18.0-553.32.1.el8_10.x86_64
+ELSA-2025-0065  Important/Sec. kernel-4.18.0-553.34.1.el8_10.x86_64
+ELSA-2025-1068  Moderate/Sec.  kernel-4.18.0-553.37.1.el8_10.x86_64
+ELSA-2025-1266  Important/Sec. kernel-4.18.0-553.40.1.el8_10.x86_64
+ELSA-2025-2473  Important/Sec. kernel-4.18.0-553.44.1.el8_10.x86_64
+ELSA-2025-3026  Important/Sec. kernel-4.18.0-553.45.1.el8_10.x86_64
+ELSA-2025-3260  Important/Sec. kernel-4.18.0-553.46.1.el8_10.x86_64
+ELSA-2024-3618  Moderate/Sec.  kernel-4.18.0-553.5.1.el8_10.x86_64
+ELSA-2025-3893  Moderate/Sec.  kernel-4.18.0-553.50.1.el8_10.x86_64
+ELSA-2025-7531  Important/Sec. kernel-4.18.0-553.52.1.el8_10.x86_64
+ELSA-2025-8056  Important/Sec. kernel-4.18.0-553.53.1.el8_10.x86_64
+ELSA-2025-8246  Moderate/Sec.  kernel-4.18.0-553.54.1.el8_10.x86_64
+ELSA-2025-8743  Moderate/Sec.  kernel-4.18.0-553.56.1.el8_10.x86_64
+ELSA-2025-9580  Moderate/Sec.  kernel-4.18.0-553.58.1.el8_10.x86_64
+ELSA-2025-10669 Important/Sec. kernel-4.18.0-553.60.1.el8_10.x86_64
+ELSA-2025-11298 Moderate/Sec.  kernel-4.18.0-553.62.1.el8_10.x86_64
+ELSA-2025-11455 Moderate/Sec.  kernel-4.18.0-553.63.1.el8_10.x86_64
+ELSA-2025-11850 Moderate/Sec.  kernel-4.18.0-553.64.1.el8_10.x86_64
+ELSA-2025-12752 Important/Sec. kernel-4.18.0-553.66.1.el8_10.x86_64
+ELSA-2025-13589 Moderate/Sec.  kernel-4.18.0-553.69.1.el8_10.x86_64
+ELSA-2025-13960 Important/Sec. kernel-4.18.0-553.70.1.el8_10.x86_64
+ELSA-2025-14438 Moderate/Sec.  kernel-4.18.0-553.71.1.el8_10.x86_64
+ELSA-2025-15008 Moderate/Sec.  kernel-4.18.0-553.72.1.el8_10.x86_64
+ELSA-2025-15471 Important/Sec. kernel-4.18.0-553.74.1.el8_10.x86_64
+ELSA-2025-15785 Important/Sec. kernel-4.18.0-553.75.1.el8_10.x86_64
+ELSA-2025-16372 Moderate/Sec.  kernel-4.18.0-553.76.1.el8_10.x86_64
+ELSA-2025-16919 Moderate/Sec.  kernel-4.18.0-553.77.1.el8_10.x86_64
+ELSA-2025-17397 Moderate/Sec.  kernel-4.18.0-553.78.1.el8_10.x86_64
+ELSA-2025-17797 Moderate/Sec.  kernel-4.18.0-553.79.1.el8_10.x86_64
+ELSA-2024-4211  Important/Sec. kernel-4.18.0-553.8.1.el8_10.x86_64
+ELSA-2025-18297 Moderate/Sec.  kernel-4.18.0-553.80.1.el8_10.x86_64
+ELSA-2024-3138  Moderate/Sec.  kernel-4.18.0-553.el8_10.x86_64
+ELSA-2023-3349  Important/Sec. kernel-core-4.18.0-477.13.1.el8_8.x86_64
+ELSA-2023-3847  Moderate/Sec.  kernel-core-4.18.0-477.15.1.el8_8.x86_64
+ELSA-2023-4517  Important/Sec. kernel-core-4.18.0-477.21.1.el8_8.x86_64
+ELSA-2023-5244  Important/Sec. kernel-core-4.18.0-477.27.0.1.el8_8.x86_64
+ELSA-2023-12839 Important/Sec. kernel-core-4.18.0-477.27.1.el8_8.x86_64
+ELSA-2024-12069 Important/Sec. kernel-core-4.18.0-513.11.0.1.el8_9.x86_64
+ELSA-2024-12169 Important/Sec. kernel-core-4.18.0-513.18.0.1.el8_9.x86_64
+ELSA-2024-12187 Important/Sec. kernel-core-4.18.0-513.18.0.2.el8_9.x86_64
+ELSA-2024-12266 Important/Sec. kernel-core-4.18.0-513.18.1.0.1.el8_9.x86_64
+ELSA-2024-0897  Important/Sec. kernel-core-4.18.0-513.18.1.el8_9.x86_64
+ELSA-2024-1607  Important/Sec. kernel-core-4.18.0-513.24.1.el8_9.x86_64
+ELSA-2023-7077  Important/Sec. kernel-core-4.18.0-513.5.1.el8_9.x86_64
+ELSA-2023-7549  Important/Sec. kernel-core-4.18.0-513.9.1.el8_9.x86_64
+ELSA-2024-5101  Important/Sec. kernel-core-4.18.0-553.16.1.el8_10.x86_64
+ELSA-2024-7000  Important/Sec. kernel-core-4.18.0-553.22.1.el8_10.x86_64
+ELSA-2024-8856  Moderate/Sec.  kernel-core-4.18.0-553.27.1.el8_10.x86_64
+ELSA-2024-10281 Moderate/Sec.  kernel-core-4.18.0-553.30.1.el8_10.x86_64
+ELSA-2024-10943 Moderate/Sec.  kernel-core-4.18.0-553.32.1.el8_10.x86_64
+ELSA-2025-0065  Important/Sec. kernel-core-4.18.0-553.34.1.el8_10.x86_64
+ELSA-2025-1068  Moderate/Sec.  kernel-core-4.18.0-553.37.1.el8_10.x86_64
+ELSA-2025-1266  Important/Sec. kernel-core-4.18.0-553.40.1.el8_10.x86_64
+ELSA-2025-2473  Important/Sec. kernel-core-4.18.0-553.44.1.el8_10.x86_64
+ELSA-2025-3026  Important/Sec. kernel-core-4.18.0-553.45.1.el8_10.x86_64
+ELSA-2025-3260  Important/Sec. kernel-core-4.18.0-553.46.1.el8_10.x86_64
+ELSA-2024-3618  Moderate/Sec.  kernel-core-4.18.0-553.5.1.el8_10.x86_64
+ELSA-2025-3893  Moderate/Sec.  kernel-core-4.18.0-553.50.1.el8_10.x86_64
+ELSA-2025-7531  Important/Sec. kernel-core-4.18.0-553.52.1.el8_10.x86_64
+ELSA-2025-8056  Important/Sec. kernel-core-4.18.0-553.53.1.el8_10.x86_64
+ELSA-2025-8246  Moderate/Sec.  kernel-core-4.18.0-553.54.1.el8_10.x86_64
+ELSA-2025-8743  Moderate/Sec.  kernel-core-4.18.0-553.56.1.el8_10.x86_64
+ELSA-2025-9580  Moderate/Sec.  kernel-core-4.18.0-553.58.1.el8_10.x86_64
+ELSA-2025-10669 Important/Sec. kernel-core-4.18.0-553.60.1.el8_10.x86_64
+ELSA-2025-11298 Moderate/Sec.  kernel-core-4.18.0-553.62.1.el8_10.x86_64
+ELSA-2025-11455 Moderate/Sec.  kernel-core-4.18.0-553.63.1.el8_10.x86_64
+ELSA-2025-11850 Moderate/Sec.  kernel-core-4.18.0-553.64.1.el8_10.x86_64
+ELSA-2025-12752 Important/Sec. kernel-core-4.18.0-553.66.1.el8_10.x86_64
+ELSA-2025-13589 Moderate/Sec.  kernel-core-4.18.0-553.69.1.el8_10.x86_64
+ELSA-2025-13960 Important/Sec. kernel-core-4.18.0-553.70.1.el8_10.x86_64
+ELSA-2025-14438 Moderate/Sec.  kernel-core-4.18.0-553.71.1.el8_10.x86_64
+ELSA-2025-15008 Moderate/Sec.  kernel-core-4.18.0-553.72.1.el8_10.x86_64
+ELSA-2025-15471 Important/Sec. kernel-core-4.18.0-553.74.1.el8_10.x86_64
+ELSA-2025-15785 Important/Sec. kernel-core-4.18.0-553.75.1.el8_10.x86_64
+ELSA-2025-16372 Moderate/Sec.  kernel-core-4.18.0-553.76.1.el8_10.x86_64
+ELSA-2025-16919 Moderate/Sec.  kernel-core-4.18.0-553.77.1.el8_10.x86_64
+ELSA-2025-17397 Moderate/Sec.  kernel-core-4.18.0-553.78.1.el8_10.x86_64
+ELSA-2025-17797 Moderate/Sec.  kernel-core-4.18.0-553.79.1.el8_10.x86_64
+ELSA-2024-4211  Important/Sec. kernel-core-4.18.0-553.8.1.el8_10.x86_64
+ELSA-2025-18297 Moderate/Sec.  kernel-core-4.18.0-553.80.1.el8_10.x86_64
+ELSA-2024-3138  Moderate/Sec.  kernel-core-4.18.0-553.el8_10.x86_64
+ELSA-2023-3349  Important/Sec. kernel-modules-4.18.0-477.13.1.el8_8.x86_64
+ELSA-2023-3847  Moderate/Sec.  kernel-modules-4.18.0-477.15.1.el8_8.x86_64
+ELSA-2023-4517  Important/Sec. kernel-modules-4.18.0-477.21.1.el8_8.x86_64
+ELSA-2023-5244  Important/Sec. kernel-modules-4.18.0-477.27.0.1.el8_8.x86_64
+ELSA-2023-12839 Important/Sec. kernel-modules-4.18.0-477.27.1.el8_8.x86_64
+ELSA-2024-12069 Important/Sec. kernel-modules-4.18.0-513.11.0.1.el8_9.x86_64
+ELSA-2024-12169 Important/Sec. kernel-modules-4.18.0-513.18.0.1.el8_9.x86_64
+ELSA-2024-12187 Important/Sec. kernel-modules-4.18.0-513.18.0.2.el8_9.x86_64
+ELSA-2024-12266 Important/Sec. kernel-modules-4.18.0-513.18.1.0.1.el8_9.x86_64
+ELSA-2024-0897  Important/Sec. kernel-modules-4.18.0-513.18.1.el8_9.x86_64
+ELSA-2024-1607  Important/Sec. kernel-modules-4.18.0-513.24.1.el8_9.x86_64
+ELSA-2023-7077  Important/Sec. kernel-modules-4.18.0-513.5.1.el8_9.x86_64
+ELSA-2023-7549  Important/Sec. kernel-modules-4.18.0-513.9.1.el8_9.x86_64
+ELSA-2024-5101  Important/Sec. kernel-modules-4.18.0-553.16.1.el8_10.x86_64
+ELSA-2024-7000  Important/Sec. kernel-modules-4.18.0-553.22.1.el8_10.x86_64
+ELSA-2024-8856  Moderate/Sec.  kernel-modules-4.18.0-553.27.1.el8_10.x86_64
+ELSA-2024-10281 Moderate/Sec.  kernel-modules-4.18.0-553.30.1.el8_10.x86_64
+ELSA-2024-10943 Moderate/Sec.  kernel-modules-4.18.0-553.32.1.el8_10.x86_64
+ELSA-2025-0065  Important/Sec. kernel-modules-4.18.0-553.34.1.el8_10.x86_64
+ELSA-2025-1068  Moderate/Sec.  kernel-modules-4.18.0-553.37.1.el8_10.x86_64
+ELSA-2025-1266  Important/Sec. kernel-modules-4.18.0-553.40.1.el8_10.x86_64
+ELSA-2025-2473  Important/Sec. kernel-modules-4.18.0-553.44.1.el8_10.x86_64
+ELSA-2025-3026  Important/Sec. kernel-modules-4.18.0-553.45.1.el8_10.x86_64
+ELSA-2025-3260  Important/Sec. kernel-modules-4.18.0-553.46.1.el8_10.x86_64
+ELSA-2024-3618  Moderate/Sec.  kernel-modules-4.18.0-553.5.1.el8_10.x86_64
+ELSA-2025-3893  Moderate/Sec.  kernel-modules-4.18.0-553.50.1.el8_10.x86_64
+ELSA-2025-7531  Important/Sec. kernel-modules-4.18.0-553.52.1.el8_10.x86_64
+ELSA-2025-8056  Important/Sec. kernel-modules-4.18.0-553.53.1.el8_10.x86_64
+ELSA-2025-8246  Moderate/Sec.  kernel-modules-4.18.0-553.54.1.el8_10.x86_64
+ELSA-2025-8743  Moderate/Sec.  kernel-modules-4.18.0-553.56.1.el8_10.x86_64
+ELSA-2025-9580  Moderate/Sec.  kernel-modules-4.18.0-553.58.1.el8_10.x86_64
+ELSA-2025-10669 Important/Sec. kernel-modules-4.18.0-553.60.1.el8_10.x86_64
+ELSA-2025-11298 Moderate/Sec.  kernel-modules-4.18.0-553.62.1.el8_10.x86_64
+ELSA-2025-11455 Moderate/Sec.  kernel-modules-4.18.0-553.63.1.el8_10.x86_64
+ELSA-2025-11850 Moderate/Sec.  kernel-modules-4.18.0-553.64.1.el8_10.x86_64
+ELSA-2025-12752 Important/Sec. kernel-modules-4.18.0-553.66.1.el8_10.x86_64
+ELSA-2025-13589 Moderate/Sec.  kernel-modules-4.18.0-553.69.1.el8_10.x86_64
+ELSA-2025-13960 Important/Sec. kernel-modules-4.18.0-553.70.1.el8_10.x86_64
+ELSA-2025-14438 Moderate/Sec.  kernel-modules-4.18.0-553.71.1.el8_10.x86_64
+ELSA-2025-15008 Moderate/Sec.  kernel-modules-4.18.0-553.72.1.el8_10.x86_64
+ELSA-2025-15471 Important/Sec. kernel-modules-4.18.0-553.74.1.el8_10.x86_64
+ELSA-2025-15785 Important/Sec. kernel-modules-4.18.0-553.75.1.el8_10.x86_64
+ELSA-2025-16372 Moderate/Sec.  kernel-modules-4.18.0-553.76.1.el8_10.x86_64
+ELSA-2025-16919 Moderate/Sec.  kernel-modules-4.18.0-553.77.1.el8_10.x86_64
+ELSA-2025-17397 Moderate/Sec.  kernel-modules-4.18.0-553.78.1.el8_10.x86_64
+ELSA-2025-17797 Moderate/Sec.  kernel-modules-4.18.0-553.79.1.el8_10.x86_64
+ELSA-2024-4211  Important/Sec. kernel-modules-4.18.0-553.8.1.el8_10.x86_64
+ELSA-2025-18297 Moderate/Sec.  kernel-modules-4.18.0-553.80.1.el8_10.x86_64
+ELSA-2024-3138  Moderate/Sec.  kernel-modules-4.18.0-553.el8_10.x86_64
+ELSA-2023-3349  Important/Sec. kernel-tools-4.18.0-477.13.1.el8_8.x86_64
+ELSA-2023-3847  Moderate/Sec.  kernel-tools-4.18.0-477.15.1.el8_8.x86_64
+ELSA-2023-4517  Important/Sec. kernel-tools-4.18.0-477.21.1.el8_8.x86_64
+ELSA-2023-5244  Important/Sec. kernel-tools-4.18.0-477.27.0.1.el8_8.x86_64
+ELSA-2023-12839 Important/Sec. kernel-tools-4.18.0-477.27.1.el8_8.x86_64
+ELSA-2024-12069 Important/Sec. kernel-tools-4.18.0-513.11.0.1.el8_9.x86_64
+ELSA-2024-12169 Important/Sec. kernel-tools-4.18.0-513.18.0.1.el8_9.x86_64
+ELSA-2024-12187 Important/Sec. kernel-tools-4.18.0-513.18.0.2.el8_9.x86_64
+ELSA-2024-12266 Important/Sec. kernel-tools-4.18.0-513.18.1.0.1.el8_9.x86_64
+ELSA-2024-0897  Important/Sec. kernel-tools-4.18.0-513.18.1.el8_9.x86_64
+ELSA-2024-1607  Important/Sec. kernel-tools-4.18.0-513.24.1.el8_9.x86_64
+ELSA-2023-7077  Important/Sec. kernel-tools-4.18.0-513.5.1.el8_9.x86_64
+ELSA-2023-7549  Important/Sec. kernel-tools-4.18.0-513.9.1.el8_9.x86_64
+ELSA-2024-5101  Important/Sec. kernel-tools-4.18.0-553.16.1.el8_10.x86_64
+ELSA-2024-7000  Important/Sec. kernel-tools-4.18.0-553.22.1.el8_10.x86_64
+ELSA-2024-8856  Moderate/Sec.  kernel-tools-4.18.0-553.27.1.el8_10.x86_64
+ELSA-2024-10281 Moderate/Sec.  kernel-tools-4.18.0-553.30.1.el8_10.x86_64
+ELSA-2024-10943 Moderate/Sec.  kernel-tools-4.18.0-553.32.1.el8_10.x86_64
+ELSA-2025-0065  Important/Sec. kernel-tools-4.18.0-553.34.1.el8_10.x86_64
+ELSA-2025-1068  Moderate/Sec.  kernel-tools-4.18.0-553.37.1.el8_10.x86_64
+ELSA-2025-1266  Important/Sec. kernel-tools-4.18.0-553.40.1.el8_10.x86_64
+ELSA-2025-2473  Important/Sec. kernel-tools-4.18.0-553.44.1.el8_10.x86_64
+ELSA-2025-3026  Important/Sec. kernel-tools-4.18.0-553.45.1.el8_10.x86_64
+ELSA-2025-3260  Important/Sec. kernel-tools-4.18.0-553.46.1.el8_10.x86_64
+ELSA-2024-3618  Moderate/Sec.  kernel-tools-4.18.0-553.5.1.el8_10.x86_64
+ELSA-2025-3893  Moderate/Sec.  kernel-tools-4.18.0-553.50.1.el8_10.x86_64
+ELSA-2025-7531  Important/Sec. kernel-tools-4.18.0-553.52.1.el8_10.x86_64
+ELSA-2025-8056  Important/Sec. kernel-tools-4.18.0-553.53.1.el8_10.x86_64
+ELSA-2025-8246  Moderate/Sec.  kernel-tools-4.18.0-553.54.1.el8_10.x86_64
+ELSA-2025-8743  Moderate/Sec.  kernel-tools-4.18.0-553.56.1.el8_10.x86_64
+ELSA-2025-9580  Moderate/Sec.  kernel-tools-4.18.0-553.58.1.el8_10.x86_64
+ELSA-2025-10669 Important/Sec. kernel-tools-4.18.0-553.60.1.el8_10.x86_64
+ELSA-2025-11298 Moderate/Sec.  kernel-tools-4.18.0-553.62.1.el8_10.x86_64
+ELSA-2025-11455 Moderate/Sec.  kernel-tools-4.18.0-553.63.1.el8_10.x86_64
+ELSA-2025-11850 Moderate/Sec.  kernel-tools-4.18.0-553.64.1.el8_10.x86_64
+ELSA-2025-12752 Important/Sec. kernel-tools-4.18.0-553.66.1.el8_10.x86_64
+ELSA-2025-13589 Moderate/Sec.  kernel-tools-4.18.0-553.69.1.el8_10.x86_64
+ELSA-2025-13960 Important/Sec. kernel-tools-4.18.0-553.70.1.el8_10.x86_64
+ELSA-2025-14438 Moderate/Sec.  kernel-tools-4.18.0-553.71.1.el8_10.x86_64
+ELSA-2025-15008 Moderate/Sec.  kernel-tools-4.18.0-553.72.1.el8_10.x86_64
+ELSA-2025-15471 Important/Sec. kernel-tools-4.18.0-553.74.1.el8_10.x86_64
+ELSA-2025-15785 Important/Sec. kernel-tools-4.18.0-553.75.1.el8_10.x86_64
+ELSA-2025-16372 Moderate/Sec.  kernel-tools-4.18.0-553.76.1.el8_10.x86_64
+ELSA-2025-16919 Moderate/Sec.  kernel-tools-4.18.0-553.77.1.el8_10.x86_64
+ELSA-2025-17397 Moderate/Sec.  kernel-tools-4.18.0-553.78.1.el8_10.x86_64
+ELSA-2025-17797 Moderate/Sec.  kernel-tools-4.18.0-553.79.1.el8_10.x86_64
+ELSA-2024-4211  Important/Sec. kernel-tools-4.18.0-553.8.1.el8_10.x86_64
+ELSA-2025-18297 Moderate/Sec.  kernel-tools-4.18.0-553.80.1.el8_10.x86_64
+ELSA-2024-3138  Moderate/Sec.  kernel-tools-4.18.0-553.el8_10.x86_64
+ELSA-2023-3349  Important/Sec. kernel-tools-libs-4.18.0-477.13.1.el8_8.x86_64
+ELSA-2023-3847  Moderate/Sec.  kernel-tools-libs-4.18.0-477.15.1.el8_8.x86_64
+ELSA-2023-4517  Important/Sec. kernel-tools-libs-4.18.0-477.21.1.el8_8.x86_64
+ELSA-2023-5244  Important/Sec. kernel-tools-libs-4.18.0-477.27.0.1.el8_8.x86_64
+ELSA-2023-12839 Important/Sec. kernel-tools-libs-4.18.0-477.27.1.el8_8.x86_64
+ELSA-2024-12069 Important/Sec. kernel-tools-libs-4.18.0-513.11.0.1.el8_9.x86_64
+ELSA-2024-12169 Important/Sec. kernel-tools-libs-4.18.0-513.18.0.1.el8_9.x86_64
+ELSA-2024-12187 Important/Sec. kernel-tools-libs-4.18.0-513.18.0.2.el8_9.x86_64
+ELSA-2024-12266 Important/Sec. kernel-tools-libs-4.18.0-513.18.1.0.1.el8_9.x86_64
+ELSA-2024-0897  Important/Sec. kernel-tools-libs-4.18.0-513.18.1.el8_9.x86_64
+ELSA-2024-1607  Important/Sec. kernel-tools-libs-4.18.0-513.24.1.el8_9.x86_64
+ELSA-2023-7077  Important/Sec. kernel-tools-libs-4.18.0-513.5.1.el8_9.x86_64
+ELSA-2023-7549  Important/Sec. kernel-tools-libs-4.18.0-513.9.1.el8_9.x86_64
+ELSA-2024-5101  Important/Sec. kernel-tools-libs-4.18.0-553.16.1.el8_10.x86_64
+ELSA-2024-7000  Important/Sec. kernel-tools-libs-4.18.0-553.22.1.el8_10.x86_64
+ELSA-2024-8856  Moderate/Sec.  kernel-tools-libs-4.18.0-553.27.1.el8_10.x86_64
+ELSA-2024-10281 Moderate/Sec.  kernel-tools-libs-4.18.0-553.30.1.el8_10.x86_64
+ELSA-2024-10943 Moderate/Sec.  kernel-tools-libs-4.18.0-553.32.1.el8_10.x86_64
+ELSA-2025-0065  Important/Sec. kernel-tools-libs-4.18.0-553.34.1.el8_10.x86_64
+ELSA-2025-1068  Moderate/Sec.  kernel-tools-libs-4.18.0-553.37.1.el8_10.x86_64
+ELSA-2025-1266  Important/Sec. kernel-tools-libs-4.18.0-553.40.1.el8_10.x86_64
+ELSA-2025-2473  Important/Sec. kernel-tools-libs-4.18.0-553.44.1.el8_10.x86_64
+ELSA-2025-3026  Important/Sec. kernel-tools-libs-4.18.0-553.45.1.el8_10.x86_64
+ELSA-2025-3260  Important/Sec. kernel-tools-libs-4.18.0-553.46.1.el8_10.x86_64
+ELSA-2024-3618  Moderate/Sec.  kernel-tools-libs-4.18.0-553.5.1.el8_10.x86_64
+ELSA-2025-3893  Moderate/Sec.  kernel-tools-libs-4.18.0-553.50.1.el8_10.x86_64
+ELSA-2025-7531  Important/Sec. kernel-tools-libs-4.18.0-553.52.1.el8_10.x86_64
+ELSA-2025-8056  Important/Sec. kernel-tools-libs-4.18.0-553.53.1.el8_10.x86_64
+ELSA-2025-8246  Moderate/Sec.  kernel-tools-libs-4.18.0-553.54.1.el8_10.x86_64
+ELSA-2025-8743  Moderate/Sec.  kernel-tools-libs-4.18.0-553.56.1.el8_10.x86_64
+ELSA-2025-9580  Moderate/Sec.  kernel-tools-libs-4.18.0-553.58.1.el8_10.x86_64
+ELSA-2025-10669 Important/Sec. kernel-tools-libs-4.18.0-553.60.1.el8_10.x86_64
+ELSA-2025-11298 Moderate/Sec.  kernel-tools-libs-4.18.0-553.62.1.el8_10.x86_64
+ELSA-2025-11455 Moderate/Sec.  kernel-tools-libs-4.18.0-553.63.1.el8_10.x86_64
+ELSA-2025-11850 Moderate/Sec.  kernel-tools-libs-4.18.0-553.64.1.el8_10.x86_64
+ELSA-2025-12752 Important/Sec. kernel-tools-libs-4.18.0-553.66.1.el8_10.x86_64
+ELSA-2025-13589 Moderate/Sec.  kernel-tools-libs-4.18.0-553.69.1.el8_10.x86_64
+ELSA-2025-13960 Important/Sec. kernel-tools-libs-4.18.0-553.70.1.el8_10.x86_64
+ELSA-2025-14438 Moderate/Sec.  kernel-tools-libs-4.18.0-553.71.1.el8_10.x86_64
+ELSA-2025-15008 Moderate/Sec.  kernel-tools-libs-4.18.0-553.72.1.el8_10.x86_64
+ELSA-2025-15471 Important/Sec. kernel-tools-libs-4.18.0-553.74.1.el8_10.x86_64
+ELSA-2025-15785 Important/Sec. kernel-tools-libs-4.18.0-553.75.1.el8_10.x86_64
+ELSA-2025-16372 Moderate/Sec.  kernel-tools-libs-4.18.0-553.76.1.el8_10.x86_64
+ELSA-2025-16919 Moderate/Sec.  kernel-tools-libs-4.18.0-553.77.1.el8_10.x86_64
+ELSA-2025-17397 Moderate/Sec.  kernel-tools-libs-4.18.0-553.78.1.el8_10.x86_64
+ELSA-2025-17797 Moderate/Sec.  kernel-tools-libs-4.18.0-553.79.1.el8_10.x86_64
+ELSA-2024-4211  Important/Sec. kernel-tools-libs-4.18.0-553.8.1.el8_10.x86_64
+ELSA-2025-18297 Moderate/Sec.  kernel-tools-libs-4.18.0-553.80.1.el8_10.x86_64
+ELSA-2024-3138  Moderate/Sec.  kernel-tools-libs-4.18.0-553.el8_10.x86_64
+ELSA-2023-12393 Important/Sec. kernel-uek-5.15.0-102.110.5.el8uek.x86_64
+ELSA-2023-12798 Important/Sec. kernel-uek-5.15.0-105.125.6.2.1.el8uek.x86_64
+ELSA-2023-12824 Important/Sec. kernel-uek-5.15.0-105.125.6.2.2.el8uek.x86_64
+ELSA-2023-12858 Important/Sec. kernel-uek-5.15.0-106.131.4.el8uek.x86_64
+ELSA-2023-13043 Important/Sec. kernel-uek-5.15.0-201.135.6.el8uek.x86_64
+ELSA-2024-12159 Important/Sec. kernel-uek-5.15.0-203.146.5.1.el8uek.x86_64
+ELSA-2024-12208 Important/Sec. kernel-uek-5.15.0-204.147.6.2.el8uek.x86_64
+ELSA-2024-12255 Important/Sec. kernel-uek-5.15.0-204.147.6.3.el8uek.x86_64
+ELSA-2024-12272 Important/Sec. kernel-uek-5.15.0-205.149.5.1.el8uek.x86_64
+ELSA-2024-12385 Important/Sec. kernel-uek-5.15.0-206.153.7.el8uek.x86_64
+ELSA-2024-12433 Important/Sec. kernel-uek-5.15.0-207.156.6.el8uek.x86_64
+ELSA-2024-12546 Important/Sec. kernel-uek-5.15.0-208.159.3.2.el8uek.x86_64
+ELSA-2024-12582 Important/Sec. kernel-uek-5.15.0-209.161.7.el8uek.x86_64
+ELSA-2024-12618 Important/Sec. kernel-uek-5.15.0-210.163.7.el8uek.x86_64
+ELSA-2024-12713 Important/Sec. kernel-uek-5.15.0-300.163.18.1.el8uek.x86_64
+ELSA-2024-12830 Important/Sec. kernel-uek-5.15.0-300.163.18.7.el8uek.x86_64
+ELSA-2024-12682 Important/Sec. kernel-uek-5.15.0-300.163.18.el8uek.x86_64
+ELSA-2024-12796 Important/Sec. kernel-uek-5.15.0-301.163.5.2.el8uek.x86_64
+ELSA-2024-12815 Important/Sec. kernel-uek-5.15.0-302.167.6.el8uek.x86_64
+ELSA-2024-12887 Important/Sec. kernel-uek-5.15.0-303.171.5.2.el8uek.x86_64
+ELSA-2025-20066 Important/Sec. kernel-uek-5.15.0-304.171.4.3.el8uek.x86_64
+ELSA-2025-20018 Important/Sec. kernel-uek-5.15.0-304.171.4.el8uek.x86_64
+ELSA-2025-20095 Important/Sec. kernel-uek-5.15.0-305.176.4.el8uek.x86_64
+ELSA-2025-20152 Important/Sec. kernel-uek-5.15.0-306.177.4.el8uek.x86_64
+ELSA-2025-20270 Important/Sec. kernel-uek-5.15.0-307.178.5.el8uek.x86_64
+ELSA-2025-20323 Important/Sec. kernel-uek-5.15.0-308.179.6.2.el8uek.x86_64
+ELSA-2025-20320 Important/Sec. kernel-uek-5.15.0-308.179.6.el8uek.x86_64
+ELSA-2025-20404 Moderate/Sec.  kernel-uek-5.15.0-309.180.4.2.el8uek.x86_64
+ELSA-2025-20365 Important/Sec. kernel-uek-5.15.0-309.180.4.el8uek.x86_64
+ELSA-2025-20470 Important/Sec. kernel-uek-5.15.0-310.184.5.2.el8uek.x86_64
+ELSA-2025-20520 Important/Sec. kernel-uek-5.15.0-311.185.9.el8uek.x86_64
+ELSA-2025-20559 Important/Sec. kernel-uek-5.15.0-312.187.5.1.el8uek.x86_64
+ELSA-2025-20609 Important/Sec. kernel-uek-5.15.0-312.187.5.3.el8uek.x86_64
+ELSA-2025-20552 Important/Sec. kernel-uek-5.15.0-312.187.5.el8uek.x86_64
+ELSA-2025-20716 Important/Sec. kernel-uek-5.15.0-313.189.5.1.el8uek.x86_64
+ELSA-2023-12393 Important/Sec. kernel-uek-core-5.15.0-102.110.5.el8uek.x86_64
+ELSA-2023-12798 Important/Sec. kernel-uek-core-5.15.0-105.125.6.2.1.el8uek.x86_64
+ELSA-2023-12824 Important/Sec. kernel-uek-core-5.15.0-105.125.6.2.2.el8uek.x86_64
+ELSA-2023-12858 Important/Sec. kernel-uek-core-5.15.0-106.131.4.el8uek.x86_64
+ELSA-2023-13043 Important/Sec. kernel-uek-core-5.15.0-201.135.6.el8uek.x86_64
+ELSA-2024-12159 Important/Sec. kernel-uek-core-5.15.0-203.146.5.1.el8uek.x86_64
+ELSA-2024-12208 Important/Sec. kernel-uek-core-5.15.0-204.147.6.2.el8uek.x86_64
+ELSA-2024-12255 Important/Sec. kernel-uek-core-5.15.0-204.147.6.3.el8uek.x86_64
+ELSA-2024-12272 Important/Sec. kernel-uek-core-5.15.0-205.149.5.1.el8uek.x86_64
+ELSA-2024-12385 Important/Sec. kernel-uek-core-5.15.0-206.153.7.el8uek.x86_64
+ELSA-2024-12433 Important/Sec. kernel-uek-core-5.15.0-207.156.6.el8uek.x86_64
+ELSA-2024-12546 Important/Sec. kernel-uek-core-5.15.0-208.159.3.2.el8uek.x86_64
+ELSA-2024-12582 Important/Sec. kernel-uek-core-5.15.0-209.161.7.el8uek.x86_64
+ELSA-2024-12618 Important/Sec. kernel-uek-core-5.15.0-210.163.7.el8uek.x86_64
+ELSA-2024-12713 Important/Sec. kernel-uek-core-5.15.0-300.163.18.1.el8uek.x86_64
+ELSA-2024-12830 Important/Sec. kernel-uek-core-5.15.0-300.163.18.7.el8uek.x86_64
+ELSA-2024-12682 Important/Sec. kernel-uek-core-5.15.0-300.163.18.el8uek.x86_64
+ELSA-2024-12796 Important/Sec. kernel-uek-core-5.15.0-301.163.5.2.el8uek.x86_64
+ELSA-2024-12815 Important/Sec. kernel-uek-core-5.15.0-302.167.6.el8uek.x86_64
+ELSA-2024-12887 Important/Sec. kernel-uek-core-5.15.0-303.171.5.2.el8uek.x86_64
+ELSA-2025-20066 Important/Sec. kernel-uek-core-5.15.0-304.171.4.3.el8uek.x86_64
+ELSA-2025-20018 Important/Sec. kernel-uek-core-5.15.0-304.171.4.el8uek.x86_64
+ELSA-2025-20095 Important/Sec. kernel-uek-core-5.15.0-305.176.4.el8uek.x86_64
+ELSA-2025-20152 Important/Sec. kernel-uek-core-5.15.0-306.177.4.el8uek.x86_64
+ELSA-2025-20270 Important/Sec. kernel-uek-core-5.15.0-307.178.5.el8uek.x86_64
+ELSA-2025-20323 Important/Sec. kernel-uek-core-5.15.0-308.179.6.2.el8uek.x86_64
+ELSA-2025-20320 Important/Sec. kernel-uek-core-5.15.0-308.179.6.el8uek.x86_64
+ELSA-2025-20404 Moderate/Sec.  kernel-uek-core-5.15.0-309.180.4.2.el8uek.x86_64
+ELSA-2025-20365 Important/Sec. kernel-uek-core-5.15.0-309.180.4.el8uek.x86_64
+ELSA-2025-20470 Important/Sec. kernel-uek-core-5.15.0-310.184.5.2.el8uek.x86_64
+ELSA-2025-20520 Important/Sec. kernel-uek-core-5.15.0-311.185.9.el8uek.x86_64
+ELSA-2025-20559 Important/Sec. kernel-uek-core-5.15.0-312.187.5.1.el8uek.x86_64
+ELSA-2025-20609 Important/Sec. kernel-uek-core-5.15.0-312.187.5.3.el8uek.x86_64
+ELSA-2025-20552 Important/Sec. kernel-uek-core-5.15.0-312.187.5.el8uek.x86_64
+ELSA-2025-20716 Important/Sec. kernel-uek-core-5.15.0-313.189.5.1.el8uek.x86_64
+ELSA-2023-12393 Important/Sec. kernel-uek-modules-5.15.0-102.110.5.el8uek.x86_64
+ELSA-2023-12798 Important/Sec. kernel-uek-modules-5.15.0-105.125.6.2.1.el8uek.x86_64
+ELSA-2023-12824 Important/Sec. kernel-uek-modules-5.15.0-105.125.6.2.2.el8uek.x86_64
+ELSA-2023-12858 Important/Sec. kernel-uek-modules-5.15.0-106.131.4.el8uek.x86_64
+ELSA-2023-13043 Important/Sec. kernel-uek-modules-5.15.0-201.135.6.el8uek.x86_64
+ELSA-2024-12159 Important/Sec. kernel-uek-modules-5.15.0-203.146.5.1.el8uek.x86_64
+ELSA-2024-12208 Important/Sec. kernel-uek-modules-5.15.0-204.147.6.2.el8uek.x86_64
+ELSA-2024-12255 Important/Sec. kernel-uek-modules-5.15.0-204.147.6.3.el8uek.x86_64
+ELSA-2024-12272 Important/Sec. kernel-uek-modules-5.15.0-205.149.5.1.el8uek.x86_64
+ELSA-2024-12385 Important/Sec. kernel-uek-modules-5.15.0-206.153.7.el8uek.x86_64
+ELSA-2024-12433 Important/Sec. kernel-uek-modules-5.15.0-207.156.6.el8uek.x86_64
+ELSA-2024-12546 Important/Sec. kernel-uek-modules-5.15.0-208.159.3.2.el8uek.x86_64
+ELSA-2024-12582 Important/Sec. kernel-uek-modules-5.15.0-209.161.7.el8uek.x86_64
+ELSA-2024-12618 Important/Sec. kernel-uek-modules-5.15.0-210.163.7.el8uek.x86_64
+ELSA-2024-12713 Important/Sec. kernel-uek-modules-5.15.0-300.163.18.1.el8uek.x86_64
+ELSA-2024-12830 Important/Sec. kernel-uek-modules-5.15.0-300.163.18.7.el8uek.x86_64
+ELSA-2024-12682 Important/Sec. kernel-uek-modules-5.15.0-300.163.18.el8uek.x86_64
+ELSA-2024-12796 Important/Sec. kernel-uek-modules-5.15.0-301.163.5.2.el8uek.x86_64
+ELSA-2024-12815 Important/Sec. kernel-uek-modules-5.15.0-302.167.6.el8uek.x86_64
+ELSA-2024-12887 Important/Sec. kernel-uek-modules-5.15.0-303.171.5.2.el8uek.x86_64
+ELSA-2025-20066 Important/Sec. kernel-uek-modules-5.15.0-304.171.4.3.el8uek.x86_64
+ELSA-2025-20018 Important/Sec. kernel-uek-modules-5.15.0-304.171.4.el8uek.x86_64
+ELSA-2025-20095 Important/Sec. kernel-uek-modules-5.15.0-305.176.4.el8uek.x86_64
+ELSA-2025-20152 Important/Sec. kernel-uek-modules-5.15.0-306.177.4.el8uek.x86_64
+ELSA-2025-20270 Important/Sec. kernel-uek-modules-5.15.0-307.178.5.el8uek.x86_64
+ELSA-2025-20323 Important/Sec. kernel-uek-modules-5.15.0-308.179.6.2.el8uek.x86_64
+ELSA-2025-20320 Important/Sec. kernel-uek-modules-5.15.0-308.179.6.el8uek.x86_64
+ELSA-2025-20404 Moderate/Sec.  kernel-uek-modules-5.15.0-309.180.4.2.el8uek.x86_64
+ELSA-2025-20365 Important/Sec. kernel-uek-modules-5.15.0-309.180.4.el8uek.x86_64
+ELSA-2025-20470 Important/Sec. kernel-uek-modules-5.15.0-310.184.5.2.el8uek.x86_64
+ELSA-2025-20520 Important/Sec. kernel-uek-modules-5.15.0-311.185.9.el8uek.x86_64
+ELSA-2025-20559 Important/Sec. kernel-uek-modules-5.15.0-312.187.5.1.el8uek.x86_64
+ELSA-2025-20609 Important/Sec. kernel-uek-modules-5.15.0-312.187.5.3.el8uek.x86_64
+ELSA-2025-20552 Important/Sec. kernel-uek-modules-5.15.0-312.187.5.el8uek.x86_64
+ELSA-2025-20716 Important/Sec. kernel-uek-modules-5.15.0-313.189.5.1.el8uek.x86_64
+ELSA-2024-3268  Low/Sec.       krb5-libs-1.18.2-27.0.1.el8_10.x86_64
+ELSA-2024-5312  Moderate/Sec.  krb5-libs-1.18.2-29.0.1.el8_10.x86_64
+ELSA-2024-8860  Important/Sec. krb5-libs-1.18.2-30.0.1.el8_10.x86_64
+ELSA-2025-2722  Moderate/Sec.  krb5-libs-1.18.2-31.0.1.el8_10.x86_64
+ELSA-2025-8411  Moderate/Sec.  krb5-libs-1.18.2-32.0.1.el8_10.x86_64
+ELSA-2024-1610  Moderate/Sec.  less-530-2.el8_9.x86_64
+ELSA-2024-4256  Important/Sec. less-530-3.el8_10.x86_64
+ELSA-2025-14135 Important/Sec. libarchive-3.3.3-6.el8_10.x86_64
+ELSA-2023-4524  Moderate/Sec.  libcap-2.48-5.el8_8.x86_64
+ELSA-2023-3106  Moderate/Sec.  libcurl-7.61.1-30.el8_8.2.x86_64
+ELSA-2023-4523  Moderate/Sec.  libcurl-7.61.1-30.el8_8.3.x86_64
+ELSA-2024-1601  Moderate/Sec.  libcurl-7.61.1-33.el8_9.5.x86_64
+ELSA-2024-5654  Moderate/Sec.  libcurl-7.61.1-34.el8_10.2.x86_64
+ELSA-2023-6976  Moderate/Sec.  libfastjson-0.99.9-2.el8.x86_64
+ELSA-2023-12788 Low/Sec.       libgcc-8.5.0-18.0.5.el8.x86_64
+ELSA-2025-1301  Moderate/Sec.  libgcc-8.5.0-23.0.1.el8_10.x86_64
+ELSA-2023-12788 Low/Sec.       libgomp-8.5.0-18.0.5.el8.x86_64
+ELSA-2025-1301  Moderate/Sec.  libgomp-8.5.0-23.0.1.el8_10.x86_64
+ELSA-2024-4620  Important/Sec. libndp-1.7-7.el8_10.x86_64
+ELSA-2023-5837  Important/Sec. libnghttp2-1.33.0-5.el8_8.x86_64
+ELSA-2024-4252  Moderate/Sec.  libnghttp2-1.33.0-6.el8_10.1.x86_64
+ELSA-2023-3839  Moderate/Sec.  libssh-0.9.6-10.el8_8.x86_64
+ELSA-2024-0628  Moderate/Sec.  libssh-0.9.6-13.el8_9.x86_64
+ELSA-2024-3233  Low/Sec.       libssh-0.9.6-14.el8.x86_64
+ELSA-2025-18286 Moderate/Sec.  libssh-0.9.6-15.el8_10.x86_64
+ELSA-2023-3839  Moderate/Sec.  libssh-config-0.9.6-10.el8_8.noarch
+ELSA-2024-0628  Moderate/Sec.  libssh-config-0.9.6-13.el8_9.noarch
+ELSA-2024-3233  Low/Sec.       libssh-config-0.9.6-14.el8.noarch
+ELSA-2025-18286 Moderate/Sec.  libssh-config-0.9.6-15.el8_10.noarch
+ELSA-2024-3270  Moderate/Sec.  libsss_autofs-2.9.4-3.0.1.el8_10.x86_64
+ELSA-2024-3270  Moderate/Sec.  libsss_certmap-2.9.4-3.0.1.el8_10.x86_64
+ELSA-2024-3270  Moderate/Sec.  libsss_idmap-2.9.4-3.0.1.el8_10.x86_64
+ELSA-2024-3270  Moderate/Sec.  libsss_nss_idmap-2.9.4-3.0.1.el8_10.x86_64
+ELSA-2024-3270  Moderate/Sec.  libsss_sudo-2.9.4-3.0.1.el8_10.x86_64
+ELSA-2023-12788 Low/Sec.       libstdc++-8.5.0-18.0.5.el8.x86_64
+ELSA-2025-1301  Moderate/Sec.  libstdc++-8.5.0-23.0.1.el8_10.x86_64
+ELSA-2025-4049  Moderate/Sec.  libtasn1-4.13-5.el8_10.x86_64
+ELSA-2023-4529  Moderate/Sec.  libxml2-2.9.7-16.el8_8.1.x86_64
+ELSA-2024-3626  Moderate/Sec.  libxml2-2.9.7-18.el8_10.1.x86_64
+ELSA-2025-1517  Moderate/Sec.  libxml2-2.9.7-18.el8_10.2.x86_64
+ELSA-2024-0119  Moderate/Sec.  libxml2-2.9.7-18.el8_9.x86_64
+ELSA-2025-2686  Important/Sec. libxml2-2.9.7-19.el8_10.x86_64
+ELSA-2025-8958  Moderate/Sec.  libxml2-2.9.7-20.el8_10.x86_64
+ELSA-2025-10698 Important/Sec. libxml2-2.9.7-21.el8_10.1.x86_64
+ELSA-2025-12450 Important/Sec. libxml2-2.9.7-21.el8_10.2.x86_64
+ELSA-2025-13203 Moderate/Sec.  libxml2-2.9.7-21.el8_10.3.x86_64
+ELSA-2023-12655 Critical/Sec.  linux-firmware-999:20230516-999.20.git6c9e0ed5.el8.noarch
+ELSA-2023-12691 Critical/Sec.  linux-firmware-999:20230516-999.22.git6c9e0ed5.el8.noarch
+ELSA-2023-12714 Important/Sec. linux-firmware-999:20230516-999.25.git6c9e0ed5.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  linux-firmware-999:20230516-999.27.git6c9e0ed5.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  linux-firmware-999:20240715-999.34.git4c8fb21e.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  linux-firmware-999:20241003-999.35.git95bfe086.el8.noarch
+ELSA-2023-12655 Critical/Sec.  linux-firmware-core-999:20230516-999.20.git6c9e0ed5.el8.noarch
+ELSA-2023-12691 Critical/Sec.  linux-firmware-core-999:20230516-999.22.git6c9e0ed5.el8.noarch
+ELSA-2023-12714 Important/Sec. linux-firmware-core-999:20230516-999.25.git6c9e0ed5.el8.noarch
+ELSA-2023-7109  Moderate/Sec.  linux-firmware-core-999:20230516-999.27.git6c9e0ed5.el8.noarch
+ELSA-2024-12580 Moderate/Sec.  linux-firmware-core-999:20240715-999.34.git4c8fb21e.el8.noarch
+ELSA-2024-12797 Moderate/Sec.  linux-firmware-core-999:20241003-999.35.git95bfe086.el8.noarch
+ELSA-2025-11035 Moderate/Sec.  lz4-libs-1.8.3-5.el8_10.x86_64
+ELSA-2023-12723 Moderate/Sec.  microcode_ctl-4:20230214-2.0.3.el8.x86_64
+ELSA-2023-12988 Important/Sec. microcode_ctl-4:20230808-2.0.2.el8.x86_64
+ELSA-2025-10991 Moderate/Sec.  microcode_ctl-4:20250512-1.0.1.el8_10.x86_64
+ELSA-2023-5249  Moderate/Sec.  ncurses-6.1-9.20180224.el8_8.1.x86_64
+ELSA-2023-5249  Moderate/Sec.  ncurses-base-6.1-9.20180224.el8_8.1.noarch
+ELSA-2023-5249  Moderate/Sec.  ncurses-libs-6.1-9.20180224.el8_8.1.x86_64
+ELSA-2024-4264  Low/Sec.       openldap-2.4.46-19.el8_10.x86_64
+ELSA-2024-12164 Moderate/Sec.  openssh-8.0p1-19.0.1.el8_9.2.x86_64
+ELSA-2023-4419  Important/Sec. openssh-8.0p1-19.el8_8.x86_64
+ELSA-2024-3166  Moderate/Sec.  openssh-8.0p1-24.0.1.el8.x86_64
+ELSA-2025-16823 Moderate/Sec.  openssh-8.0p1-26.0.1.el8_10.x86_64
+ELSA-2024-12164 Moderate/Sec.  openssh-clients-8.0p1-19.0.1.el8_9.2.x86_64
+ELSA-2023-4419  Important/Sec. openssh-clients-8.0p1-19.el8_8.x86_64
+ELSA-2024-3166  Moderate/Sec.  openssh-clients-8.0p1-24.0.1.el8.x86_64
+ELSA-2025-16823 Moderate/Sec.  openssh-clients-8.0p1-26.0.1.el8_10.x86_64
+ELSA-2024-12164 Moderate/Sec.  openssh-server-8.0p1-19.0.1.el8_9.2.x86_64
+ELSA-2023-4419  Important/Sec. openssh-server-8.0p1-19.el8_8.x86_64
+ELSA-2024-3166  Moderate/Sec.  openssh-server-8.0p1-24.0.1.el8.x86_64
+ELSA-2025-16823 Moderate/Sec.  openssh-server-8.0p1-26.0.1.el8_10.x86_64
+ELSA-2023-7877  Low/Sec.       openssl-1:1.1.1k-12.el8_9.x86_64
+ELSA-2024-7848  Low/Sec.       openssl-1:1.1.1k-14.el8_6.x86_64
+ELSA-2023-7877  Low/Sec.       openssl-libs-1:1.1.1k-12.el8_9.x86_64
+ELSA-2024-7848  Low/Sec.       openssl-libs-1:1.1.1k-14.el8_6.x86_64
+ELSA-2024-3163  Moderate/Sec.  pam-1.3.1-33.el8.x86_64
+ELSA-2024-10379 Important/Sec. pam-1.3.1-36.0.1.el8_10.x86_64
+ELSA-2025-10027 Important/Sec. pam-1.3.1-37.0.1.el8_10.x86_64
+ELSA-2025-14557 Important/Sec. pam-1.3.1-38.0.1.el8_10.x86_64
+ELSA-2023-3591  Important/Sec. platform-python-3.6.8-51.0.1.el8_8.1.x86_64
+ELSA-2023-5997  Important/Sec. platform-python-3.6.8-51.0.1.el8_8.2.x86_64
+ELSA-2024-0114  Moderate/Sec.  platform-python-3.6.8-56.0.1.el8_9.2.x86_64
+ELSA-2024-0256  Moderate/Sec.  platform-python-3.6.8-56.0.1.el8_9.3.x86_64
+ELSA-2023-7151  Moderate/Sec.  platform-python-3.6.8-56.0.1.el8_9.x86_64
+ELSA-2024-3347  Important/Sec. platform-python-3.6.8-62.0.1.el8_10.x86_64
+ELSA-2024-6975  Moderate/Sec.  platform-python-3.6.8-67.0.1.el8_10.x86_64
+ELSA-2024-10779 Moderate/Sec.  platform-python-3.6.8-69.0.1.el8_10.x86_64
+ELSA-2025-10128 Important/Sec. platform-python-3.6.8-70.0.1.el8_10.x86_64
+ELSA-2025-14560 Moderate/Sec.  platform-python-3.6.8-71.0.1.el8_10.x86_64
+ELSA-2023-7176  Moderate/Sec.  platform-python-pip-9.0.3-23.el8.noarch
+ELSA-2024-5530  Important/Sec. platform-python-setuptools-39.2.0-8.el8_10.noarch
+ELSA-2025-11036 Moderate/Sec.  platform-python-setuptools-39.2.0-9.el8_10.noarch
+ELSA-2023-7187  Low/Sec.       procps-ng-3.3.15-14.0.1.el8.x86_64
+ELSA-2024-12079 Important/Sec. python3-cryptography-3.2.1-6.0.1.el8.x86_64
+ELSA-2023-7096  Moderate/Sec.  python3-cryptography-3.2.1-6.el8.x86_64
+ELSA-2025-14553 Moderate/Sec.  python3-cryptography-3.2.1-8.el8_10.x86_64
+ELSA-2023-3591  Important/Sec. python3-libs-3.6.8-51.0.1.el8_8.1.x86_64
+ELSA-2023-5997  Important/Sec. python3-libs-3.6.8-51.0.1.el8_8.2.x86_64
+ELSA-2024-0114  Moderate/Sec.  python3-libs-3.6.8-56.0.1.el8_9.2.x86_64
+ELSA-2024-0256  Moderate/Sec.  python3-libs-3.6.8-56.0.1.el8_9.3.x86_64
+ELSA-2023-7151  Moderate/Sec.  python3-libs-3.6.8-56.0.1.el8_9.x86_64
+ELSA-2024-3347  Important/Sec. python3-libs-3.6.8-62.0.1.el8_10.x86_64
+ELSA-2024-6975  Moderate/Sec.  python3-libs-3.6.8-67.0.1.el8_10.x86_64
+ELSA-2024-10779 Moderate/Sec.  python3-libs-3.6.8-69.0.1.el8_10.x86_64
+ELSA-2025-10128 Important/Sec. python3-libs-3.6.8-70.0.1.el8_10.x86_64
+ELSA-2025-14560 Moderate/Sec.  python3-libs-3.6.8-71.0.1.el8_10.x86_64
+ELSA-2023-4529  Moderate/Sec.  python3-libxml2-2.9.7-16.el8_8.1.x86_64
+ELSA-2024-3626  Moderate/Sec.  python3-libxml2-2.9.7-18.el8_10.1.x86_64
+ELSA-2025-1517  Moderate/Sec.  python3-libxml2-2.9.7-18.el8_10.2.x86_64
+ELSA-2024-0119  Moderate/Sec.  python3-libxml2-2.9.7-18.el8_9.x86_64
+ELSA-2025-2686  Important/Sec. python3-libxml2-2.9.7-19.el8_10.x86_64
+ELSA-2025-8958  Moderate/Sec.  python3-libxml2-2.9.7-20.el8_10.x86_64
+ELSA-2025-10698 Important/Sec. python3-libxml2-2.9.7-21.el8_10.1.x86_64
+ELSA-2025-12450 Important/Sec. python3-libxml2-2.9.7-21.el8_10.2.x86_64
+ELSA-2025-13203 Moderate/Sec.  python3-libxml2-2.9.7-21.el8_10.3.x86_64
+ELSA-2023-3349  Important/Sec. python3-perf-4.18.0-477.13.1.el8_8.x86_64
+ELSA-2023-3847  Moderate/Sec.  python3-perf-4.18.0-477.15.1.el8_8.x86_64
+ELSA-2023-4517  Important/Sec. python3-perf-4.18.0-477.21.1.el8_8.x86_64
+ELSA-2023-5244  Important/Sec. python3-perf-4.18.0-477.27.0.1.el8_8.x86_64
+ELSA-2023-12839 Important/Sec. python3-perf-4.18.0-477.27.1.el8_8.x86_64
+ELSA-2024-12069 Important/Sec. python3-perf-4.18.0-513.11.0.1.el8_9.x86_64
+ELSA-2024-12169 Important/Sec. python3-perf-4.18.0-513.18.0.1.el8_9.x86_64
+ELSA-2024-12187 Important/Sec. python3-perf-4.18.0-513.18.0.2.el8_9.x86_64
+ELSA-2024-12266 Important/Sec. python3-perf-4.18.0-513.18.1.0.1.el8_9.x86_64
+ELSA-2024-0897  Important/Sec. python3-perf-4.18.0-513.18.1.el8_9.x86_64
+ELSA-2024-1607  Important/Sec. python3-perf-4.18.0-513.24.1.el8_9.x86_64
+ELSA-2023-7077  Important/Sec. python3-perf-4.18.0-513.5.1.el8_9.x86_64
+ELSA-2023-7549  Important/Sec. python3-perf-4.18.0-513.9.1.el8_9.x86_64
+ELSA-2024-5101  Important/Sec. python3-perf-4.18.0-553.16.1.el8_10.x86_64
+ELSA-2024-7000  Important/Sec. python3-perf-4.18.0-553.22.1.el8_10.x86_64
+ELSA-2024-8856  Moderate/Sec.  python3-perf-4.18.0-553.27.1.el8_10.x86_64
+ELSA-2024-10281 Moderate/Sec.  python3-perf-4.18.0-553.30.1.el8_10.x86_64
+ELSA-2024-10943 Moderate/Sec.  python3-perf-4.18.0-553.32.1.el8_10.x86_64
+ELSA-2025-0065  Important/Sec. python3-perf-4.18.0-553.34.1.el8_10.x86_64
+ELSA-2025-1068  Moderate/Sec.  python3-perf-4.18.0-553.37.1.el8_10.x86_64
+ELSA-2025-1266  Important/Sec. python3-perf-4.18.0-553.40.1.el8_10.x86_64
+ELSA-2025-2473  Important/Sec. python3-perf-4.18.0-553.44.1.el8_10.x86_64
+ELSA-2025-3026  Important/Sec. python3-perf-4.18.0-553.45.1.el8_10.x86_64
+ELSA-2025-3260  Important/Sec. python3-perf-4.18.0-553.46.1.el8_10.x86_64
+ELSA-2024-3618  Moderate/Sec.  python3-perf-4.18.0-553.5.1.el8_10.x86_64
+ELSA-2025-3893  Moderate/Sec.  python3-perf-4.18.0-553.50.1.el8_10.x86_64
+ELSA-2025-7531  Important/Sec. python3-perf-4.18.0-553.52.1.el8_10.x86_64
+ELSA-2025-8056  Important/Sec. python3-perf-4.18.0-553.53.1.el8_10.x86_64
+ELSA-2025-8246  Moderate/Sec.  python3-perf-4.18.0-553.54.1.el8_10.x86_64
+ELSA-2025-8743  Moderate/Sec.  python3-perf-4.18.0-553.56.1.el8_10.x86_64
+ELSA-2025-9580  Moderate/Sec.  python3-perf-4.18.0-553.58.1.el8_10.x86_64
+ELSA-2025-10669 Important/Sec. python3-perf-4.18.0-553.60.1.el8_10.x86_64
+ELSA-2025-11298 Moderate/Sec.  python3-perf-4.18.0-553.62.1.el8_10.x86_64
+ELSA-2025-11455 Moderate/Sec.  python3-perf-4.18.0-553.63.1.el8_10.x86_64
+ELSA-2025-11850 Moderate/Sec.  python3-perf-4.18.0-553.64.1.el8_10.x86_64
+ELSA-2025-12752 Important/Sec. python3-perf-4.18.0-553.66.1.el8_10.x86_64
+ELSA-2025-13589 Moderate/Sec.  python3-perf-4.18.0-553.69.1.el8_10.x86_64
+ELSA-2025-13960 Important/Sec. python3-perf-4.18.0-553.70.1.el8_10.x86_64
+ELSA-2025-14438 Moderate/Sec.  python3-perf-4.18.0-553.71.1.el8_10.x86_64
+ELSA-2025-15008 Moderate/Sec.  python3-perf-4.18.0-553.72.1.el8_10.x86_64
+ELSA-2025-15471 Important/Sec. python3-perf-4.18.0-553.74.1.el8_10.x86_64
+ELSA-2025-15785 Important/Sec. python3-perf-4.18.0-553.75.1.el8_10.x86_64
+ELSA-2025-16372 Moderate/Sec.  python3-perf-4.18.0-553.76.1.el8_10.x86_64
+ELSA-2025-16919 Moderate/Sec.  python3-perf-4.18.0-553.77.1.el8_10.x86_64
+ELSA-2025-17397 Moderate/Sec.  python3-perf-4.18.0-553.78.1.el8_10.x86_64
+ELSA-2025-17797 Moderate/Sec.  python3-perf-4.18.0-553.79.1.el8_10.x86_64
+ELSA-2024-4211  Important/Sec. python3-perf-4.18.0-553.8.1.el8_10.x86_64
+ELSA-2025-18297 Moderate/Sec.  python3-perf-4.18.0-553.80.1.el8_10.x86_64
+ELSA-2024-3138  Moderate/Sec.  python3-perf-4.18.0-553.el8_10.x86_64
+ELSA-2023-7176  Moderate/Sec.  python3-pip-9.0.3-23.el8.noarch
+ELSA-2023-7176  Moderate/Sec.  python3-pip-wheel-9.0.3-23.el8.noarch
+ELSA-2024-0647  Moderate/Sec.  python3-rpm-4.14.3-28.0.2.el8_9.x86_64
+ELSA-2024-5530  Important/Sec. python3-setuptools-39.2.0-8.el8_10.noarch
+ELSA-2025-11036 Moderate/Sec.  python3-setuptools-39.2.0-9.el8_10.noarch
+ELSA-2024-5530  Important/Sec. python3-setuptools-wheel-39.2.0-8.el8_10.noarch
+ELSA-2025-11036 Moderate/Sec.  python3-setuptools-wheel-39.2.0-9.el8_10.noarch
+ELSA-2025-0837  Important/Sec. python3-unbound-1.16.2-5.8.el8_10.x86_64
+ELSA-2025-11884 Important/Sec. python3-unbound-1.16.2-5.9.el8_10.x86_64
+ELSA-2024-0965  Important/Sec. python3-unbound-1.16.2-5.el8_9.2.x86_64
+ELSA-2024-1751  Important/Sec. python3-unbound-1.16.2-5.el8_9.6.x86_64
+ELSA-2024-0647  Moderate/Sec.  rpm-4.14.3-28.0.2.el8_9.x86_64
+ELSA-2024-0647  Moderate/Sec.  rpm-build-libs-4.14.3-28.0.2.el8_9.x86_64
+ELSA-2024-0647  Moderate/Sec.  rpm-libs-4.14.3-28.0.2.el8_9.x86_64
+ELSA-2024-0647  Moderate/Sec.  rpm-plugin-selinux-4.14.3-28.0.2.el8_9.x86_64
+ELSA-2024-0647  Moderate/Sec.  rpm-plugin-systemd-inhibit-4.14.3-28.0.2.el8_9.x86_64
+ELSA-2023-7112  Low/Sec.       shadow-utils-2:4.6-19.el8.x86_64
+ELSA-2023-3840  Moderate/Sec.  sqlite-libs-3.26.0-18.0.1.el8_8.x86_64
+ELSA-2024-0253  Moderate/Sec.  sqlite-libs-3.26.0-19.0.1.el8_9.x86_64
+ELSA-2025-12010 Important/Sec. sqlite-libs-3.26.0-20.el8_10.x86_64
+ELSA-2024-3139  Moderate/Sec.  squashfs-tools-4.3-21.el8.x86_64
+ELSA-2024-3270  Moderate/Sec.  sssd-client-2.9.4-3.0.1.el8_10.x86_64
+ELSA-2024-3270  Moderate/Sec.  sssd-common-2.9.4-3.0.1.el8_10.x86_64
+ELSA-2024-3270  Moderate/Sec.  sssd-kcm-2.9.4-3.0.1.el8_10.x86_64
+ELSA-2024-3270  Moderate/Sec.  sssd-nfs-idmap-2.9.4-3.0.1.el8_10.x86_64
+ELSA-2025-10110 Important/Sec. sudo-1.9.5p2-1.0.1.el8_10.1.x86_64
+ELSA-2024-0811  Moderate/Sec.  sudo-1.9.5p2-1.el8_9.x86_64
+ELSA-2023-3837  Moderate/Sec.  systemd-239-74.0.4.el8_8.2.x86_64
+ELSA-2024-3203  Moderate/Sec.  systemd-239-82.0.1.el8.x86_64
+ELSA-2025-20343 Important/Sec. systemd-239-82.0.4.el8_10.5.x86_64
+ELSA-2023-3837  Moderate/Sec.  systemd-libs-239-74.0.4.el8_8.2.x86_64
+ELSA-2024-3203  Moderate/Sec.  systemd-libs-239-82.0.1.el8.x86_64
+ELSA-2025-20343 Important/Sec. systemd-libs-239-82.0.4.el8_10.5.x86_64
+ELSA-2023-3837  Moderate/Sec.  systemd-pam-239-74.0.4.el8_8.2.x86_64
+ELSA-2024-3203  Moderate/Sec.  systemd-pam-239-82.0.1.el8.x86_64
+ELSA-2025-20343 Important/Sec. systemd-pam-239-82.0.4.el8_10.5.x86_64
+ELSA-2023-3837  Moderate/Sec.  systemd-udev-239-74.0.4.el8_8.2.x86_64
+ELSA-2024-3203  Moderate/Sec.  systemd-udev-239-82.0.1.el8.x86_64
+ELSA-2025-20343 Important/Sec. systemd-udev-239-82.0.4.el8_10.5.x86_64
+ELSA-2023-7166  Low/Sec.       tpm2-tss-2.3.2-5.el8.x86_64
+ELSA-2024-11161 Moderate/Sec.  tuned-2.22.1-5.0.1.el8_10.noarch
+ELSA-2025-0837  Important/Sec. unbound-libs-1.16.2-5.8.el8_10.x86_64
+ELSA-2025-11884 Important/Sec. unbound-libs-1.16.2-5.9.el8_10.x86_64
+ELSA-2024-0965  Important/Sec. unbound-libs-1.16.2-5.el8_9.2.x86_64
+ELSA-2024-1751  Important/Sec. unbound-libs-1.16.2-5.el8_9.6.x86_64
+ELSA-2025-17715 Moderate/Sec.  vim-minimal-2:8.0.1763-21.0.1.el8_10.x86_64</pre>
+
+<h3>Aplicación de actualizaciones</h3>
+<pre>Last metadata expiration check: 0:00:35 ago on Mon Oct 27 08:57:29 2025.
+Dependencies resolved.
+====================================================================================================
+ Package                        Arch    Version                             Repository          Size
+====================================================================================================
+Installing:
+ kernel                         x86_64  4.18.0-553.80.1.el8_10              ol8_baseos_latest   11 M
+Upgrading:
+ NetworkManager                 x86_64  1:1.40.16-20.0.1.el8_10             ol8_baseos_latest  2.3 M
+ NetworkManager-libnm           x86_64  1:1.40.16-20.0.1.el8_10             ol8_baseos_latest  1.9 M
+ NetworkManager-team            x86_64  1:1.40.16-20.0.1.el8_10             ol8_baseos_latest  161 k
+ NetworkManager-tui             x86_64  1:1.40.16-20.0.1.el8_10             ol8_baseos_latest  356 k
+ bzip2-libs                     x86_64  1.0.6-28.el8_10                     ol8_baseos_latest   47 k
+ c-ares                         x86_64  1.13.0-11.el8_10                    ol8_baseos_latest   93 k
+ curl                           x86_64  7.61.1-34.el8_10.8                  ol8_baseos_latest  353 k
+ dbus                           x86_64  1:1.12.8-27.0.1.el8_10              ol8_baseos_latest   41 k
+ dbus-common                    noarch  1:1.12.8-27.0.1.el8_10              ol8_baseos_latest   46 k
+ dbus-daemon                    x86_64  1:1.12.8-27.0.1.el8_10              ol8_baseos_latest  241 k
+ dbus-libs                      x86_64  1:1.12.8-27.0.1.el8_10              ol8_baseos_latest  184 k
+ dbus-tools                     x86_64  1:1.12.8-27.0.1.el8_10              ol8_baseos_latest   86 k
+ dmidecode                      x86_64  1:3.5-1.el8                         ol8_baseos_latest   98 k
+ expat                          x86_64  2.2.5-17.0.1.el8_10                 ol8_baseos_latest  114 k
+ freetype                       x86_64  2.9.1-10.el8_10                     ol8_baseos_latest  393 k
+ glib2                          x86_64  2.56.4-166.el8_10                   ol8_baseos_latest  2.5 M
+ glibc                          x86_64  2.28-251.0.3.el8_10.25              ol8_baseos_latest  2.2 M
+ glibc-common                   x86_64  2.28-251.0.3.el8_10.25              ol8_baseos_latest  1.0 M
+ glibc-gconv-extra              x86_64  2.28-251.0.3.el8_10.25              ol8_baseos_latest  1.6 M
+ glibc-langpack-es              x86_64  2.28-251.0.3.el8_10.25              ol8_baseos_latest  581 k
+ gmp                            x86_64  1:6.1.2-11.el8                      ol8_baseos_latest  317 k
+ gnutls                         x86_64  3.6.16-8.el8_10.4                   ol8_baseos_latest  1.0 M
+ grub2-common                   noarch  1:2.02-169.0.1.el8_10               ol8_baseos_latest  899 k
+ grub2-pc                       x86_64  1:2.02-169.0.1.el8_10               ol8_baseos_latest   50 k
+ grub2-pc-modules               noarch  1:2.02-169.0.1.el8_10               ol8_baseos_latest  936 k
+ grub2-tools                    x86_64  1:2.02-169.0.1.el8_10               ol8_baseos_latest  2.0 M
+ grub2-tools-extra              x86_64  1:2.02-169.0.1.el8_10               ol8_baseos_latest  1.1 M
+ grub2-tools-minimal            x86_64  1:2.02-169.0.1.el8_10               ol8_baseos_latest  218 k
+ iwl100-firmware                noarch  999:39.31.5.1-999.44.el8            ol8_baseos_latest  170 k
+ iwl1000-firmware               noarch  999:39.31.5.1-999.44.el8            ol8_baseos_latest  170 k
+ iwl105-firmware                noarch  999:18.168.6.1-999.44.el8           ol8_baseos_latest  254 k
+ iwl135-firmware                noarch  999:18.168.6.1-999.44.el8           ol8_baseos_latest  263 k
+ iwl2000-firmware               noarch  999:18.168.6.1-999.44.el8           ol8_baseos_latest  257 k
+ iwl2030-firmware               noarch  999:18.168.6.1-999.44.el8           ol8_baseos_latest  265 k
+ iwl3160-firmware               noarch  999:25.30.13.0-999.44.el8           ol8_baseos_latest  497 k
+ iwl5000-firmware               noarch  999:8.83.5.1_1-999.44.el8           ol8_baseos_latest  167 k
+ iwl5150-firmware               noarch  999:8.24.2.2-999.44.el8             ol8_baseos_latest  166 k
+ iwl6000-firmware               noarch  999:9.221.4.1-999.44.el8            ol8_baseos_latest  187 k
+ iwl6000g2a-firmware            noarch  999:18.168.6.1-999.44.el8           ol8_baseos_latest  239 k
+ iwl6050-firmware               noarch  999:41.28.5.1-999.44.el8            ol8_baseos_latest  194 k
+ iwl7260-firmware               noarch  999:25.30.13.0-999.44.el8           ol8_baseos_latest  7.1 M
+ iwlax2xx-firmware              noarch  999:20250909-999.44.el8             ol8_baseos_latest   29 M
+ kernel-tools                   x86_64  4.18.0-553.80.1.el8_10              ol8_baseos_latest   11 M
+ kernel-tools-libs              x86_64  4.18.0-553.80.1.el8_10              ol8_baseos_latest   11 M
+ krb5-libs                      x86_64  1.18.2-32.0.1.el8_10                ol8_baseos_latest  845 k
+ less                           x86_64  530-3.el8_10                        ol8_baseos_latest  163 k
+ libarchive                     x86_64  3.3.3-6.el8_10                      ol8_baseos_latest  359 k
+ libcap                         x86_64  2.48-6.el8_9                        ol8_baseos_latest   73 k
+ libcurl                        x86_64  7.61.1-34.el8_10.8                  ol8_baseos_latest  304 k
+ libfastjson                    x86_64  0.99.9-2.el8                        ol8_appstream       38 k
+ libgcc                         x86_64  8.5.0-28.0.1.el8_10                 ol8_baseos_latest   94 k
+ libgomp                        x86_64  8.5.0-28.0.1.el8_10                 ol8_baseos_latest  219 k
+ libndp                         x86_64  1.7-7.el8_10                        ol8_baseos_latest   39 k
+ libnghttp2                     x86_64  1.33.0-6.el8_10.1                   ol8_baseos_latest   77 k
+ libssh                         x86_64  0.9.6-15.el8_10                     ol8_baseos_latest  219 k
+ libssh-config                  noarch  0.9.6-15.el8_10                     ol8_baseos_latest   20 k
+ libsss_autofs                  x86_64  2.9.4-5.0.2.el8_10.2                ol8_baseos_latest  131 k
+ libsss_certmap                 x86_64  2.9.4-5.0.2.el8_10.2                ol8_baseos_latest  186 k
+ libsss_idmap                   x86_64  2.9.4-5.0.2.el8_10.2                ol8_baseos_latest  133 k
+ libsss_nss_idmap               x86_64  2.9.4-5.0.2.el8_10.2                ol8_baseos_latest  141 k
+ libsss_sudo                    x86_64  2.9.4-5.0.2.el8_10.2                ol8_baseos_latest  129 k
+ libstdc++                      x86_64  8.5.0-28.0.1.el8_10                 ol8_baseos_latest  484 k
+ libtasn1                       x86_64  4.13-5.el8_10                       ol8_baseos_latest   76 k
+ libtevent                      x86_64  0.16.0-0.el8                        ol8_baseos_latest   54 k
+ libxml2                        x86_64  2.9.7-21.el8_10.3                   ol8_baseos_latest  697 k
+ linux-firmware                 noarch  999:20250909-999.44.git260ff424.el8 ol8_baseos_latest  570 M
+ linux-firmware-core            noarch  999:20250909-999.44.git260ff424.el8 ol8_baseos_latest  2.1 M
+ lz4-libs                       x86_64  1.8.3-5.el8_10                      ol8_baseos_latest   65 k
+ microcode_ctl                  x86_64  4:20250512-1.0.1.el8_10             ol8_baseos_latest   15 M
+ ncurses                        x86_64  6.1-10.20180224.el8                 ol8_baseos_latest  387 k
+ ncurses-base                   noarch  6.1-10.20180224.el8                 ol8_baseos_latest   81 k
+ ncurses-libs                   x86_64  6.1-10.20180224.el8                 ol8_baseos_latest  334 k
+ openldap                       x86_64  2.4.46-21.el8_10                    ol8_baseos_latest  352 k
+ openssh                        x86_64  8.0p1-26.0.1.el8_10                 ol8_baseos_latest  525 k
+ openssh-clients                x86_64  8.0p1-26.0.1.el8_10                 ol8_baseos_latest  646 k
+ openssh-server                 x86_64  8.0p1-26.0.1.el8_10                 ol8_baseos_latest  494 k
+ openssl                        x86_64  1:1.1.1k-14.el8_6                   ol8_baseos_latest  710 k
+ openssl-libs                   x86_64  1:1.1.1k-14.el8_6                   ol8_baseos_latest  1.5 M
+ pam                            x86_64  1.3.1-38.0.1.el8_10                 ol8_baseos_latest  749 k
+ platform-python                x86_64  3.6.8-71.0.1.el8_10                 ol8_baseos_latest   88 k
+ platform-python-pip            noarch  9.0.3-24.el8                        ol8_baseos_latest  1.6 M
+ platform-python-setuptools     noarch  39.2.0-9.el8_10                     ol8_baseos_latest  630 k
+ procps-ng                      x86_64  3.3.15-14.0.1.el8                   ol8_baseos_latest  331 k
+ python3-cffi                   x86_64  1.11.5-6.el8                        ol8_baseos_latest  238 k
+ python3-cryptography           x86_64  3.2.1-8.el8_10                      ol8_baseos_latest  558 k
+ python3-libs                   x86_64  3.6.8-71.0.1.el8_10                 ol8_baseos_latest  7.9 M
+ python3-libxml2                x86_64  2.9.7-21.el8_10.3                   ol8_baseos_latest  237 k
+ python3-perf                   x86_64  4.18.0-553.80.1.el8_10              ol8_baseos_latest   11 M
+ python3-pip                    noarch  9.0.3-24.el8                        ol8_appstream       19 k
+ python3-pip-wheel              noarch  9.0.3-24.el8                        ol8_baseos_latest  864 k
+ python3-rpm                    x86_64  4.14.3-32.0.1.el8_10                ol8_baseos_latest  155 k
+ python3-setuptools             noarch  39.2.0-9.el8_10                     ol8_baseos_latest  162 k
+ python3-setuptools-wheel       noarch  39.2.0-9.el8_10                     ol8_baseos_latest  286 k
+ python3-unbound                x86_64  1.16.2-5.9.el8_10                   ol8_appstream      129 k
+ rpm                            x86_64  4.14.3-32.0.1.el8_10                ol8_baseos_latest  544 k
+ rpm-build-libs                 x86_64  4.14.3-32.0.1.el8_10                ol8_baseos_latest  157 k
+ rpm-libs                       x86_64  4.14.3-32.0.1.el8_10                ol8_baseos_latest  348 k
+ rpm-plugin-selinux             x86_64  4.14.3-32.0.1.el8_10                ol8_baseos_latest   78 k
+ rpm-plugin-systemd-inhibit     x86_64  4.14.3-32.0.1.el8_10                ol8_baseos_latest   79 k
+ shadow-utils                   x86_64  2:4.6-22.el8                        ol8_baseos_latest  1.2 M
+ sqlite-libs                    x86_64  3.26.0-20.el8_10                    ol8_baseos_latest  580 k
+ squashfs-tools                 x86_64  4.3-21.el8                          ol8_baseos_latest  164 k
+ sssd-client                    x86_64  2.9.4-5.0.2.el8_10.2                ol8_baseos_latest  245 k
+ sssd-common                    x86_64  2.9.4-5.0.2.el8_10.2                ol8_baseos_latest  1.7 M
+ sssd-kcm                       x86_64  2.9.4-5.0.2.el8_10.2                ol8_baseos_latest  266 k
+ sssd-nfs-idmap                 x86_64  2.9.4-5.0.2.el8_10.2                ol8_baseos_latest  130 k
+ sudo                           x86_64  1.9.5p2-1.0.1.el8_10.2              ol8_baseos_latest  1.0 M
+ systemd                        x86_64  239-82.0.5.el8_10.5                 ol8_baseos_latest  3.7 M
+ systemd-libs                   x86_64  239-82.0.5.el8_10.5                 ol8_baseos_latest  1.1 M
+ systemd-pam                    x86_64  239-82.0.5.el8_10.5                 ol8_baseos_latest  517 k
+ systemd-udev                   x86_64  239-82.0.5.el8_10.5                 ol8_baseos_latest  1.6 M
+ tpm2-tss                       x86_64  2.3.2-6.el8                         ol8_baseos_latest  274 k
+ tuned                          noarch  2.22.1-6.0.1.el8_10                 ol8_baseos_latest  369 k
+ unbound-libs                   x86_64  1.16.2-5.9.el8_10                   ol8_appstream      577 k
+ vim-minimal                    x86_64  2:8.0.1763-21.0.1.el8_10            ol8_baseos_latest  574 k
+Installing group/module packages:
+ kernel-uek                     x86_64  5.15.0-313.189.5.1.el8uek           ol8_UEKR7          3.3 M
+Installing dependencies:
+ device-mapper-multipath        x86_64  0.8.4-37.el8                        ol8_baseos_latest  208 k
+ device-mapper-multipath-libs   x86_64  0.8.4-37.el8                        ol8_baseos_latest  334 k
+ grub2-tools-efi                x86_64  1:2.02-169.0.1.el8_10               ol8_baseos_latest  489 k
+ kernel-core                    x86_64  4.18.0-553.80.1.el8_10              ol8_baseos_latest   44 M
+ kernel-modules                 x86_64  4.18.0-553.80.1.el8_10              ol8_baseos_latest   36 M
+ kernel-uek-core                x86_64  5.15.0-313.189.5.1.el8uek           ol8_UEKR7           63 M
+ kernel-uek-modules             x86_64  5.15.0-313.189.5.1.el8uek           ol8_UEKR7           73 M
+ userspace-rcu                  x86_64  0.10.1-4.el8                        ol8_baseos_latest  101 k
+
+Transaction Summary
+====================================================================================================
+Install   10 Packages
+Upgrade  115 Packages
+
+Total download size: 947 M
+--------------------------------------------------------------------------------
+Transaction check succeeded.
+Transaction test succeeded.
+
+Upgraded:
+  NetworkManager-1:1.40.16-20.0.1.el8_10.x86_64                                 
+  NetworkManager-libnm-1:1.40.16-20.0.1.el8_10.x86_64                           
+  NetworkManager-team-1:1.40.16-20.0.1.el8_10.x86_64                            
+  NetworkManager-tui-1:1.40.16-20.0.1.el8_10.x86_64                             
+  bzip2-libs-1.0.6-28.el8_10.x86_64                                             
+  c-ares-1.13.0-11.el8_10.x86_64                                                
+  curl-7.61.1-34.el8_10.8.x86_64                                                
+  dbus-1:1.12.8-27.0.1.el8_10.x86_64                                            
+  dbus-common-1:1.12.8-27.0.1.el8_10.noarch                                     
+  dbus-daemon-1:1.12.8-27.0.1.el8_10.x86_64                                     
+  dbus-libs-1:1.12.8-27.0.1.el8_10.x86_64                                       
+  dbus-tools-1:1.12.8-27.0.1.el8_10.x86_64                                      
+  dmidecode-1:3.5-1.el8.x86_64                                                  
+  expat-2.2.5-17.0.1.el8_10.x86_64                                              
+  freetype-2.9.1-10.el8_10.x86_64                                               
+  glib2-2.56.4-166.el8_10.x86_64                                                
+  glibc-2.28-251.0.3.el8_10.25.x86_64                                           
+  glibc-common-2.28-251.0.3.el8_10.25.x86_64                                    
+  glibc-gconv-extra-2.28-251.0.3.el8_10.25.x86_64                               
+  glibc-langpack-es-2.28-251.0.3.el8_10.25.x86_64                               
+  gmp-1:6.1.2-11.el8.x86_64                                                     
+  gnutls-3.6.16-8.el8_10.4.x86_64                                               
+  grub2-common-1:2.02-169.0.1.el8_10.noarch                                     
+  grub2-pc-1:2.02-169.0.1.el8_10.x86_64                                         
+  grub2-pc-modules-1:2.02-169.0.1.el8_10.noarch                                 
+  grub2-tools-1:2.02-169.0.1.el8_10.x86_64                                      
+  grub2-tools-extra-1:2.02-169.0.1.el8_10.x86_64                                
+  grub2-tools-minimal-1:2.02-169.0.1.el8_10.x86_64                              
+  iwl100-firmware-999:39.31.5.1-999.44.el8.noarch                               
+  iwl1000-firmware-999:39.31.5.1-999.44.el8.noarch                              
+  iwl105-firmware-999:18.168.6.1-999.44.el8.noarch                              
+  iwl135-firmware-999:18.168.6.1-999.44.el8.noarch                              
+  iwl2000-firmware-999:18.168.6.1-999.44.el8.noarch                             
+  iwl2030-firmware-999:18.168.6.1-999.44.el8.noarch                             
+  iwl3160-firmware-999:25.30.13.0-999.44.el8.noarch                             
+  iwl5000-firmware-999:8.83.5.1_1-999.44.el8.noarch                             
+  iwl5150-firmware-999:8.24.2.2-999.44.el8.noarch                               
+  iwl6000-firmware-999:9.221.4.1-999.44.el8.noarch                              
+  iwl6000g2a-firmware-999:18.168.6.1-999.44.el8.noarch                          
+  iwl6050-firmware-999:41.28.5.1-999.44.el8.noarch                              
+  iwl7260-firmware-999:25.30.13.0-999.44.el8.noarch                             
+  iwlax2xx-firmware-999:20250909-999.44.el8.noarch                              
+  kernel-tools-4.18.0-553.80.1.el8_10.x86_64                                    
+  kernel-tools-libs-4.18.0-553.80.1.el8_10.x86_64                               
+  krb5-libs-1.18.2-32.0.1.el8_10.x86_64                                         
+  less-530-3.el8_10.x86_64                                                      
+  libarchive-3.3.3-6.el8_10.x86_64                                              
+  libcap-2.48-6.el8_9.x86_64                                                    
+  libcurl-7.61.1-34.el8_10.8.x86_64                                             
+  libfastjson-0.99.9-2.el8.x86_64                                               
+  libgcc-8.5.0-28.0.1.el8_10.x86_64                                             
+  libgomp-8.5.0-28.0.1.el8_10.x86_64                                            
+  libndp-1.7-7.el8_10.x86_64                                                    
+  libnghttp2-1.33.0-6.el8_10.1.x86_64                                           
+  libssh-0.9.6-15.el8_10.x86_64                                                 
+  libssh-config-0.9.6-15.el8_10.noarch                                          
+  libsss_autofs-2.9.4-5.0.2.el8_10.2.x86_64                                     
+  libsss_certmap-2.9.4-5.0.2.el8_10.2.x86_64                                    
+  libsss_idmap-2.9.4-5.0.2.el8_10.2.x86_64                                      
+  libsss_nss_idmap-2.9.4-5.0.2.el8_10.2.x86_64                                  
+  libsss_sudo-2.9.4-5.0.2.el8_10.2.x86_64                                       
+  libstdc++-8.5.0-28.0.1.el8_10.x86_64                                          
+  libtasn1-4.13-5.el8_10.x86_64                                                 
+  libtevent-0.16.0-0.el8.x86_64                                                 
+  libxml2-2.9.7-21.el8_10.3.x86_64                                              
+  linux-firmware-999:20250909-999.44.git260ff424.el8.noarch                     
+  linux-firmware-core-999:20250909-999.44.git260ff424.el8.noarch                
+  lz4-libs-1.8.3-5.el8_10.x86_64                                                
+  microcode_ctl-4:20250512-1.0.1.el8_10.x86_64                                  
+  ncurses-6.1-10.20180224.el8.x86_64                                            
+  ncurses-base-6.1-10.20180224.el8.noarch                                       
+  ncurses-libs-6.1-10.20180224.el8.x86_64                                       
+  openldap-2.4.46-21.el8_10.x86_64                                              
+  openssh-8.0p1-26.0.1.el8_10.x86_64                                            
+  openssh-clients-8.0p1-26.0.1.el8_10.x86_64                                    
+  openssh-server-8.0p1-26.0.1.el8_10.x86_64                                     
+  openssl-1:1.1.1k-14.el8_6.x86_64                                              
+  openssl-libs-1:1.1.1k-14.el8_6.x86_64                                         
+  pam-1.3.1-38.0.1.el8_10.x86_64                                                
+  platform-python-3.6.8-71.0.1.el8_10.x86_64                                    
+  platform-python-pip-9.0.3-24.el8.noarch                                       
+  platform-python-setuptools-39.2.0-9.el8_10.noarch                             
+  procps-ng-3.3.15-14.0.1.el8.x86_64                                            
+  python3-cffi-1.11.5-6.el8.x86_64                                              
+  python3-cryptography-3.2.1-8.el8_10.x86_64                                    
+  python3-libs-3.6.8-71.0.1.el8_10.x86_64                                       
+  python3-libxml2-2.9.7-21.el8_10.3.x86_64                                      
+  python3-perf-4.18.0-553.80.1.el8_10.x86_64                                    
+  python3-pip-9.0.3-24.el8.noarch                                               
+  python3-pip-wheel-9.0.3-24.el8.noarch                                         
+  python3-rpm-4.14.3-32.0.1.el8_10.x86_64                                       
+  python3-setuptools-39.2.0-9.el8_10.noarch                                     
+  python3-setuptools-wheel-39.2.0-9.el8_10.noarch                               
+  python3-unbound-1.16.2-5.9.el8_10.x86_64                                      
+  rpm-4.14.3-32.0.1.el8_10.x86_64                                               
+  rpm-build-libs-4.14.3-32.0.1.el8_10.x86_64                                    
+  rpm-libs-4.14.3-32.0.1.el8_10.x86_64                                          
+  rpm-plugin-selinux-4.14.3-32.0.1.el8_10.x86_64                                
+  rpm-plugin-systemd-inhibit-4.14.3-32.0.1.el8_10.x86_64                        
+  shadow-utils-2:4.6-22.el8.x86_64                                              
+  sqlite-libs-3.26.0-20.el8_10.x86_64                                           
+  squashfs-tools-4.3-21.el8.x86_64                                              
+  sssd-client-2.9.4-5.0.2.el8_10.2.x86_64                                       
+  sssd-common-2.9.4-5.0.2.el8_10.2.x86_64                                       
+  sssd-kcm-2.9.4-5.0.2.el8_10.2.x86_64                                          
+  sssd-nfs-idmap-2.9.4-5.0.2.el8_10.2.x86_64                                    
+  sudo-1.9.5p2-1.0.1.el8_10.2.x86_64                                            
+  systemd-239-82.0.5.el8_10.5.x86_64                                            
+  systemd-libs-239-82.0.5.el8_10.5.x86_64                                       
+  systemd-pam-239-82.0.5.el8_10.5.x86_64                                        
+  systemd-udev-239-82.0.5.el8_10.5.x86_64                                       
+  tpm2-tss-2.3.2-6.el8.x86_64                                                   
+  tuned-2.22.1-6.0.1.el8_10.noarch                                              
+  unbound-libs-1.16.2-5.9.el8_10.x86_64                                         
+  vim-minimal-2:8.0.1763-21.0.1.el8_10.x86_64                                   
+Installed:
+  device-mapper-multipath-0.8.4-37.el8.x86_64                                   
+  device-mapper-multipath-libs-0.8.4-37.el8.x86_64                              
+  grub2-tools-efi-1:2.02-169.0.1.el8_10.x86_64                                  
+  kernel-4.18.0-553.80.1.el8_10.x86_64                                          
+  kernel-core-4.18.0-553.80.1.el8_10.x86_64                                     
+  kernel-modules-4.18.0-553.80.1.el8_10.x86_64                                  
+  kernel-uek-5.15.0-313.189.5.1.el8uek.x86_64                                   
+  kernel-uek-core-5.15.0-313.189.5.1.el8uek.x86_64                              
+  kernel-uek-modules-5.15.0-313.189.5.1.el8uek.x86_64                           
+  userspace-rcu-0.10.1-4.el8.x86_64                                             
+
+Complete!</pre>
+</div>
+</body>
+</html>
