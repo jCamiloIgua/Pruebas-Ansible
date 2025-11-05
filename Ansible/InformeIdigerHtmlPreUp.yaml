@@ -2,7 +2,7 @@
 
 ---
 - name: Informe Diagnostico
-  hosts: "{{ groups['Pruebas'] | sort }}"
+  hosts: "{{ groups['RHEL-Onpremise'] | sort }}"
   become: true
   gather_facts: false
   order: sorted  # Orden alfabetico numerico
