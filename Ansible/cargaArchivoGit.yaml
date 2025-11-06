@@ -22,7 +22,7 @@
 
     - name: Hacer commit y push
       shell: |
-        cd /var/lib/awx/projects/_6__awx_pruebas/Ansible/ResultadosInformes/
+        cd /var/lib/awx/projects/_6__dbsystem_piloto_git/Ansible/ResultadosInformes/
         git config --global user.name "AWX"
         git config --global user.email "awx@localhost"
         git add .
