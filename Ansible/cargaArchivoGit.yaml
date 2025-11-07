@@ -8,7 +8,7 @@
   vars:
      fecha_actual: "{{ lookup('pipe', 'date +%Y%m%d_%H%M%S') }}" #formato fecha
      nombre_archivo: "InformeIdiger_{{ fecha_actual }}.html"
-     ruta_destino: "/var/lib/awx/projects/_7__dbsystem_piloto_git/Ansible/ResultadosInformes/{{ nombre_archivo }}"
+     ruta_destino: "/var/lib/awx/projects/_6__dbsystem_piloto_git/Ansible/ResultadosInformes/{{ nombre_archivo }}"
 
   tasks:
     - name: Copiar archivo a repositorio
@@ -22,7 +22,7 @@
 
     - name: Hacer commit y push
       shell: |
-        cd /var/lib/awx/projects/_7__dbsystem_piloto_git/Ansible/ResultadosInformes/
+        cd /var/lib/awx/projects/_6__dbsystem_piloto_git/Ansible/ResultadosInformes/
         git config --global user.name "AWX"
         git config --global user.email "awx@localhost"
         git add .
