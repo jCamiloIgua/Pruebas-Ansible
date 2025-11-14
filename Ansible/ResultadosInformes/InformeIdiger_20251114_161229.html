@@ -1,0 +1,2238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Informe Diagnostico - 20251114_161206</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #fafafa; color: #333; }
+        h1, h2 {color: #0044cc; }
+        pre { background: #f4f4f4; padding: 10px; boder-radius: 6px; overflow-x: auto;
+        .host-block { background: #fff; padding: 15px; border-radius: 10px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+   </style>
+</head>
+<body>
+    <h1>Informe Diagnostico Idiger - 20251114_161206</h1>
+    <div class="host-block">
+<h2>Host: pariacaca.fopaedom1.local</h2>
+<ul>
+  <li><b>Virtualización:</b> microsoft</li>
+  <li><b>Sistema Operativo:</b> Red Hat Enterprise Linux 8.10 (Ootpa)</li>
+  <li><b>Kernel:</b> Linux 4.18.0-553.64.1.el8_10.x86_64</li>
+  <li><b>Arquitectura:</b> x86-64</li>
+</ul>
+
+<h3>Información Memoria</h3>
+<pre>=== Informacion de memoria ===
+              total        used        free      shared  buff/cache   available
+Mem:           23Gi       7.0Gi        15Gi       5.0Mi       582Mi        15Gi
+Swap:          15Gi       2.0Mi        15Gi</pre>
+<p>Memoria okey</p>
+
+<h3>Información espacio Disco</h3>
+<pre>Correcto Todos los fylesystems estan por debajo del 85%</pre>
+
+<h3>Información Red </h3>
+<pre>GENERAL.DEVICE:                         eth0
+GENERAL.TYPE:                           ethernet
+GENERAL.STATE:                          100 (connected)
+IP4.ADDRESS[1]:                         172.16.24.35/22
+
+GENERAL.DEVICE:                         virbr0
+GENERAL.TYPE:                           bridge
+GENERAL.STATE:                          100 (connected (externally))
+IP4.ADDRESS[1]:                         192.168.122.1/24
+
+GENERAL.DEVICE:                         lo
+GENERAL.TYPE:                           loopback
+GENERAL.STATE:                          10 (unmanaged)
+IP4.ADDRESS[1]:                         127.0.0.1/8</pre>
+
+<h3>Actualizaciones de seguridad</h3>
+<pre>Updating Subscription Management repositories.
+Last metadata expiration check: 3:31:33 ago on Fri 14 Nov 2025 12:21:16 PM -05.
+RHSA-2025:19835 Important/Sec. bind-export-libs-32:9.11.36-16.el8_10.6.x86_64
+RHSA-2025:19835 Important/Sec. bind-libs-32:9.11.36-16.el8_10.6.x86_64
+RHSA-2025:19835 Important/Sec. bind-libs-lite-32:9.11.36-16.el8_10.6.x86_64
+RHSA-2025:19835 Important/Sec. bind-license-32:9.11.36-16.el8_10.6.noarch
+RHSA-2025:19835 Important/Sec. bind-utils-32:9.11.36-16.el8_10.6.x86_64
+RHSA-2025:12752 Important/Sec. bpftool-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  bpftool-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. bpftool-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  bpftool-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  bpftool-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. bpftool-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. bpftool-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  bpftool-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  bpftool-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  bpftool-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  bpftool-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  bpftool-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  bpftool-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  bpftool-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  bpftool-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12980 Moderate/Sec.  compat-libpthread-nonshared-2.28-251.el8_10.25.x86_64
+RHSA-2025:15702 Important/Sec. cups-1:2.2.6-63.el8_10.x86_64
+RHSA-2025:15702 Important/Sec. cups-client-1:2.2.6-63.el8_10.x86_64
+RHSA-2025:15702 Important/Sec. cups-filesystem-1:2.2.6-63.el8_10.noarch
+RHSA-2025:15702 Important/Sec. cups-ipptool-1:2.2.6-63.el8_10.x86_64
+RHSA-2025:15702 Important/Sec. cups-libs-1:2.2.6-63.el8_10.x86_64
+RHSA-2025:14442 Important/Sec. firefox-128.14.0-2.el8_10.x86_64
+RHSA-2025:16260 Important/Sec. firefox-140.3.0-1.el8_10.x86_64
+RHSA-2025:18285 Important/Sec. firefox-140.4.0-3.el8_10.x86_64
+RHSA-2025:13315 Moderate/Sec.  gdk-pixbuf2-2.36.12-7.el8_10.x86_64
+RHSA-2025:13315 Moderate/Sec.  gdk-pixbuf2-modules-2.36.12-7.el8_10.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-2.28-251.el8_10.25.i686
+RHSA-2025:12980 Moderate/Sec.  glibc-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-all-langpacks-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-common-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-devel-2.28-251.el8_10.25.i686
+RHSA-2025:12980 Moderate/Sec.  glibc-devel-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-gconv-extra-2.28-251.el8_10.25.i686
+RHSA-2025:12980 Moderate/Sec.  glibc-gconv-extra-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-headers-2.28-251.el8_10.25.i686
+RHSA-2025:12980 Moderate/Sec.  glibc-headers-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-langpack-en-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-locale-source-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-minimal-langpack-2.28-251.el8_10.25.x86_64
+RHSA-2025:17415 Moderate/Sec.  gnutls-3.6.16-8.el8_10.4.x86_64
+RHSA-2025:17415 Moderate/Sec.  gnutls-dane-3.6.16-8.el8_10.4.x86_64
+RHSA-2025:17415 Moderate/Sec.  gnutls-utils-3.6.16-8.el8_10.4.x86_64
+RHSA-2025:18815 Moderate/Sec.  java-1.8.0-openjdk-1:1.8.0.472.b08-1.el8.x86_64
+RHSA-2025:18815 Moderate/Sec.  java-1.8.0-openjdk-headless-1:1.8.0.472.b08-1.el8.x86_64
+RHSA-2025:12752 Important/Sec. kernel-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-core-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-core-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-core-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-core-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-core-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-core-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-core-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-core-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-core-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-core-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-core-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-core-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-core-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-core-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-core-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-headers-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-headers-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-headers-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-headers-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-headers-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-headers-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-headers-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-headers-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-headers-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-headers-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-headers-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-headers-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-headers-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-headers-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-headers-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-modules-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-modules-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-modules-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-modules-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-modules-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-modules-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-modules-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-modules-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-modules-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-modules-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-modules-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-modules-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-modules-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-modules-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-modules-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-modules-extra-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-modules-extra-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-modules-extra-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-modules-extra-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-modules-extra-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-modules-extra-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-modules-extra-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-modules-extra-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-modules-extra-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-modules-extra-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-modules-extra-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-modules-extra-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-modules-extra-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-modules-extra-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-modules-extra-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-tools-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-tools-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-tools-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-tools-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-tools-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-tools-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-tools-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-tools-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-tools-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-tools-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-tools-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-tools-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-tools-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-tools-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-tools-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-tools-libs-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-tools-libs-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-tools-libs-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-tools-libs-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-tools-libs-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-tools-libs-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-tools-libs-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-tools-libs-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-tools-libs-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-tools-libs-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-tools-libs-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-tools-libs-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-tools-libs-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-tools-libs-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-tools-libs-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:14135 Important/Sec. libarchive-3.3.3-6.el8_10.x86_64
+RHSA-2025:12980 Moderate/Sec.  libnsl-2.28-251.el8_10.25.x86_64
+RHSA-2025:19714 Important/Sec. libsoup-2.62.3-10.el8_10.x86_64
+RHSA-2025:18286 Moderate/Sec.  libssh-0.9.6-15.el8_10.x86_64
+RHSA-2025:18286 Moderate/Sec.  libssh-config-0.9.6-15.el8_10.noarch
+RHSA-2025:19610 Important/Sec. libsss_idmap-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. libsss_nss_idmap-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19276 Important/Sec. libtiff-4.0.9-35.el8_10.x86_64
+RHSA-2025:20034 Important/Sec. libtiff-4.0.9-36.el8_10.x86_64
+RHSA-2025:12527 Moderate/Sec.  libtpms-0.9.1-3.20211126git1ff6fe1f43.module+el8.10.0+23348+204cfc70.x86_64
+RHSA-2025:15017 Important/Sec. libudisks2-2.9.0-16.el8_10.1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-client-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-config-network-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-interface-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-network-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-nodedev-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-nwfilter-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-qemu-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-secret-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-core-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-disk-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-gluster-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-iscsi-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-iscsi-direct-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-logical-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-mpath-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-rbd-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-scsi-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-kvm-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-libs-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:13203 Moderate/Sec.  libxml2-2.9.7-21.el8_10.3.x86_64
+RHSA-2025:12980 Moderate/Sec.  nss_db-2.28-251.el8_10.25.i686
+RHSA-2025:12980 Moderate/Sec.  nss_db-2.28-251.el8_10.25.x86_64
+RHSA-2025:17509 Important/Sec. open-vm-tools-12.3.5-2.el8_10.1.x86_64
+RHSA-2025:17509 Important/Sec. open-vm-tools-desktop-12.3.5-2.el8_10.1.x86_64
+RHSA-2025:16823 Moderate/Sec.  openssh-8.0p1-26.el8_10.x86_64
+RHSA-2025:16823 Moderate/Sec.  openssh-askpass-8.0p1-26.el8_10.x86_64
+RHSA-2025:16823 Moderate/Sec.  openssh-clients-8.0p1-26.el8_10.x86_64
+RHSA-2025:16823 Moderate/Sec.  openssh-server-8.0p1-26.el8_10.x86_64
+RHSA-2025:14557 Important/Sec. pam-1.3.1-38.el8_10.x86_64
+RHSA-2025:14560 Moderate/Sec.  platform-python-3.6.8-71.el8_10.x86_64
+RHSA-2025:19835 Important/Sec. python3-bind-32:9.11.36-16.el8_10.6.noarch
+RHSA-2025:14553 Moderate/Sec.  python3-cryptography-3.2.1-8.el8_10.x86_64
+RHSA-2025:14560 Moderate/Sec.  python3-libs-3.6.8-71.el8_10.x86_64
+RHSA-2025:13203 Moderate/Sec.  python3-libxml2-2.9.7-21.el8_10.3.x86_64
+RHSA-2025:12752 Important/Sec. python3-perf-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  python3-perf-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. python3-perf-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  python3-perf-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  python3-perf-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. python3-perf-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. python3-perf-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  python3-perf-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  python3-perf-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  python3-perf-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  python3-perf-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  python3-perf-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  python3-perf-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  python3-perf-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  python3-perf-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:13234 Moderate/Sec.  python3-requests-2.20.0-6.el8_10.noarch
+RHSA-2025:12527 Moderate/Sec.  qemu-guest-agent-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-img-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-block-curl-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-block-gluster-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-block-iscsi-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-block-rbd-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-block-ssh-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-common-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-core-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-docs-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-hw-usbredir-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-ui-opengl-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-ui-spice-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:19610 Important/Sec. sssd-client-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19909 Important/Sec. tigervnc-license-1.15.0-8.el8_10.noarch
+RHSA-2025:19909 Important/Sec. tigervnc-server-minimal-1.15.0-8.el8_10.x86_64
+RHSA-2025:15017 Important/Sec. udisks2-2.9.0-16.el8_10.1.x86_64
+RHSA-2025:15017 Important/Sec. udisks2-iscsi-2.9.0-16.el8_10.1.x86_64
+RHSA-2025:17715 Moderate/Sec.  vim-common-2:8.0.1763-21.el8_10.x86_64
+RHSA-2025:17715 Moderate/Sec.  vim-enhanced-2:8.0.1763-21.el8_10.x86_64
+RHSA-2025:17715 Moderate/Sec.  vim-filesystem-2:8.0.1763-21.el8_10.noarch
+RHSA-2025:17715 Moderate/Sec.  vim-minimal-2:8.0.1763-21.el8_10.x86_64
+RHSA-2025:13780 Important/Sec. webkit2gtk3-2.48.5-1.el8_10.x86_64
+RHSA-2025:17802 Important/Sec. webkit2gtk3-2.50.0-1.el8_10.x86_64
+RHSA-2025:18070 Important/Sec. webkit2gtk3-2.50.1-1.el8_10.x86_64
+RHSA-2025:13780 Important/Sec. webkit2gtk3-jsc-2.48.5-1.el8_10.x86_64
+RHSA-2025:17802 Important/Sec. webkit2gtk3-jsc-2.50.0-1.el8_10.x86_64
+RHSA-2025:18070 Important/Sec. webkit2gtk3-jsc-2.50.1-1.el8_10.x86_64
+RHSA-2025:19434 Moderate/Sec.  xorg-x11-server-Xorg-1.20.11-27.el8_10.x86_64
+RHSA-2025:19432 Moderate/Sec.  xorg-x11-server-Xwayland-21.1.3-19.el8_10.x86_64
+RHSA-2025:19434 Moderate/Sec.  xorg-x11-server-common-1.20.11-27.el8_10.x86_64</pre>
+
+<h3>Aplicación de actualizaciones</h3>
+<pre>Updating Subscription Management repositories.
+Last metadata expiration check: 3:31:58 ago on Fri 14 Nov 2025 12:21:16 PM -05.
+Dependencies resolved.
+==========================================================================================================================================================
+ Package                                      Arch    Version                                                      Repository                         Size
+==========================================================================================================================================================
+Installing:
+ kernel                                       x86_64  4.18.0-553.83.1.el8_10                                       rhel-8-for-x86_64-baseos-rpms      11 M
+ kernel-core                                  x86_64  4.18.0-553.83.1.el8_10                                       rhel-8-for-x86_64-baseos-rpms      44 M
+ kernel-modules                               x86_64  4.18.0-553.83.1.el8_10                                       rhel-8-for-x86_64-baseos-rpms      36 M
+ kernel-modules-extra                         x86_64  4.18.0-553.83.1.el8_10                                       rhel-8-for-x86_64-baseos-rpms      11 M
+Upgrading:
+ bind-export-libs                             x86_64  32:9.11.36-16.el8_10.6                                       rhel-8-for-x86_64-baseos-rpms     1.1 M
+ bind-libs                                    x86_64  32:9.11.36-16.el8_10.6                                       rhel-8-for-x86_64-appstream-rpms  176 k
+ bind-libs-lite                               x86_64  32:9.11.36-16.el8_10.6                                       rhel-8-for-x86_64-appstream-rpms  1.2 M
+ bind-license                                 noarch  32:9.11.36-16.el8_10.6                                       rhel-8-for-x86_64-appstream-rpms  105 k
+ bind-utils                                   x86_64  32:9.11.36-16.el8_10.6                                       rhel-8-for-x86_64-appstream-rpms  453 k
+ bpftool                                      x86_64  4.18.0-553.83.1.el8_10                                       rhel-8-for-x86_64-baseos-rpms      11 M
+ compat-libpthread-nonshared                  x86_64  2.28-251.el8_10.25                                           rhel-8-for-x86_64-appstream-rpms   72 k
+ cups                                         x86_64  1:2.2.6-63.el8_10                                            rhel-8-for-x86_64-appstream-rpms  1.4 M
+ cups-client                                  x86_64  1:2.2.6-63.el8_10                                            rhel-8-for-x86_64-appstream-rpms  172 k
+ cups-filesystem                              noarch  1:2.2.6-63.el8_10                                            rhel-8-for-x86_64-appstream-rpms  112 k
+ cups-ipptool                                 x86_64  1:2.2.6-63.el8_10                                            rhel-8-for-x86_64-appstream-rpms  5.8 M
+ cups-libs                                    x86_64  1:2.2.6-63.el8_10                                            rhel-8-for-x86_64-baseos-rpms     436 k
+ firefox                                      x86_64  140.4.0-3.el8_10                                             rhel-8-for-x86_64-appstream-rpms  118 M
+ gdk-pixbuf2                                  x86_64  2.36.12-7.el8_10                                             rhel-8-for-x86_64-baseos-rpms     467 k
+ gdk-pixbuf2-modules                          x86_64  2.36.12-7.el8_10                                             rhel-8-for-x86_64-appstream-rpms  109 k
+ glibc                                        i686    2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms     1.9 M
+ glibc                                        x86_64  2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms     2.2 M
+ glibc-all-langpacks                          x86_64  2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms      26 M
+ glibc-common                                 x86_64  2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms     1.0 M
+ glibc-devel                                  i686    2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms      88 k
+ glibc-devel                                  x86_64  2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms      89 k
+ glibc-gconv-extra                            i686    2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms     1.6 M
+ glibc-gconv-extra                            x86_64  2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms     1.6 M
+ glibc-headers                                i686    2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms     494 k
+ glibc-headers                                x86_64  2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms     494 k
+ glibc-langpack-en                            x86_64  2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms     833 k
+ glibc-locale-source                          x86_64  2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms     4.2 M
+ glibc-minimal-langpack                       x86_64  2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms      71 k
+ gnutls                                       x86_64  3.6.16-8.el8_10.4                                            rhel-8-for-x86_64-baseos-rpms     1.0 M
+ gnutls-dane                                  x86_64  3.6.16-8.el8_10.4                                            rhel-8-for-x86_64-appstream-rpms   52 k
+ gnutls-utils                                 x86_64  3.6.16-8.el8_10.4                                            rhel-8-for-x86_64-appstream-rpms  349 k
+ java-1.8.0-openjdk                           x86_64  1:1.8.0.472.b08-1.el8                                        rhel-8-for-x86_64-appstream-rpms  561 k
+ java-1.8.0-openjdk-headless                  x86_64  1:1.8.0.472.b08-1.el8                                        rhel-8-for-x86_64-appstream-rpms   35 M
+ kernel-headers                               x86_64  4.18.0-553.83.1.el8_10                                       rhel-8-for-x86_64-baseos-rpms      12 M
+ kernel-tools                                 x86_64  4.18.0-553.83.1.el8_10                                       rhel-8-for-x86_64-baseos-rpms      11 M
+ kernel-tools-libs                            x86_64  4.18.0-553.83.1.el8_10                                       rhel-8-for-x86_64-baseos-rpms      11 M
+ libarchive                                   x86_64  3.3.3-6.el8_10                                               rhel-8-for-x86_64-baseos-rpms     359 k
+ libnsl                                       x86_64  2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms     111 k
+ libsoup                                      x86_64  2.62.3-10.el8_10                                             rhel-8-for-x86_64-baseos-rpms     425 k
+ libssh                                       x86_64  0.9.6-15.el8_10                                              rhel-8-for-x86_64-baseos-rpms     219 k
+ libssh-config                                noarch  0.9.6-15.el8_10                                              rhel-8-for-x86_64-baseos-rpms      20 k
+ libsss_idmap                                 x86_64  2.9.4-5.el8_10.3                                             rhel-8-for-x86_64-baseos-rpms     133 k
+ libsss_nss_idmap                             x86_64  2.9.4-5.el8_10.3                                             rhel-8-for-x86_64-baseos-rpms     141 k
+ libtiff                                      x86_64  4.0.9-36.el8_10                                              rhel-8-for-x86_64-appstream-rpms  190 k
+ libtpms                                      x86_64  0.9.1-3.20211126git1ff6fe1f43.module+el8.10.0+23348+204cfc70 rhel-8-for-x86_64-appstream-rpms  184 k
+ libudisks2                                   x86_64  2.9.0-16.el8_10.1                                            rhel-8-for-x86_64-appstream-rpms  184 k
+ libvirt-client                               x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms  421 k
+ libvirt-daemon                               x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms  426 k
+ libvirt-daemon-config-network                x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms   73 k
+ libvirt-daemon-driver-interface              x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms  216 k
+ libvirt-daemon-driver-network                x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms  242 k
+ libvirt-daemon-driver-nodedev                x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms  227 k
+ libvirt-daemon-driver-nwfilter               x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms  241 k
+ libvirt-daemon-driver-qemu                   x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms  931 k
+ libvirt-daemon-driver-secret                 x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms  204 k
+ libvirt-daemon-driver-storage                x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms   72 k
+ libvirt-daemon-driver-storage-core           x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms  260 k
+ libvirt-daemon-driver-storage-disk           x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms   82 k
+ libvirt-daemon-driver-storage-gluster        x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms   84 k
+ libvirt-daemon-driver-storage-iscsi          x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms   79 k
+ libvirt-daemon-driver-storage-iscsi-direct   x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms   81 k
+ libvirt-daemon-driver-storage-logical        x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms   83 k
+ libvirt-daemon-driver-storage-mpath          x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms   76 k
+ libvirt-daemon-driver-storage-rbd            x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms   87 k
+ libvirt-daemon-driver-storage-scsi           x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms   79 k
+ libvirt-daemon-kvm                           x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms   71 k
+ libvirt-libs                                 x86_64  8.0.0-23.4.module+el8.10.0+23205+d8da55c1                    rhel-8-for-x86_64-appstream-rpms  4.7 M
+ libxml2                                      x86_64  2.9.7-21.el8_10.3                                            rhel-8-for-x86_64-baseos-rpms     697 k
+ nspr                                         x86_64  4.36.0-2.el8_10                                              rhel-8-for-x86_64-appstream-rpms  143 k
+ nss                                          x86_64  3.112.0-4.el8_10                                             rhel-8-for-x86_64-appstream-rpms  771 k
+ nss-softokn                                  x86_64  3.112.0-4.el8_10                                             rhel-8-for-x86_64-appstream-rpms  540 k
+ nss-softokn-freebl                           i686    3.112.0-4.el8_10                                             rhel-8-for-x86_64-appstream-rpms  482 k
+ nss-softokn-freebl                           x86_64  3.112.0-4.el8_10                                             rhel-8-for-x86_64-appstream-rpms  482 k
+ nss-sysinit                                  x86_64  3.112.0-4.el8_10                                             rhel-8-for-x86_64-appstream-rpms   76 k
+ nss-tools                                    x86_64  3.112.0-4.el8_10                                             rhel-8-for-x86_64-appstream-rpms  599 k
+ nss-util                                     x86_64  3.112.0-4.el8_10                                             rhel-8-for-x86_64-appstream-rpms  143 k
+ nss_db                                       i686    2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms      84 k
+ nss_db                                       x86_64  2.28-251.el8_10.25                                           rhel-8-for-x86_64-baseos-rpms      84 k
+ open-vm-tools                                x86_64  12.3.5-2.el8_10.1                                            rhel-8-for-x86_64-appstream-rpms  883 k
+ open-vm-tools-desktop                        x86_64  12.3.5-2.el8_10.1                                            rhel-8-for-x86_64-appstream-rpms  203 k
+ openssh                                      x86_64  8.0p1-26.el8_10                                              rhel-8-for-x86_64-baseos-rpms     525 k
+ openssh-askpass                              x86_64  8.0p1-26.el8_10                                              rhel-8-for-x86_64-appstream-rpms   95 k
+ openssh-clients                              x86_64  8.0p1-26.el8_10                                              rhel-8-for-x86_64-baseos-rpms     646 k
+ openssh-server                               x86_64  8.0p1-26.el8_10                                              rhel-8-for-x86_64-baseos-rpms     494 k
+ pam                                          x86_64  1.3.1-38.el8_10                                              rhel-8-for-x86_64-baseos-rpms     748 k
+ platform-python                              x86_64  3.6.8-71.el8_10                                              rhel-8-for-x86_64-baseos-rpms      88 k
+ python3-bind                                 noarch  32:9.11.36-16.el8_10.6                                       rhel-8-for-x86_64-appstream-rpms  152 k
+ python3-cryptography                         x86_64  3.2.1-8.el8_10                                               rhel-8-for-x86_64-baseos-rpms     559 k
+ python3-libs                                 x86_64  3.6.8-71.el8_10                                              rhel-8-for-x86_64-baseos-rpms     7.9 M
+ python3-libxml2                              x86_64  2.9.7-21.el8_10.3                                            rhel-8-for-x86_64-baseos-rpms     238 k
+ python3-perf                                 x86_64  4.18.0-553.83.1.el8_10                                       rhel-8-for-x86_64-baseos-rpms      11 M
+ python3-requests                             noarch  2.20.0-6.el8_10                                              rhel-8-for-x86_64-baseos-rpms     125 k
+ qemu-guest-agent                             x86_64  15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4                 rhel-8-for-x86_64-appstream-rpms  372 k
+ qemu-img                                     x86_64  15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4                 rhel-8-for-x86_64-appstream-rpms  2.2 M
+ qemu-kvm                                     x86_64  15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4                 rhel-8-for-x86_64-appstream-rpms  195 k
+ qemu-kvm-block-curl                          x86_64  15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4                 rhel-8-for-x86_64-appstream-rpms  206 k
+ qemu-kvm-block-gluster                       x86_64  15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4                 rhel-8-for-x86_64-appstream-rpms  207 k
+ qemu-kvm-block-iscsi                         x86_64  15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4                 rhel-8-for-x86_64-appstream-rpms  214 k
+ qemu-kvm-block-rbd                           x86_64  15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4                 rhel-8-for-x86_64-appstream-rpms  208 k
+ qemu-kvm-block-ssh                           x86_64  15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4                 rhel-8-for-x86_64-appstream-rpms  208 k
+ qemu-kvm-common                              x86_64  15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4                 rhel-8-for-x86_64-appstream-rpms  1.1 M
+ qemu-kvm-core                                x86_64  15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4                 rhel-8-for-x86_64-appstream-rpms  3.4 M
+ qemu-kvm-docs                                x86_64  15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4                 rhel-8-for-x86_64-appstream-rpms  2.6 M
+ qemu-kvm-hw-usbredir                         x86_64  15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4                 rhel-8-for-x86_64-appstream-rpms  218 k
+ qemu-kvm-ui-opengl                           x86_64  15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4                 rhel-8-for-x86_64-appstream-rpms  209 k
+ qemu-kvm-ui-spice                            x86_64  15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4                 rhel-8-for-x86_64-appstream-rpms  256 k
+ sssd-client                                  x86_64  2.9.4-5.el8_10.3                                             rhel-8-for-x86_64-baseos-rpms     246 k
+ tigervnc-license                             noarch  1.15.0-8.el8_10                                              rhel-8-for-x86_64-appstream-rpms   45 k
+ tigervnc-server-minimal                      x86_64  1.15.0-8.el8_10                                              rhel-8-for-x86_64-appstream-rpms  1.2 M
+ udisks2                                      x86_64  2.9.0-16.el8_10.1                                            rhel-8-for-x86_64-appstream-rpms  474 k
+ udisks2-iscsi                                x86_64  2.9.0-16.el8_10.1                                            rhel-8-for-x86_64-appstream-rpms   31 k
+ vim-common                                   x86_64  2:8.0.1763-21.el8_10                                         rhel-8-for-x86_64-appstream-rpms  6.3 M
+ vim-enhanced                                 x86_64  2:8.0.1763-21.el8_10                                         rhel-8-for-x86_64-appstream-rpms  1.4 M
+ vim-filesystem                               noarch  2:8.0.1763-21.el8_10                                         rhel-8-for-x86_64-appstream-rpms   50 k
+ vim-minimal                                  x86_64  2:8.0.1763-21.el8_10                                         rhel-8-for-x86_64-baseos-rpms     574 k
+ webkit2gtk3                                  x86_64  2.50.1-1.el8_10                                              rhel-8-for-x86_64-appstream-rpms   27 M
+ webkit2gtk3-jsc                              x86_64  2.50.1-1.el8_10                                              rhel-8-for-x86_64-appstream-rpms  8.1 M
+ xorg-x11-server-Xorg                         x86_64  1.20.11-27.el8_10                                            rhel-8-for-x86_64-appstream-rpms  1.5 M
+ xorg-x11-server-Xwayland                     x86_64  21.1.3-19.el8_10                                             rhel-8-for-x86_64-appstream-rpms  966 k
+ xorg-x11-server-common                       x86_64  1.20.11-27.el8_10                                            rhel-8-for-x86_64-appstream-rpms   45 k
+Removing:
+ kernel                                       x86_64  4.18.0-553.51.1.el8_10                                       @rhel-8-for-x86_64-baseos-rpms      0  
+ kernel-core                                  x86_64  4.18.0-553.51.1.el8_10                                       @rhel-8-for-x86_64-baseos-rpms     71 M
+ kernel-modules                               x86_64  4.18.0-553.51.1.el8_10                                       @rhel-8-for-x86_64-baseos-rpms     25 M
+ kernel-modules-extra                         x86_64  4.18.0-553.51.1.el8_10                                       @rhel-8-for-x86_64-baseos-rpms    688 k
+
+Transaction Summary
+==========================================================================================================================================================
+Install    4 Packages
+Upgrade  120 Packages
+Remove     4 Packages
+
+Total download size: 449 M
+--------------------------------------------------------------------------------
+Transaction check succeeded.
+Transaction test succeeded.
+  Erasing          : kernel-4.18.0-553.51.1.el8_10.x86_64               134/248 
+  Erasing          : kernel-modules-extra-4.18.0-553.51.1.el8_10.x86_   239/248 
+  Erasing          : kernel-modules-4.18.0-553.51.1.el8_10.x86_64       247/248 
+  Erasing          : kernel-core-4.18.0-553.51.1.el8_10.x86_64          248/248 
+Installed products updated.
+
+Upgraded:
+  bind-export-libs-32:9.11.36-16.el8_10.6.x86_64                                
+  bind-libs-32:9.11.36-16.el8_10.6.x86_64                                       
+  bind-libs-lite-32:9.11.36-16.el8_10.6.x86_64                                  
+  bind-license-32:9.11.36-16.el8_10.6.noarch                                    
+  bind-utils-32:9.11.36-16.el8_10.6.x86_64                                      
+  bpftool-4.18.0-553.83.1.el8_10.x86_64                                         
+  compat-libpthread-nonshared-2.28-251.el8_10.25.x86_64                         
+  cups-1:2.2.6-63.el8_10.x86_64                                                 
+  cups-client-1:2.2.6-63.el8_10.x86_64                                          
+  cups-filesystem-1:2.2.6-63.el8_10.noarch                                      
+  cups-ipptool-1:2.2.6-63.el8_10.x86_64                                         
+  cups-libs-1:2.2.6-63.el8_10.x86_64                                            
+  firefox-140.4.0-3.el8_10.x86_64                                               
+  gdk-pixbuf2-2.36.12-7.el8_10.x86_64                                           
+  gdk-pixbuf2-modules-2.36.12-7.el8_10.x86_64                                   
+  glibc-2.28-251.el8_10.25.i686                                                 
+  glibc-2.28-251.el8_10.25.x86_64                                               
+  glibc-all-langpacks-2.28-251.el8_10.25.x86_64                                 
+  glibc-common-2.28-251.el8_10.25.x86_64                                        
+  glibc-devel-2.28-251.el8_10.25.i686                                           
+  glibc-devel-2.28-251.el8_10.25.x86_64                                         
+  glibc-gconv-extra-2.28-251.el8_10.25.i686                                     
+  glibc-gconv-extra-2.28-251.el8_10.25.x86_64                                   
+  glibc-headers-2.28-251.el8_10.25.i686                                         
+  glibc-headers-2.28-251.el8_10.25.x86_64                                       
+  glibc-langpack-en-2.28-251.el8_10.25.x86_64                                   
+  glibc-locale-source-2.28-251.el8_10.25.x86_64                                 
+  glibc-minimal-langpack-2.28-251.el8_10.25.x86_64                              
+  gnutls-3.6.16-8.el8_10.4.x86_64                                               
+  gnutls-dane-3.6.16-8.el8_10.4.x86_64                                          
+  gnutls-utils-3.6.16-8.el8_10.4.x86_64                                         
+  java-1.8.0-openjdk-1:1.8.0.472.b08-1.el8.x86_64                               
+  java-1.8.0-openjdk-headless-1:1.8.0.472.b08-1.el8.x86_64                      
+  kernel-headers-4.18.0-553.83.1.el8_10.x86_64                                  
+  kernel-tools-4.18.0-553.83.1.el8_10.x86_64                                    
+  kernel-tools-libs-4.18.0-553.83.1.el8_10.x86_64                               
+  libarchive-3.3.3-6.el8_10.x86_64                                              
+  libnsl-2.28-251.el8_10.25.x86_64                                              
+  libsoup-2.62.3-10.el8_10.x86_64                                               
+  libssh-0.9.6-15.el8_10.x86_64                                                 
+  libssh-config-0.9.6-15.el8_10.noarch                                          
+  libsss_idmap-2.9.4-5.el8_10.3.x86_64                                          
+  libsss_nss_idmap-2.9.4-5.el8_10.3.x86_64                                      
+  libtiff-4.0.9-36.el8_10.x86_64                                                
+  libtpms-0.9.1-3.20211126git1ff6fe1f43.module+el8.10.0+23348+204cfc70.x86_64   
+  libudisks2-2.9.0-16.el8_10.1.x86_64                                           
+  libvirt-client-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64               
+  libvirt-daemon-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64               
+  libvirt-daemon-config-network-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+  libvirt-daemon-driver-interface-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+  libvirt-daemon-driver-network-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+  libvirt-daemon-driver-nodedev-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+  libvirt-daemon-driver-nwfilter-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+  libvirt-daemon-driver-qemu-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64   
+  libvirt-daemon-driver-secret-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64 
+  libvirt-daemon-driver-storage-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+  libvirt-daemon-driver-storage-core-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+  libvirt-daemon-driver-storage-disk-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+  libvirt-daemon-driver-storage-gluster-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+  libvirt-daemon-driver-storage-iscsi-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+  libvirt-daemon-driver-storage-iscsi-direct-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+  libvirt-daemon-driver-storage-logical-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+  libvirt-daemon-driver-storage-mpath-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+  libvirt-daemon-driver-storage-rbd-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+  libvirt-daemon-driver-storage-scsi-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+  libvirt-daemon-kvm-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64           
+  libvirt-libs-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64                 
+  libxml2-2.9.7-21.el8_10.3.x86_64                                              
+  nspr-4.36.0-2.el8_10.x86_64                                                   
+  nss-3.112.0-4.el8_10.x86_64                                                   
+  nss-softokn-3.112.0-4.el8_10.x86_64                                           
+  nss-softokn-freebl-3.112.0-4.el8_10.i686                                      
+  nss-softokn-freebl-3.112.0-4.el8_10.x86_64                                    
+  nss-sysinit-3.112.0-4.el8_10.x86_64                                           
+  nss-tools-3.112.0-4.el8_10.x86_64                                             
+  nss-util-3.112.0-4.el8_10.x86_64                                              
+  nss_db-2.28-251.el8_10.25.i686                                                
+  nss_db-2.28-251.el8_10.25.x86_64                                              
+  open-vm-tools-12.3.5-2.el8_10.1.x86_64                                        
+  open-vm-tools-desktop-12.3.5-2.el8_10.1.x86_64                                
+  openssh-8.0p1-26.el8_10.x86_64                                                
+  openssh-askpass-8.0p1-26.el8_10.x86_64                                        
+  openssh-clients-8.0p1-26.el8_10.x86_64                                        
+  openssh-server-8.0p1-26.el8_10.x86_64                                         
+  pam-1.3.1-38.el8_10.x86_64                                                    
+  platform-python-3.6.8-71.el8_10.x86_64                                        
+  python3-bind-32:9.11.36-16.el8_10.6.noarch                                    
+  python3-cryptography-3.2.1-8.el8_10.x86_64                                    
+  python3-libs-3.6.8-71.el8_10.x86_64                                           
+  python3-libxml2-2.9.7-21.el8_10.3.x86_64                                      
+  python3-perf-4.18.0-553.83.1.el8_10.x86_64                                    
+  python3-requests-2.20.0-6.el8_10.noarch                                       
+  qemu-guest-agent-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64          
+  qemu-img-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64                  
+  qemu-kvm-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64                  
+  qemu-kvm-block-curl-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64       
+  qemu-kvm-block-gluster-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64    
+  qemu-kvm-block-iscsi-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64      
+  qemu-kvm-block-rbd-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64        
+  qemu-kvm-block-ssh-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64        
+  qemu-kvm-common-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64           
+  qemu-kvm-core-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64             
+  qemu-kvm-docs-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64             
+  qemu-kvm-hw-usbredir-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64      
+  qemu-kvm-ui-opengl-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64        
+  qemu-kvm-ui-spice-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64         
+  sssd-client-2.9.4-5.el8_10.3.x86_64                                           
+  tigervnc-license-1.15.0-8.el8_10.noarch                                       
+  tigervnc-server-minimal-1.15.0-8.el8_10.x86_64                                
+  udisks2-2.9.0-16.el8_10.1.x86_64                                              
+  udisks2-iscsi-2.9.0-16.el8_10.1.x86_64                                        
+  vim-common-2:8.0.1763-21.el8_10.x86_64                                        
+  vim-enhanced-2:8.0.1763-21.el8_10.x86_64                                      
+  vim-filesystem-2:8.0.1763-21.el8_10.noarch                                    
+  vim-minimal-2:8.0.1763-21.el8_10.x86_64                                       
+  webkit2gtk3-2.50.1-1.el8_10.x86_64                                            
+  webkit2gtk3-jsc-2.50.1-1.el8_10.x86_64                                        
+  xorg-x11-server-Xorg-1.20.11-27.el8_10.x86_64                                 
+  xorg-x11-server-Xwayland-21.1.3-19.el8_10.x86_64                              
+  xorg-x11-server-common-1.20.11-27.el8_10.x86_64                               
+Installed:
+  kernel-4.18.0-553.83.1.el8_10.x86_64                                          
+  kernel-core-4.18.0-553.83.1.el8_10.x86_64                                     
+  kernel-modules-4.18.0-553.83.1.el8_10.x86_64                                  
+  kernel-modules-extra-4.18.0-553.83.1.el8_10.x86_64                            
+Removed:
+  kernel-4.18.0-553.51.1.el8_10.x86_64                                          
+  kernel-core-4.18.0-553.51.1.el8_10.x86_64                                     
+  kernel-modules-4.18.0-553.51.1.el8_10.x86_64                                  
+  kernel-modules-extra-4.18.0-553.51.1.el8_10.x86_64                            
+
+Complete!</pre>
+</div>
+
+<div class="host-block">
+<h2>Host: paricia.fopaedom.local</h2>
+<ul>
+  <li><b>Virtualización:</b> microsoft</li>
+  <li><b>Sistema Operativo:</b> Red Hat Enterprise Linux 8.10 (Ootpa)</li>
+  <li><b>Kernel:</b> Linux 4.18.0-553.64.1.el8_10.x86_64</li>
+  <li><b>Arquitectura:</b> x86-64</li>
+</ul>
+
+<h3>Información Memoria</h3>
+<pre>=== Informacion de memoria ===
+              total        used        free      shared  buff/cache   available
+Mem:          7.5Gi       2.1Gi       5.0Gi       0.0Ki       419Mi       5.2Gi
+Swap:          15Gi          0B        15Gi</pre>
+<p>Memoria okey</p>
+
+<h3>Información espacio Disco</h3>
+<pre>Correcto Todos los fylesystems estan por debajo del 85%</pre>
+
+<h3>Información Red </h3>
+<pre>GENERAL.DEVICE:                         eth0
+GENERAL.TYPE:                           ethernet
+GENERAL.STATE:                          100 (connected)
+IP4.ADDRESS[1]:                         172.16.24.37/22
+
+GENERAL.DEVICE:                         lo
+GENERAL.TYPE:                           loopback
+GENERAL.STATE:                          10 (unmanaged)
+IP4.ADDRESS[1]:                         127.0.0.1/8</pre>
+
+<h3>Actualizaciones de seguridad</h3>
+<pre>Updating Subscription Management repositories.
+Last metadata expiration check: 1:23:40 ago on Fri 14 Nov 2025 02:36:59 PM -05.
+RHSA-2025:19835 Important/Sec. bind-export-libs-32:9.11.36-16.el8_10.6.x86_64
+RHSA-2025:19835 Important/Sec. bind-libs-32:9.11.36-16.el8_10.6.x86_64
+RHSA-2025:19835 Important/Sec. bind-libs-lite-32:9.11.36-16.el8_10.6.x86_64
+RHSA-2025:19835 Important/Sec. bind-license-32:9.11.36-16.el8_10.6.noarch
+RHSA-2025:19835 Important/Sec. bind-utils-32:9.11.36-16.el8_10.6.x86_64
+RHSA-2025:15702 Important/Sec. cups-libs-1:2.2.6-63.el8_10.x86_64
+RHSA-2025:14442 Important/Sec. firefox-128.14.0-2.el8_10.x86_64
+RHSA-2025:16260 Important/Sec. firefox-140.3.0-1.el8_10.x86_64
+RHSA-2025:18285 Important/Sec. firefox-140.4.0-3.el8_10.x86_64
+RHSA-2025:13315 Moderate/Sec.  gdk-pixbuf2-2.36.12-7.el8_10.x86_64
+RHSA-2025:13315 Moderate/Sec.  gdk-pixbuf2-modules-2.36.12-7.el8_10.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-2.28-251.el8_10.25.i686
+RHSA-2025:12980 Moderate/Sec.  glibc-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-all-langpacks-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-common-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-devel-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-gconv-extra-2.28-251.el8_10.25.i686
+RHSA-2025:12980 Moderate/Sec.  glibc-gconv-extra-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-headers-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-locale-source-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-minimal-langpack-2.28-251.el8_10.25.x86_64
+RHSA-2025:17415 Moderate/Sec.  gnutls-3.6.16-8.el8_10.4.x86_64
+RHSA-2025:18815 Moderate/Sec.  java-1.8.0-openjdk-1:1.8.0.472.b08-1.el8.x86_64
+RHSA-2025:18815 Moderate/Sec.  java-1.8.0-openjdk-devel-1:1.8.0.472.b08-1.el8.x86_64
+RHSA-2025:18815 Moderate/Sec.  java-1.8.0-openjdk-headless-1:1.8.0.472.b08-1.el8.x86_64
+RHSA-2025:12752 Important/Sec. kernel-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-core-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-core-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-core-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-core-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-core-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-core-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-core-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-core-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-core-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-core-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-core-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-core-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-core-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-core-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-core-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-headers-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-headers-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-headers-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-headers-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-headers-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-headers-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-headers-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-headers-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-headers-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-headers-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-headers-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-headers-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-headers-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-headers-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-headers-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-modules-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-modules-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-modules-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-modules-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-modules-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-modules-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-modules-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-modules-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-modules-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-modules-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-modules-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-modules-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-modules-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-modules-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-modules-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-modules-extra-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-modules-extra-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-modules-extra-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-modules-extra-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-modules-extra-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-modules-extra-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-modules-extra-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-modules-extra-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-modules-extra-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-modules-extra-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-modules-extra-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-modules-extra-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-modules-extra-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-modules-extra-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-modules-extra-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-tools-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-tools-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-tools-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-tools-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-tools-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-tools-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-tools-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-tools-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-tools-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-tools-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-tools-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-tools-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-tools-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-tools-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-tools-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-tools-libs-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-tools-libs-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-tools-libs-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-tools-libs-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-tools-libs-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-tools-libs-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-tools-libs-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-tools-libs-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-tools-libs-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-tools-libs-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-tools-libs-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-tools-libs-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-tools-libs-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-tools-libs-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-tools-libs-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:14135 Important/Sec. libarchive-3.3.3-6.el8_10.x86_64
+RHSA-2025:12980 Moderate/Sec.  libnsl-2.28-251.el8_10.25.x86_64
+RHSA-2025:19714 Important/Sec. libsoup-2.62.3-10.el8_10.x86_64
+RHSA-2025:18286 Moderate/Sec.  libssh-0.9.6-15.el8_10.x86_64
+RHSA-2025:18286 Moderate/Sec.  libssh-config-0.9.6-15.el8_10.noarch
+RHSA-2025:19610 Important/Sec. libsss_idmap-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. libsss_nss_idmap-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19276 Important/Sec. libtiff-4.0.9-35.el8_10.x86_64
+RHSA-2025:20034 Important/Sec. libtiff-4.0.9-36.el8_10.x86_64
+RHSA-2025:13203 Moderate/Sec.  libxml2-2.9.7-21.el8_10.3.x86_64
+RHSA-2025:12980 Moderate/Sec.  nss_db-2.28-251.el8_10.25.i686
+RHSA-2025:12980 Moderate/Sec.  nss_db-2.28-251.el8_10.25.x86_64
+RHSA-2025:16823 Moderate/Sec.  openssh-8.0p1-26.el8_10.x86_64
+RHSA-2025:16823 Moderate/Sec.  openssh-clients-8.0p1-26.el8_10.x86_64
+RHSA-2025:16823 Moderate/Sec.  openssh-server-8.0p1-26.el8_10.x86_64
+RHSA-2025:14557 Important/Sec. pam-1.3.1-38.el8_10.x86_64
+RHSA-2025:14560 Moderate/Sec.  platform-python-3.6.8-71.el8_10.x86_64
+RHSA-2025:19835 Important/Sec. python3-bind-32:9.11.36-16.el8_10.6.noarch
+RHSA-2025:14553 Moderate/Sec.  python3-cryptography-3.2.1-8.el8_10.x86_64
+RHSA-2025:14560 Moderate/Sec.  python3-libs-3.6.8-71.el8_10.x86_64
+RHSA-2025:13203 Moderate/Sec.  python3-libxml2-2.9.7-21.el8_10.3.x86_64
+RHSA-2025:12752 Important/Sec. python3-perf-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  python3-perf-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. python3-perf-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  python3-perf-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  python3-perf-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. python3-perf-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. python3-perf-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  python3-perf-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  python3-perf-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  python3-perf-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  python3-perf-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  python3-perf-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  python3-perf-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  python3-perf-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  python3-perf-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:13234 Moderate/Sec.  python3-requests-2.20.0-6.el8_10.noarch
+RHSA-2025:12527 Moderate/Sec.  qemu-guest-agent-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:19610 Important/Sec. sssd-client-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:17715 Moderate/Sec.  vim-common-2:8.0.1763-21.el8_10.x86_64
+RHSA-2025:17715 Moderate/Sec.  vim-enhanced-2:8.0.1763-21.el8_10.x86_64
+RHSA-2025:17715 Moderate/Sec.  vim-filesystem-2:8.0.1763-21.el8_10.noarch
+RHSA-2025:17715 Moderate/Sec.  vim-minimal-2:8.0.1763-21.el8_10.x86_64</pre>
+
+<h3>Aplicación de actualizaciones</h3>
+<pre>Updating Subscription Management repositories.
+Last metadata expiration check: 1:23:53 ago on Fri 14 Nov 2025 02:36:59 PM -05.
+Dependencies resolved.
+===========================================================================================================================
+ Package                       Arch    Version                                      Repository                         Size
+===========================================================================================================================
+Installing:
+ kernel                        x86_64  4.18.0-553.83.1.el8_10                       rhel-8-for-x86_64-baseos-rpms      11 M
+ kernel-core                   x86_64  4.18.0-553.83.1.el8_10                       rhel-8-for-x86_64-baseos-rpms      44 M
+ kernel-modules                x86_64  4.18.0-553.83.1.el8_10                       rhel-8-for-x86_64-baseos-rpms      36 M
+ kernel-modules-extra          x86_64  4.18.0-553.83.1.el8_10                       rhel-8-for-x86_64-baseos-rpms      11 M
+Upgrading:
+ bind-export-libs              x86_64  32:9.11.36-16.el8_10.6                       rhel-8-for-x86_64-baseos-rpms     1.1 M
+ bind-libs                     x86_64  32:9.11.36-16.el8_10.6                       rhel-8-for-x86_64-appstream-rpms  176 k
+ bind-libs-lite                x86_64  32:9.11.36-16.el8_10.6                       rhel-8-for-x86_64-appstream-rpms  1.2 M
+ bind-license                  noarch  32:9.11.36-16.el8_10.6                       rhel-8-for-x86_64-appstream-rpms  105 k
+ bind-utils                    x86_64  32:9.11.36-16.el8_10.6                       rhel-8-for-x86_64-appstream-rpms  453 k
+ cups-libs                     x86_64  1:2.2.6-63.el8_10                            rhel-8-for-x86_64-baseos-rpms     436 k
+ firefox                       x86_64  140.4.0-3.el8_10                             rhel-8-for-x86_64-appstream-rpms  118 M
+ gdk-pixbuf2                   x86_64  2.36.12-7.el8_10                             rhel-8-for-x86_64-baseos-rpms     467 k
+ gdk-pixbuf2-modules           x86_64  2.36.12-7.el8_10                             rhel-8-for-x86_64-appstream-rpms  109 k
+ glibc                         i686    2.28-251.el8_10.25                           rhel-8-for-x86_64-baseos-rpms     1.9 M
+ glibc                         x86_64  2.28-251.el8_10.25                           rhel-8-for-x86_64-baseos-rpms     2.2 M
+ glibc-all-langpacks           x86_64  2.28-251.el8_10.25                           rhel-8-for-x86_64-baseos-rpms      26 M
+ glibc-common                  x86_64  2.28-251.el8_10.25                           rhel-8-for-x86_64-baseos-rpms     1.0 M
+ glibc-devel                   x86_64  2.28-251.el8_10.25                           rhel-8-for-x86_64-baseos-rpms      89 k
+ glibc-gconv-extra             i686    2.28-251.el8_10.25                           rhel-8-for-x86_64-baseos-rpms     1.6 M
+ glibc-gconv-extra             x86_64  2.28-251.el8_10.25                           rhel-8-for-x86_64-baseos-rpms     1.6 M
+ glibc-headers                 x86_64  2.28-251.el8_10.25                           rhel-8-for-x86_64-baseos-rpms     494 k
+ glibc-locale-source           x86_64  2.28-251.el8_10.25                           rhel-8-for-x86_64-baseos-rpms     4.2 M
+ glibc-minimal-langpack        x86_64  2.28-251.el8_10.25                           rhel-8-for-x86_64-baseos-rpms      71 k
+ gnutls                        x86_64  3.6.16-8.el8_10.4                            rhel-8-for-x86_64-baseos-rpms     1.0 M
+ java-1.8.0-openjdk            x86_64  1:1.8.0.472.b08-1.el8                        rhel-8-for-x86_64-appstream-rpms  561 k
+ java-1.8.0-openjdk-devel      x86_64  1:1.8.0.472.b08-1.el8                        rhel-8-for-x86_64-appstream-rpms  9.9 M
+ java-1.8.0-openjdk-headless   x86_64  1:1.8.0.472.b08-1.el8                        rhel-8-for-x86_64-appstream-rpms   35 M
+ kernel-headers                x86_64  4.18.0-553.83.1.el8_10                       rhel-8-for-x86_64-baseos-rpms      12 M
+ kernel-tools                  x86_64  4.18.0-553.83.1.el8_10                       rhel-8-for-x86_64-baseos-rpms      11 M
+ kernel-tools-libs             x86_64  4.18.0-553.83.1.el8_10                       rhel-8-for-x86_64-baseos-rpms      11 M
+ libarchive                    x86_64  3.3.3-6.el8_10                               rhel-8-for-x86_64-baseos-rpms     359 k
+ libnsl                        x86_64  2.28-251.el8_10.25                           rhel-8-for-x86_64-baseos-rpms     111 k
+ libsoup                       x86_64  2.62.3-10.el8_10                             rhel-8-for-x86_64-baseos-rpms     425 k
+ libssh                        x86_64  0.9.6-15.el8_10                              rhel-8-for-x86_64-baseos-rpms     219 k
+ libssh-config                 noarch  0.9.6-15.el8_10                              rhel-8-for-x86_64-baseos-rpms      20 k
+ libsss_idmap                  x86_64  2.9.4-5.el8_10.3                             rhel-8-for-x86_64-baseos-rpms     133 k
+ libsss_nss_idmap              x86_64  2.9.4-5.el8_10.3                             rhel-8-for-x86_64-baseos-rpms     141 k
+ libtiff                       x86_64  4.0.9-36.el8_10                              rhel-8-for-x86_64-appstream-rpms  190 k
+ libxml2                       x86_64  2.9.7-21.el8_10.3                            rhel-8-for-x86_64-baseos-rpms     697 k
+ nspr                          x86_64  4.36.0-2.el8_10                              rhel-8-for-x86_64-appstream-rpms  143 k
+ nss                           x86_64  3.112.0-4.el8_10                             rhel-8-for-x86_64-appstream-rpms  771 k
+ nss-softokn                   x86_64  3.112.0-4.el8_10                             rhel-8-for-x86_64-appstream-rpms  540 k
+ nss-softokn-freebl            i686    3.112.0-4.el8_10                             rhel-8-for-x86_64-appstream-rpms  482 k
+ nss-softokn-freebl            x86_64  3.112.0-4.el8_10                             rhel-8-for-x86_64-appstream-rpms  482 k
+ nss-sysinit                   x86_64  3.112.0-4.el8_10                             rhel-8-for-x86_64-appstream-rpms   76 k
+ nss-tools                     x86_64  3.112.0-4.el8_10                             rhel-8-for-x86_64-appstream-rpms  599 k
+ nss-util                      x86_64  3.112.0-4.el8_10                             rhel-8-for-x86_64-appstream-rpms  143 k
+ nss_db                        i686    2.28-251.el8_10.25                           rhel-8-for-x86_64-baseos-rpms      84 k
+ nss_db                        x86_64  2.28-251.el8_10.25                           rhel-8-for-x86_64-baseos-rpms      84 k
+ openssh                       x86_64  8.0p1-26.el8_10                              rhel-8-for-x86_64-baseos-rpms     525 k
+ openssh-clients               x86_64  8.0p1-26.el8_10                              rhel-8-for-x86_64-baseos-rpms     646 k
+ openssh-server                x86_64  8.0p1-26.el8_10                              rhel-8-for-x86_64-baseos-rpms     494 k
+ pam                           x86_64  1.3.1-38.el8_10                              rhel-8-for-x86_64-baseos-rpms     748 k
+ platform-python               x86_64  3.6.8-71.el8_10                              rhel-8-for-x86_64-baseos-rpms      88 k
+ python3-bind                  noarch  32:9.11.36-16.el8_10.6                       rhel-8-for-x86_64-appstream-rpms  152 k
+ python3-cryptography          x86_64  3.2.1-8.el8_10                               rhel-8-for-x86_64-baseos-rpms     559 k
+ python3-libs                  x86_64  3.6.8-71.el8_10                              rhel-8-for-x86_64-baseos-rpms     7.9 M
+ python3-libxml2               x86_64  2.9.7-21.el8_10.3                            rhel-8-for-x86_64-baseos-rpms     238 k
+ python3-perf                  x86_64  4.18.0-553.83.1.el8_10                       rhel-8-for-x86_64-baseos-rpms      11 M
+ python3-requests              noarch  2.20.0-6.el8_10                              rhel-8-for-x86_64-baseos-rpms     125 k
+ qemu-guest-agent              x86_64  15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4 rhel-8-for-x86_64-appstream-rpms  372 k
+ sssd-client                   x86_64  2.9.4-5.el8_10.3                             rhel-8-for-x86_64-baseos-rpms     246 k
+ vim-common                    x86_64  2:8.0.1763-21.el8_10                         rhel-8-for-x86_64-appstream-rpms  6.3 M
+ vim-enhanced                  x86_64  2:8.0.1763-21.el8_10                         rhel-8-for-x86_64-appstream-rpms  1.4 M
+ vim-filesystem                noarch  2:8.0.1763-21.el8_10                         rhel-8-for-x86_64-appstream-rpms   50 k
+ vim-minimal                   x86_64  2:8.0.1763-21.el8_10                         rhel-8-for-x86_64-baseos-rpms     574 k
+Removing:
+ kernel                        x86_64  4.18.0-553.51.1.el8_10                       @rhel-8-for-x86_64-baseos-rpms      0  
+ kernel-core                   x86_64  4.18.0-553.51.1.el8_10                       @rhel-8-for-x86_64-baseos-rpms     71 M
+ kernel-modules                x86_64  4.18.0-553.51.1.el8_10                       @rhel-8-for-x86_64-baseos-rpms     25 M
+ kernel-modules-extra          x86_64  4.18.0-553.51.1.el8_10                       @rhel-8-for-x86_64-baseos-rpms    688 k
+
+Transaction Summary
+===========================================================================================================================
+Install   4 Packages
+Upgrade  62 Packages
+Remove    4 Packages
+
+Total download size: 378 M
+--------------------------------------------------------------------------------
+Transaction check succeeded.
+Transaction test succeeded.
+  Erasing          : kernel-4.18.0-553.51.1.el8_10.x86_64                71/132 
+  Erasing          : kernel-modules-extra-4.18.0-553.51.1.el8_10.x86_   125/132 
+  Erasing          : kernel-modules-4.18.0-553.51.1.el8_10.x86_64       131/132 
+  Erasing          : kernel-core-4.18.0-553.51.1.el8_10.x86_64          132/132 
+Installed products updated.
+
+Upgraded:
+  bind-export-libs-32:9.11.36-16.el8_10.6.x86_64                                
+  bind-libs-32:9.11.36-16.el8_10.6.x86_64                                       
+  bind-libs-lite-32:9.11.36-16.el8_10.6.x86_64                                  
+  bind-license-32:9.11.36-16.el8_10.6.noarch                                    
+  bind-utils-32:9.11.36-16.el8_10.6.x86_64                                      
+  cups-libs-1:2.2.6-63.el8_10.x86_64                                            
+  firefox-140.4.0-3.el8_10.x86_64                                               
+  gdk-pixbuf2-2.36.12-7.el8_10.x86_64                                           
+  gdk-pixbuf2-modules-2.36.12-7.el8_10.x86_64                                   
+  glibc-2.28-251.el8_10.25.i686                                                 
+  glibc-2.28-251.el8_10.25.x86_64                                               
+  glibc-all-langpacks-2.28-251.el8_10.25.x86_64                                 
+  glibc-common-2.28-251.el8_10.25.x86_64                                        
+  glibc-devel-2.28-251.el8_10.25.x86_64                                         
+  glibc-gconv-extra-2.28-251.el8_10.25.i686                                     
+  glibc-gconv-extra-2.28-251.el8_10.25.x86_64                                   
+  glibc-headers-2.28-251.el8_10.25.x86_64                                       
+  glibc-locale-source-2.28-251.el8_10.25.x86_64                                 
+  glibc-minimal-langpack-2.28-251.el8_10.25.x86_64                              
+  gnutls-3.6.16-8.el8_10.4.x86_64                                               
+  java-1.8.0-openjdk-1:1.8.0.472.b08-1.el8.x86_64                               
+  java-1.8.0-openjdk-devel-1:1.8.0.472.b08-1.el8.x86_64                         
+  java-1.8.0-openjdk-headless-1:1.8.0.472.b08-1.el8.x86_64                      
+  kernel-headers-4.18.0-553.83.1.el8_10.x86_64                                  
+  kernel-tools-4.18.0-553.83.1.el8_10.x86_64                                    
+  kernel-tools-libs-4.18.0-553.83.1.el8_10.x86_64                               
+  libarchive-3.3.3-6.el8_10.x86_64                                              
+  libnsl-2.28-251.el8_10.25.x86_64                                              
+  libsoup-2.62.3-10.el8_10.x86_64                                               
+  libssh-0.9.6-15.el8_10.x86_64                                                 
+  libssh-config-0.9.6-15.el8_10.noarch                                          
+  libsss_idmap-2.9.4-5.el8_10.3.x86_64                                          
+  libsss_nss_idmap-2.9.4-5.el8_10.3.x86_64                                      
+  libtiff-4.0.9-36.el8_10.x86_64                                                
+  libxml2-2.9.7-21.el8_10.3.x86_64                                              
+  nspr-4.36.0-2.el8_10.x86_64                                                   
+  nss-3.112.0-4.el8_10.x86_64                                                   
+  nss-softokn-3.112.0-4.el8_10.x86_64                                           
+  nss-softokn-freebl-3.112.0-4.el8_10.i686                                      
+  nss-softokn-freebl-3.112.0-4.el8_10.x86_64                                    
+  nss-sysinit-3.112.0-4.el8_10.x86_64                                           
+  nss-tools-3.112.0-4.el8_10.x86_64                                             
+  nss-util-3.112.0-4.el8_10.x86_64                                              
+  nss_db-2.28-251.el8_10.25.i686                                                
+  nss_db-2.28-251.el8_10.25.x86_64                                              
+  openssh-8.0p1-26.el8_10.x86_64                                                
+  openssh-clients-8.0p1-26.el8_10.x86_64                                        
+  openssh-server-8.0p1-26.el8_10.x86_64                                         
+  pam-1.3.1-38.el8_10.x86_64                                                    
+  platform-python-3.6.8-71.el8_10.x86_64                                        
+  python3-bind-32:9.11.36-16.el8_10.6.noarch                                    
+  python3-cryptography-3.2.1-8.el8_10.x86_64                                    
+  python3-libs-3.6.8-71.el8_10.x86_64                                           
+  python3-libxml2-2.9.7-21.el8_10.3.x86_64                                      
+  python3-perf-4.18.0-553.83.1.el8_10.x86_64                                    
+  python3-requests-2.20.0-6.el8_10.noarch                                       
+  qemu-guest-agent-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64          
+  sssd-client-2.9.4-5.el8_10.3.x86_64                                           
+  vim-common-2:8.0.1763-21.el8_10.x86_64                                        
+  vim-enhanced-2:8.0.1763-21.el8_10.x86_64                                      
+  vim-filesystem-2:8.0.1763-21.el8_10.noarch                                    
+  vim-minimal-2:8.0.1763-21.el8_10.x86_64                                       
+Installed:
+  kernel-4.18.0-553.83.1.el8_10.x86_64                                          
+  kernel-core-4.18.0-553.83.1.el8_10.x86_64                                     
+  kernel-modules-4.18.0-553.83.1.el8_10.x86_64                                  
+  kernel-modules-extra-4.18.0-553.83.1.el8_10.x86_64                            
+Removed:
+  kernel-4.18.0-553.51.1.el8_10.x86_64                                          
+  kernel-core-4.18.0-553.51.1.el8_10.x86_64                                     
+  kernel-modules-4.18.0-553.51.1.el8_10.x86_64                                  
+  kernel-modules-extra-4.18.0-553.51.1.el8_10.x86_64                            
+
+Complete!</pre>
+</div>
+
+<div class="host-block">
+<h2>Host: SRV-APP-PROXY</h2>
+<ul>
+  <li><b>Virtualización:</b> microsoft</li>
+  <li><b>Sistema Operativo:</b> Red Hat Enterprise Linux 9.5 (Plow)</li>
+  <li><b>Kernel:</b> Linux 5.14.0-503.11.1.el9_5.x86_64</li>
+  <li><b>Arquitectura:</b> x86-64</li>
+</ul>
+
+<h3>Información Memoria</h3>
+<pre>=== Informacion de memoria ===
+               total        used        free      shared  buff/cache   available
+Mem:           3.6Gi       528Mi       2.7Gi        16Mi       562Mi       3.0Gi
+Swap:          7.5Gi          0B       7.5Gi</pre>
+<p>Memoria okey</p>
+
+<h3>Información espacio Disco</h3>
+<pre>Correcto Todos los fylesystems estan por debajo del 85%</pre>
+
+<h3>Información Red </h3>
+<pre>GENERAL.DEVICE:                         eth0
+GENERAL.TYPE:                           ethernet
+GENERAL.STATE:                          100 (connected)
+IP4.ADDRESS[1]:                         172.16.24.50/22
+
+GENERAL.DEVICE:                         lo
+GENERAL.TYPE:                           loopback
+GENERAL.STATE:                          100 (connected (externally))
+IP4.ADDRESS[1]:                         127.0.0.1/8</pre>
+
+<h3>Actualizaciones de seguridad</h3>
+<pre>Updating Subscription Management repositories.
+Last metadata expiration check: 0:46:02 ago on Fri 14 Nov 2025 03:20:21 PM EST.
+RHSA-2025:0377  Moderate/Sec.  NetworkManager-1:1.48.10-5.el9_5.x86_64
+RHSA-2025:0377  Moderate/Sec.  NetworkManager-libnm-1:1.48.10-5.el9_5.x86_64
+RHSA-2025:0377  Moderate/Sec.  NetworkManager-team-1:1.48.10-5.el9_5.x86_64
+RHSA-2025:0377  Moderate/Sec.  NetworkManager-tui-1:1.48.10-5.el9_5.x86_64
+RHSA-2025:19951 Important/Sec. bind-libs-32:9.16.23-31.el9_6.2.x86_64
+RHSA-2025:21110 Important/Sec. bind-libs-32:9.16.23-34.el9_7.1.x86_64
+RHSA-2025:19951 Important/Sec. bind-license-32:9.16.23-31.el9_6.2.noarch
+RHSA-2025:21110 Important/Sec. bind-license-32:9.16.23-34.el9_7.1.noarch
+RHSA-2025:19951 Important/Sec. bind-utils-32:9.16.23-31.el9_6.2.x86_64
+RHSA-2025:21110 Important/Sec. bind-utils-32:9.16.23-34.el9_7.1.x86_64
+RHSA-2025:0925  Moderate/Sec.  bzip2-libs-1.0.8-10.el9_5.x86_64
+RHSA-2024:9541  Moderate/Sec.  expat-2.5.0-3.el9_5.1.x86_64
+RHSA-2025:3531  Moderate/Sec.  expat-2.5.0-3.el9_5.3.x86_64
+RHSA-2025:7444  Moderate/Sec.  expat-2.5.0-5.el9_6.x86_64
+RHSA-2025:11140 Moderate/Sec.  glib2-2.68.4-16.el9_6.2.x86_64
+RHSA-2025:4244  Moderate/Sec.  glibc-2.34-125.el9_5.8.x86_64
+RHSA-2025:8655  Moderate/Sec.  glibc-2.34-168.el9_6.19.x86_64
+RHSA-2025:9877  Moderate/Sec.  glibc-2.34-168.el9_6.20.x86_64
+RHSA-2025:12748 Moderate/Sec.  glibc-2.34-168.el9_6.23.x86_64
+RHSA-2025:4244  Moderate/Sec.  glibc-common-2.34-125.el9_5.8.x86_64
+RHSA-2025:8655  Moderate/Sec.  glibc-common-2.34-168.el9_6.19.x86_64
+RHSA-2025:9877  Moderate/Sec.  glibc-common-2.34-168.el9_6.20.x86_64
+RHSA-2025:12748 Moderate/Sec.  glibc-common-2.34-168.el9_6.23.x86_64
+RHSA-2025:4244  Moderate/Sec.  glibc-gconv-extra-2.34-125.el9_5.8.x86_64
+RHSA-2025:8655  Moderate/Sec.  glibc-gconv-extra-2.34-168.el9_6.19.x86_64
+RHSA-2025:9877  Moderate/Sec.  glibc-gconv-extra-2.34-168.el9_6.20.x86_64
+RHSA-2025:12748 Moderate/Sec.  glibc-gconv-extra-2.34-168.el9_6.23.x86_64
+RHSA-2025:4244  Moderate/Sec.  glibc-langpack-en-2.34-125.el9_5.8.x86_64
+RHSA-2025:8655  Moderate/Sec.  glibc-langpack-en-2.34-168.el9_6.19.x86_64
+RHSA-2025:9877  Moderate/Sec.  glibc-langpack-en-2.34-168.el9_6.20.x86_64
+RHSA-2025:12748 Moderate/Sec.  glibc-langpack-en-2.34-168.el9_6.23.x86_64
+RHSA-2025:7076  Moderate/Sec.  gnutls-3.8.3-6.el9.x86_64
+RHSA-2025:16116 Moderate/Sec.  gnutls-3.8.3-6.el9_6.2.x86_64
+RHSA-2025:6990  Moderate/Sec.  grub2-common-1:2.06-104.el9_6.noarch
+RHSA-2025:20532 Moderate/Sec.  grub2-common-1:2.06-114.el9_7.noarch
+RHSA-2025:2867  Important/Sec. grub2-common-1:2.06-94.el9_5.noarch
+RHSA-2025:6990  Moderate/Sec.  grub2-pc-1:2.06-104.el9_6.x86_64
+RHSA-2025:20532 Moderate/Sec.  grub2-pc-1:2.06-114.el9_7.x86_64
+RHSA-2025:2867  Important/Sec. grub2-pc-1:2.06-94.el9_5.x86_64
+RHSA-2025:6990  Moderate/Sec.  grub2-pc-modules-1:2.06-104.el9_6.noarch
+RHSA-2025:20532 Moderate/Sec.  grub2-pc-modules-1:2.06-114.el9_7.noarch
+RHSA-2025:2867  Important/Sec. grub2-pc-modules-1:2.06-94.el9_5.noarch
+RHSA-2025:6990  Moderate/Sec.  grub2-tools-1:2.06-104.el9_6.x86_64
+RHSA-2025:20532 Moderate/Sec.  grub2-tools-1:2.06-114.el9_7.x86_64
+RHSA-2025:2867  Important/Sec. grub2-tools-1:2.06-94.el9_5.x86_64
+RHSA-2025:6990  Moderate/Sec.  grub2-tools-minimal-1:2.06-104.el9_6.x86_64
+RHSA-2025:20532 Moderate/Sec.  grub2-tools-minimal-1:2.06-114.el9_7.x86_64
+RHSA-2025:2867  Important/Sec. grub2-tools-minimal-1:2.06-94.el9_5.x86_64
+RHSA-2025:9432  Moderate/Sec.  iputils-20210202-11.el9_6.1.x86_64
+RHSA-2025:17558 Moderate/Sec.  iputils-20210202-11.el9_6.3.x86_64
+RHSA-2025:10585 Moderate/Sec.  jq-1.6-17.el9_6.2.x86_64
+RHSA-2024:9605  Moderate/Sec.  kernel-5.14.0-503.14.1.el9_5.x86_64
+RHSA-2024:10274 Moderate/Sec.  kernel-5.14.0-503.15.1.el9_5.x86_64
+RHSA-2024:10939 Moderate/Sec.  kernel-5.14.0-503.16.1.el9_5.x86_64
+RHSA-2024:11486 Moderate/Sec.  kernel-5.14.0-503.19.1.el9_5.x86_64
+RHSA-2025:0059  Important/Sec. kernel-5.14.0-503.21.1.el9_5.x86_64
+RHSA-2025:0578  Moderate/Sec.  kernel-5.14.0-503.22.1.el9_5.x86_64
+RHSA-2025:1262  Important/Sec. kernel-5.14.0-503.23.2.el9_5.x86_64
+RHSA-2025:1659  Moderate/Sec.  kernel-5.14.0-503.26.1.el9_5.x86_64
+RHSA-2025:2627  Important/Sec. kernel-5.14.0-503.31.1.el9_5.x86_64
+RHSA-2025:3208  Important/Sec. kernel-5.14.0-503.34.1.el9_5.x86_64
+RHSA-2025:3506  Moderate/Sec.  kernel-5.14.0-503.35.1.el9_5.x86_64
+RHSA-2025:3937  Moderate/Sec.  kernel-5.14.0-503.38.1.el9_5.x86_64
+RHSA-2025:4341  Important/Sec. kernel-5.14.0-503.40.1.el9_5.x86_64
+RHSA-2025:6966  Moderate/Sec.  kernel-5.14.0-570.12.1.el9_6.x86_64
+RHSA-2025:7423  Important/Sec. kernel-5.14.0-570.16.1.el9_6.x86_64
+RHSA-2025:7903  Important/Sec. kernel-5.14.0-570.17.1.el9_6.x86_64
+RHSA-2025:8142  Moderate/Sec.  kernel-5.14.0-570.18.1.el9_6.x86_64
+RHSA-2025:8333  Moderate/Sec.  kernel-5.14.0-570.19.1.el9_6.x86_64
+RHSA-2025:8643  Important/Sec. kernel-5.14.0-570.21.1.el9_6.x86_64
+RHSA-2025:9080  Important/Sec. kernel-5.14.0-570.22.1.el9_6.x86_64
+RHSA-2025:9302  Moderate/Sec.  kernel-5.14.0-570.23.1.el9_6.x86_64
+RHSA-2025:9880  Moderate/Sec.  kernel-5.14.0-570.24.1.el9_6.x86_64
+RHSA-2025:10379 Important/Sec. kernel-5.14.0-570.25.1.el9_6.x86_64
+RHSA-2025:10837 Moderate/Sec.  kernel-5.14.0-570.26.1.el9_6.x86_64
+RHSA-2025:11411 Important/Sec. kernel-5.14.0-570.28.1.el9_6.x86_64
+RHSA-2025:11861 Moderate/Sec.  kernel-5.14.0-570.30.1.el9_6.x86_64
+RHSA-2025:12746 Important/Sec. kernel-5.14.0-570.32.1.el9_6.x86_64
+RHSA-2025:13602 Moderate/Sec.  kernel-5.14.0-570.33.2.el9_6.x86_64
+RHSA-2025:13962 Important/Sec. kernel-5.14.0-570.35.1.el9_6.x86_64
+RHSA-2025:14420 Important/Sec. kernel-5.14.0-570.37.1.el9_6.x86_64
+RHSA-2025:15011 Important/Sec. kernel-5.14.0-570.39.1.el9_6.x86_64
+RHSA-2025:15429 Important/Sec. kernel-5.14.0-570.41.1.el9_6.x86_64
+RHSA-2025:15661 Important/Sec. kernel-5.14.0-570.42.2.el9_6.x86_64
+RHSA-2025:15740 Moderate/Sec.  kernel-5.14.0-570.44.1.el9_6.x86_64
+RHSA-2025:16398 Moderate/Sec.  kernel-5.14.0-570.46.1.el9_6.x86_64
+RHSA-2025:16880 Moderate/Sec.  kernel-5.14.0-570.49.1.el9_6.x86_64
+RHSA-2025:17377 Moderate/Sec.  kernel-5.14.0-570.51.1.el9_6.x86_64
+RHSA-2025:17760 Moderate/Sec.  kernel-5.14.0-570.52.1.el9_6.x86_64
+RHSA-2025:18281 Moderate/Sec.  kernel-5.14.0-570.55.1.el9_6.x86_64
+RHSA-2025:19105 Moderate/Sec.  kernel-5.14.0-570.58.1.el9_6.x86_64
+RHSA-2025:19409 Moderate/Sec.  kernel-5.14.0-570.60.1.el9_6.x86_64
+RHSA-2025:19930 Moderate/Sec.  kernel-5.14.0-570.62.1.el9_6.x86_64
+RHSA-2025:20518 Moderate/Sec.  kernel-5.14.0-611.5.1.el9_7.x86_64
+RHSA-2025:21112 Moderate/Sec.  kernel-5.14.0-611.7.1.el9_7.x86_64
+RHSA-2024:9605  Moderate/Sec.  kernel-core-5.14.0-503.14.1.el9_5.x86_64
+RHSA-2024:10274 Moderate/Sec.  kernel-core-5.14.0-503.15.1.el9_5.x86_64
+RHSA-2024:10939 Moderate/Sec.  kernel-core-5.14.0-503.16.1.el9_5.x86_64
+RHSA-2024:11486 Moderate/Sec.  kernel-core-5.14.0-503.19.1.el9_5.x86_64
+RHSA-2025:0059  Important/Sec. kernel-core-5.14.0-503.21.1.el9_5.x86_64
+RHSA-2025:0578  Moderate/Sec.  kernel-core-5.14.0-503.22.1.el9_5.x86_64
+RHSA-2025:1262  Important/Sec. kernel-core-5.14.0-503.23.2.el9_5.x86_64
+RHSA-2025:1659  Moderate/Sec.  kernel-core-5.14.0-503.26.1.el9_5.x86_64
+RHSA-2025:2627  Important/Sec. kernel-core-5.14.0-503.31.1.el9_5.x86_64
+RHSA-2025:3208  Important/Sec. kernel-core-5.14.0-503.34.1.el9_5.x86_64
+RHSA-2025:3506  Moderate/Sec.  kernel-core-5.14.0-503.35.1.el9_5.x86_64
+RHSA-2025:3937  Moderate/Sec.  kernel-core-5.14.0-503.38.1.el9_5.x86_64
+RHSA-2025:4341  Important/Sec. kernel-core-5.14.0-503.40.1.el9_5.x86_64
+RHSA-2025:6966  Moderate/Sec.  kernel-core-5.14.0-570.12.1.el9_6.x86_64
+RHSA-2025:7423  Important/Sec. kernel-core-5.14.0-570.16.1.el9_6.x86_64
+RHSA-2025:7903  Important/Sec. kernel-core-5.14.0-570.17.1.el9_6.x86_64
+RHSA-2025:8142  Moderate/Sec.  kernel-core-5.14.0-570.18.1.el9_6.x86_64
+RHSA-2025:8333  Moderate/Sec.  kernel-core-5.14.0-570.19.1.el9_6.x86_64
+RHSA-2025:8643  Important/Sec. kernel-core-5.14.0-570.21.1.el9_6.x86_64
+RHSA-2025:9080  Important/Sec. kernel-core-5.14.0-570.22.1.el9_6.x86_64
+RHSA-2025:9302  Moderate/Sec.  kernel-core-5.14.0-570.23.1.el9_6.x86_64
+RHSA-2025:9880  Moderate/Sec.  kernel-core-5.14.0-570.24.1.el9_6.x86_64
+RHSA-2025:10379 Important/Sec. kernel-core-5.14.0-570.25.1.el9_6.x86_64
+RHSA-2025:10837 Moderate/Sec.  kernel-core-5.14.0-570.26.1.el9_6.x86_64
+RHSA-2025:11411 Important/Sec. kernel-core-5.14.0-570.28.1.el9_6.x86_64
+RHSA-2025:11861 Moderate/Sec.  kernel-core-5.14.0-570.30.1.el9_6.x86_64
+RHSA-2025:12746 Important/Sec. kernel-core-5.14.0-570.32.1.el9_6.x86_64
+RHSA-2025:13602 Moderate/Sec.  kernel-core-5.14.0-570.33.2.el9_6.x86_64
+RHSA-2025:13962 Important/Sec. kernel-core-5.14.0-570.35.1.el9_6.x86_64
+RHSA-2025:14420 Important/Sec. kernel-core-5.14.0-570.37.1.el9_6.x86_64
+RHSA-2025:15011 Important/Sec. kernel-core-5.14.0-570.39.1.el9_6.x86_64
+RHSA-2025:15429 Important/Sec. kernel-core-5.14.0-570.41.1.el9_6.x86_64
+RHSA-2025:15661 Important/Sec. kernel-core-5.14.0-570.42.2.el9_6.x86_64
+RHSA-2025:15740 Moderate/Sec.  kernel-core-5.14.0-570.44.1.el9_6.x86_64
+RHSA-2025:16398 Moderate/Sec.  kernel-core-5.14.0-570.46.1.el9_6.x86_64
+RHSA-2025:16880 Moderate/Sec.  kernel-core-5.14.0-570.49.1.el9_6.x86_64
+RHSA-2025:17377 Moderate/Sec.  kernel-core-5.14.0-570.51.1.el9_6.x86_64
+RHSA-2025:17760 Moderate/Sec.  kernel-core-5.14.0-570.52.1.el9_6.x86_64
+RHSA-2025:18281 Moderate/Sec.  kernel-core-5.14.0-570.55.1.el9_6.x86_64
+RHSA-2025:19105 Moderate/Sec.  kernel-core-5.14.0-570.58.1.el9_6.x86_64
+RHSA-2025:19409 Moderate/Sec.  kernel-core-5.14.0-570.60.1.el9_6.x86_64
+RHSA-2025:19930 Moderate/Sec.  kernel-core-5.14.0-570.62.1.el9_6.x86_64
+RHSA-2025:20518 Moderate/Sec.  kernel-core-5.14.0-611.5.1.el9_7.x86_64
+RHSA-2025:21112 Moderate/Sec.  kernel-core-5.14.0-611.7.1.el9_7.x86_64
+RHSA-2024:9605  Moderate/Sec.  kernel-modules-5.14.0-503.14.1.el9_5.x86_64
+RHSA-2024:10274 Moderate/Sec.  kernel-modules-5.14.0-503.15.1.el9_5.x86_64
+RHSA-2024:10939 Moderate/Sec.  kernel-modules-5.14.0-503.16.1.el9_5.x86_64
+RHSA-2024:11486 Moderate/Sec.  kernel-modules-5.14.0-503.19.1.el9_5.x86_64
+RHSA-2025:0059  Important/Sec. kernel-modules-5.14.0-503.21.1.el9_5.x86_64
+RHSA-2025:0578  Moderate/Sec.  kernel-modules-5.14.0-503.22.1.el9_5.x86_64
+RHSA-2025:1262  Important/Sec. kernel-modules-5.14.0-503.23.2.el9_5.x86_64
+RHSA-2025:1659  Moderate/Sec.  kernel-modules-5.14.0-503.26.1.el9_5.x86_64
+RHSA-2025:2627  Important/Sec. kernel-modules-5.14.0-503.31.1.el9_5.x86_64
+RHSA-2025:3208  Important/Sec. kernel-modules-5.14.0-503.34.1.el9_5.x86_64
+RHSA-2025:3506  Moderate/Sec.  kernel-modules-5.14.0-503.35.1.el9_5.x86_64
+RHSA-2025:3937  Moderate/Sec.  kernel-modules-5.14.0-503.38.1.el9_5.x86_64
+RHSA-2025:4341  Important/Sec. kernel-modules-5.14.0-503.40.1.el9_5.x86_64
+RHSA-2025:6966  Moderate/Sec.  kernel-modules-5.14.0-570.12.1.el9_6.x86_64
+RHSA-2025:7423  Important/Sec. kernel-modules-5.14.0-570.16.1.el9_6.x86_64
+RHSA-2025:7903  Important/Sec. kernel-modules-5.14.0-570.17.1.el9_6.x86_64
+RHSA-2025:8142  Moderate/Sec.  kernel-modules-5.14.0-570.18.1.el9_6.x86_64
+RHSA-2025:8333  Moderate/Sec.  kernel-modules-5.14.0-570.19.1.el9_6.x86_64
+RHSA-2025:8643  Important/Sec. kernel-modules-5.14.0-570.21.1.el9_6.x86_64
+RHSA-2025:9080  Important/Sec. kernel-modules-5.14.0-570.22.1.el9_6.x86_64
+RHSA-2025:9302  Moderate/Sec.  kernel-modules-5.14.0-570.23.1.el9_6.x86_64
+RHSA-2025:9880  Moderate/Sec.  kernel-modules-5.14.0-570.24.1.el9_6.x86_64
+RHSA-2025:10379 Important/Sec. kernel-modules-5.14.0-570.25.1.el9_6.x86_64
+RHSA-2025:10837 Moderate/Sec.  kernel-modules-5.14.0-570.26.1.el9_6.x86_64
+RHSA-2025:11411 Important/Sec. kernel-modules-5.14.0-570.28.1.el9_6.x86_64
+RHSA-2025:11861 Moderate/Sec.  kernel-modules-5.14.0-570.30.1.el9_6.x86_64
+RHSA-2025:12746 Important/Sec. kernel-modules-5.14.0-570.32.1.el9_6.x86_64
+RHSA-2025:13602 Moderate/Sec.  kernel-modules-5.14.0-570.33.2.el9_6.x86_64
+RHSA-2025:13962 Important/Sec. kernel-modules-5.14.0-570.35.1.el9_6.x86_64
+RHSA-2025:14420 Important/Sec. kernel-modules-5.14.0-570.37.1.el9_6.x86_64
+RHSA-2025:15011 Important/Sec. kernel-modules-5.14.0-570.39.1.el9_6.x86_64
+RHSA-2025:15429 Important/Sec. kernel-modules-5.14.0-570.41.1.el9_6.x86_64
+RHSA-2025:15661 Important/Sec. kernel-modules-5.14.0-570.42.2.el9_6.x86_64
+RHSA-2025:15740 Moderate/Sec.  kernel-modules-5.14.0-570.44.1.el9_6.x86_64
+RHSA-2025:16398 Moderate/Sec.  kernel-modules-5.14.0-570.46.1.el9_6.x86_64
+RHSA-2025:16880 Moderate/Sec.  kernel-modules-5.14.0-570.49.1.el9_6.x86_64
+RHSA-2025:17377 Moderate/Sec.  kernel-modules-5.14.0-570.51.1.el9_6.x86_64
+RHSA-2025:17760 Moderate/Sec.  kernel-modules-5.14.0-570.52.1.el9_6.x86_64
+RHSA-2025:18281 Moderate/Sec.  kernel-modules-5.14.0-570.55.1.el9_6.x86_64
+RHSA-2025:19105 Moderate/Sec.  kernel-modules-5.14.0-570.58.1.el9_6.x86_64
+RHSA-2025:19409 Moderate/Sec.  kernel-modules-5.14.0-570.60.1.el9_6.x86_64
+RHSA-2025:19930 Moderate/Sec.  kernel-modules-5.14.0-570.62.1.el9_6.x86_64
+RHSA-2025:20518 Moderate/Sec.  kernel-modules-5.14.0-611.5.1.el9_7.x86_64
+RHSA-2025:21112 Moderate/Sec.  kernel-modules-5.14.0-611.7.1.el9_7.x86_64
+RHSA-2024:9605  Moderate/Sec.  kernel-modules-core-5.14.0-503.14.1.el9_5.x86_64
+RHSA-2024:10274 Moderate/Sec.  kernel-modules-core-5.14.0-503.15.1.el9_5.x86_64
+RHSA-2024:10939 Moderate/Sec.  kernel-modules-core-5.14.0-503.16.1.el9_5.x86_64
+RHSA-2024:11486 Moderate/Sec.  kernel-modules-core-5.14.0-503.19.1.el9_5.x86_64
+RHSA-2025:0059  Important/Sec. kernel-modules-core-5.14.0-503.21.1.el9_5.x86_64
+RHSA-2025:0578  Moderate/Sec.  kernel-modules-core-5.14.0-503.22.1.el9_5.x86_64
+RHSA-2025:1262  Important/Sec. kernel-modules-core-5.14.0-503.23.2.el9_5.x86_64
+RHSA-2025:1659  Moderate/Sec.  kernel-modules-core-5.14.0-503.26.1.el9_5.x86_64
+RHSA-2025:2627  Important/Sec. kernel-modules-core-5.14.0-503.31.1.el9_5.x86_64
+RHSA-2025:3208  Important/Sec. kernel-modules-core-5.14.0-503.34.1.el9_5.x86_64
+RHSA-2025:3506  Moderate/Sec.  kernel-modules-core-5.14.0-503.35.1.el9_5.x86_64
+RHSA-2025:3937  Moderate/Sec.  kernel-modules-core-5.14.0-503.38.1.el9_5.x86_64
+RHSA-2025:4341  Important/Sec. kernel-modules-core-5.14.0-503.40.1.el9_5.x86_64
+RHSA-2025:6966  Moderate/Sec.  kernel-modules-core-5.14.0-570.12.1.el9_6.x86_64
+RHSA-2025:7423  Important/Sec. kernel-modules-core-5.14.0-570.16.1.el9_6.x86_64
+RHSA-2025:7903  Important/Sec. kernel-modules-core-5.14.0-570.17.1.el9_6.x86_64
+RHSA-2025:8142  Moderate/Sec.  kernel-modules-core-5.14.0-570.18.1.el9_6.x86_64
+RHSA-2025:8333  Moderate/Sec.  kernel-modules-core-5.14.0-570.19.1.el9_6.x86_64
+RHSA-2025:8643  Important/Sec. kernel-modules-core-5.14.0-570.21.1.el9_6.x86_64
+RHSA-2025:9080  Important/Sec. kernel-modules-core-5.14.0-570.22.1.el9_6.x86_64
+RHSA-2025:9302  Moderate/Sec.  kernel-modules-core-5.14.0-570.23.1.el9_6.x86_64
+RHSA-2025:9880  Moderate/Sec.  kernel-modules-core-5.14.0-570.24.1.el9_6.x86_64
+RHSA-2025:10379 Important/Sec. kernel-modules-core-5.14.0-570.25.1.el9_6.x86_64
+RHSA-2025:10837 Moderate/Sec.  kernel-modules-core-5.14.0-570.26.1.el9_6.x86_64
+RHSA-2025:11411 Important/Sec. kernel-modules-core-5.14.0-570.28.1.el9_6.x86_64
+RHSA-2025:11861 Moderate/Sec.  kernel-modules-core-5.14.0-570.30.1.el9_6.x86_64
+RHSA-2025:12746 Important/Sec. kernel-modules-core-5.14.0-570.32.1.el9_6.x86_64
+RHSA-2025:13602 Moderate/Sec.  kernel-modules-core-5.14.0-570.33.2.el9_6.x86_64
+RHSA-2025:13962 Important/Sec. kernel-modules-core-5.14.0-570.35.1.el9_6.x86_64
+RHSA-2025:14420 Important/Sec. kernel-modules-core-5.14.0-570.37.1.el9_6.x86_64
+RHSA-2025:15011 Important/Sec. kernel-modules-core-5.14.0-570.39.1.el9_6.x86_64
+RHSA-2025:15429 Important/Sec. kernel-modules-core-5.14.0-570.41.1.el9_6.x86_64
+RHSA-2025:15661 Important/Sec. kernel-modules-core-5.14.0-570.42.2.el9_6.x86_64
+RHSA-2025:15740 Moderate/Sec.  kernel-modules-core-5.14.0-570.44.1.el9_6.x86_64
+RHSA-2025:16398 Moderate/Sec.  kernel-modules-core-5.14.0-570.46.1.el9_6.x86_64
+RHSA-2025:16880 Moderate/Sec.  kernel-modules-core-5.14.0-570.49.1.el9_6.x86_64
+RHSA-2025:17377 Moderate/Sec.  kernel-modules-core-5.14.0-570.51.1.el9_6.x86_64
+RHSA-2025:17760 Moderate/Sec.  kernel-modules-core-5.14.0-570.52.1.el9_6.x86_64
+RHSA-2025:18281 Moderate/Sec.  kernel-modules-core-5.14.0-570.55.1.el9_6.x86_64
+RHSA-2025:19105 Moderate/Sec.  kernel-modules-core-5.14.0-570.58.1.el9_6.x86_64
+RHSA-2025:19409 Moderate/Sec.  kernel-modules-core-5.14.0-570.60.1.el9_6.x86_64
+RHSA-2025:19930 Moderate/Sec.  kernel-modules-core-5.14.0-570.62.1.el9_6.x86_64
+RHSA-2025:20518 Moderate/Sec.  kernel-modules-core-5.14.0-611.5.1.el9_7.x86_64
+RHSA-2025:21112 Moderate/Sec.  kernel-modules-core-5.14.0-611.7.1.el9_7.x86_64
+RHSA-2024:9605  Moderate/Sec.  kernel-tools-5.14.0-503.14.1.el9_5.x86_64
+RHSA-2024:10274 Moderate/Sec.  kernel-tools-5.14.0-503.15.1.el9_5.x86_64
+RHSA-2024:10939 Moderate/Sec.  kernel-tools-5.14.0-503.16.1.el9_5.x86_64
+RHSA-2024:11486 Moderate/Sec.  kernel-tools-5.14.0-503.19.1.el9_5.x86_64
+RHSA-2025:0059  Important/Sec. kernel-tools-5.14.0-503.21.1.el9_5.x86_64
+RHSA-2025:0578  Moderate/Sec.  kernel-tools-5.14.0-503.22.1.el9_5.x86_64
+RHSA-2025:1262  Important/Sec. kernel-tools-5.14.0-503.23.2.el9_5.x86_64
+RHSA-2025:1659  Moderate/Sec.  kernel-tools-5.14.0-503.26.1.el9_5.x86_64
+RHSA-2025:2627  Important/Sec. kernel-tools-5.14.0-503.31.1.el9_5.x86_64
+RHSA-2025:3208  Important/Sec. kernel-tools-5.14.0-503.34.1.el9_5.x86_64
+RHSA-2025:3506  Moderate/Sec.  kernel-tools-5.14.0-503.35.1.el9_5.x86_64
+RHSA-2025:3937  Moderate/Sec.  kernel-tools-5.14.0-503.38.1.el9_5.x86_64
+RHSA-2025:4341  Important/Sec. kernel-tools-5.14.0-503.40.1.el9_5.x86_64
+RHSA-2025:6966  Moderate/Sec.  kernel-tools-5.14.0-570.12.1.el9_6.x86_64
+RHSA-2025:7423  Important/Sec. kernel-tools-5.14.0-570.16.1.el9_6.x86_64
+RHSA-2025:7903  Important/Sec. kernel-tools-5.14.0-570.17.1.el9_6.x86_64
+RHSA-2025:8142  Moderate/Sec.  kernel-tools-5.14.0-570.18.1.el9_6.x86_64
+RHSA-2025:8333  Moderate/Sec.  kernel-tools-5.14.0-570.19.1.el9_6.x86_64
+RHSA-2025:8643  Important/Sec. kernel-tools-5.14.0-570.21.1.el9_6.x86_64
+RHSA-2025:9080  Important/Sec. kernel-tools-5.14.0-570.22.1.el9_6.x86_64
+RHSA-2025:9302  Moderate/Sec.  kernel-tools-5.14.0-570.23.1.el9_6.x86_64
+RHSA-2025:9880  Moderate/Sec.  kernel-tools-5.14.0-570.24.1.el9_6.x86_64
+RHSA-2025:10379 Important/Sec. kernel-tools-5.14.0-570.25.1.el9_6.x86_64
+RHSA-2025:10837 Moderate/Sec.  kernel-tools-5.14.0-570.26.1.el9_6.x86_64
+RHSA-2025:11411 Important/Sec. kernel-tools-5.14.0-570.28.1.el9_6.x86_64
+RHSA-2025:11861 Moderate/Sec.  kernel-tools-5.14.0-570.30.1.el9_6.x86_64
+RHSA-2025:12746 Important/Sec. kernel-tools-5.14.0-570.32.1.el9_6.x86_64
+RHSA-2025:13602 Moderate/Sec.  kernel-tools-5.14.0-570.33.2.el9_6.x86_64
+RHSA-2025:13962 Important/Sec. kernel-tools-5.14.0-570.35.1.el9_6.x86_64
+RHSA-2025:14420 Important/Sec. kernel-tools-5.14.0-570.37.1.el9_6.x86_64
+RHSA-2025:15011 Important/Sec. kernel-tools-5.14.0-570.39.1.el9_6.x86_64
+RHSA-2025:15429 Important/Sec. kernel-tools-5.14.0-570.41.1.el9_6.x86_64
+RHSA-2025:15661 Important/Sec. kernel-tools-5.14.0-570.42.2.el9_6.x86_64
+RHSA-2025:15740 Moderate/Sec.  kernel-tools-5.14.0-570.44.1.el9_6.x86_64
+RHSA-2025:16398 Moderate/Sec.  kernel-tools-5.14.0-570.46.1.el9_6.x86_64
+RHSA-2025:16880 Moderate/Sec.  kernel-tools-5.14.0-570.49.1.el9_6.x86_64
+RHSA-2025:17377 Moderate/Sec.  kernel-tools-5.14.0-570.51.1.el9_6.x86_64
+RHSA-2025:17760 Moderate/Sec.  kernel-tools-5.14.0-570.52.1.el9_6.x86_64
+RHSA-2025:18281 Moderate/Sec.  kernel-tools-5.14.0-570.55.1.el9_6.x86_64
+RHSA-2025:19105 Moderate/Sec.  kernel-tools-5.14.0-570.58.1.el9_6.x86_64
+RHSA-2025:19409 Moderate/Sec.  kernel-tools-5.14.0-570.60.1.el9_6.x86_64
+RHSA-2025:19930 Moderate/Sec.  kernel-tools-5.14.0-570.62.1.el9_6.x86_64
+RHSA-2025:20518 Moderate/Sec.  kernel-tools-5.14.0-611.5.1.el9_7.x86_64
+RHSA-2025:21112 Moderate/Sec.  kernel-tools-5.14.0-611.7.1.el9_7.x86_64
+RHSA-2024:9605  Moderate/Sec.  kernel-tools-libs-5.14.0-503.14.1.el9_5.x86_64
+RHSA-2024:10274 Moderate/Sec.  kernel-tools-libs-5.14.0-503.15.1.el9_5.x86_64
+RHSA-2024:10939 Moderate/Sec.  kernel-tools-libs-5.14.0-503.16.1.el9_5.x86_64
+RHSA-2024:11486 Moderate/Sec.  kernel-tools-libs-5.14.0-503.19.1.el9_5.x86_64
+RHSA-2025:0059  Important/Sec. kernel-tools-libs-5.14.0-503.21.1.el9_5.x86_64
+RHSA-2025:0578  Moderate/Sec.  kernel-tools-libs-5.14.0-503.22.1.el9_5.x86_64
+RHSA-2025:1262  Important/Sec. kernel-tools-libs-5.14.0-503.23.2.el9_5.x86_64
+RHSA-2025:1659  Moderate/Sec.  kernel-tools-libs-5.14.0-503.26.1.el9_5.x86_64
+RHSA-2025:2627  Important/Sec. kernel-tools-libs-5.14.0-503.31.1.el9_5.x86_64
+RHSA-2025:3208  Important/Sec. kernel-tools-libs-5.14.0-503.34.1.el9_5.x86_64
+RHSA-2025:3506  Moderate/Sec.  kernel-tools-libs-5.14.0-503.35.1.el9_5.x86_64
+RHSA-2025:3937  Moderate/Sec.  kernel-tools-libs-5.14.0-503.38.1.el9_5.x86_64
+RHSA-2025:4341  Important/Sec. kernel-tools-libs-5.14.0-503.40.1.el9_5.x86_64
+RHSA-2025:6966  Moderate/Sec.  kernel-tools-libs-5.14.0-570.12.1.el9_6.x86_64
+RHSA-2025:7423  Important/Sec. kernel-tools-libs-5.14.0-570.16.1.el9_6.x86_64
+RHSA-2025:7903  Important/Sec. kernel-tools-libs-5.14.0-570.17.1.el9_6.x86_64
+RHSA-2025:8142  Moderate/Sec.  kernel-tools-libs-5.14.0-570.18.1.el9_6.x86_64
+RHSA-2025:8333  Moderate/Sec.  kernel-tools-libs-5.14.0-570.19.1.el9_6.x86_64
+RHSA-2025:8643  Important/Sec. kernel-tools-libs-5.14.0-570.21.1.el9_6.x86_64
+RHSA-2025:9080  Important/Sec. kernel-tools-libs-5.14.0-570.22.1.el9_6.x86_64
+RHSA-2025:9302  Moderate/Sec.  kernel-tools-libs-5.14.0-570.23.1.el9_6.x86_64
+RHSA-2025:9880  Moderate/Sec.  kernel-tools-libs-5.14.0-570.24.1.el9_6.x86_64
+RHSA-2025:10379 Important/Sec. kernel-tools-libs-5.14.0-570.25.1.el9_6.x86_64
+RHSA-2025:10837 Moderate/Sec.  kernel-tools-libs-5.14.0-570.26.1.el9_6.x86_64
+RHSA-2025:11411 Important/Sec. kernel-tools-libs-5.14.0-570.28.1.el9_6.x86_64
+RHSA-2025:11861 Moderate/Sec.  kernel-tools-libs-5.14.0-570.30.1.el9_6.x86_64
+RHSA-2025:12746 Important/Sec. kernel-tools-libs-5.14.0-570.32.1.el9_6.x86_64
+RHSA-2025:13602 Moderate/Sec.  kernel-tools-libs-5.14.0-570.33.2.el9_6.x86_64
+RHSA-2025:13962 Important/Sec. kernel-tools-libs-5.14.0-570.35.1.el9_6.x86_64
+RHSA-2025:14420 Important/Sec. kernel-tools-libs-5.14.0-570.37.1.el9_6.x86_64
+RHSA-2025:15011 Important/Sec. kernel-tools-libs-5.14.0-570.39.1.el9_6.x86_64
+RHSA-2025:15429 Important/Sec. kernel-tools-libs-5.14.0-570.41.1.el9_6.x86_64
+RHSA-2025:15661 Important/Sec. kernel-tools-libs-5.14.0-570.42.2.el9_6.x86_64
+RHSA-2025:15740 Moderate/Sec.  kernel-tools-libs-5.14.0-570.44.1.el9_6.x86_64
+RHSA-2025:16398 Moderate/Sec.  kernel-tools-libs-5.14.0-570.46.1.el9_6.x86_64
+RHSA-2025:16880 Moderate/Sec.  kernel-tools-libs-5.14.0-570.49.1.el9_6.x86_64
+RHSA-2025:17377 Moderate/Sec.  kernel-tools-libs-5.14.0-570.51.1.el9_6.x86_64
+RHSA-2025:17760 Moderate/Sec.  kernel-tools-libs-5.14.0-570.52.1.el9_6.x86_64
+RHSA-2025:18281 Moderate/Sec.  kernel-tools-libs-5.14.0-570.55.1.el9_6.x86_64
+RHSA-2025:19105 Moderate/Sec.  kernel-tools-libs-5.14.0-570.58.1.el9_6.x86_64
+RHSA-2025:19409 Moderate/Sec.  kernel-tools-libs-5.14.0-570.60.1.el9_6.x86_64
+RHSA-2025:19930 Moderate/Sec.  kernel-tools-libs-5.14.0-570.62.1.el9_6.x86_64
+RHSA-2025:20518 Moderate/Sec.  kernel-tools-libs-5.14.0-611.5.1.el9_7.x86_64
+RHSA-2025:21112 Moderate/Sec.  kernel-tools-libs-5.14.0-611.7.1.el9_7.x86_64
+RHSA-2024:9474  Important/Sec. krb5-libs-1.21.1-4.el9_5.x86_64
+RHSA-2025:7067  Moderate/Sec.  krb5-libs-1.21.1-6.el9.x86_64
+RHSA-2025:9430  Moderate/Sec.  krb5-libs-1.21.1-8.el9_6.x86_64
+RHSA-2025:9431  Moderate/Sec.  libarchive-3.5.3-5.el9_6.x86_64
+RHSA-2025:14130 Important/Sec. libarchive-3.5.3-6.el9_6.x86_64
+RHSA-2025:1346  Moderate/Sec.  libgcc-11.5.0-5.el9_5.x86_64
+RHSA-2025:1346  Moderate/Sec.  libgomp-11.5.0-5.el9_5.x86_64
+RHSA-2025:18275 Moderate/Sec.  libssh-0.10.4-15.el9_6.x86_64
+RHSA-2025:20943 Moderate/Sec.  libssh-0.10.4-15.el9_7.x86_64
+RHSA-2025:18275 Moderate/Sec.  libssh-config-0.10.4-15.el9_6.noarch
+RHSA-2025:20943 Moderate/Sec.  libssh-config-0.10.4-15.el9_7.noarch
+RHSA-2025:20954 Important/Sec. libsss_certmap-2.9.7-4.el9_7.1.x86_64
+RHSA-2025:20954 Important/Sec. libsss_idmap-2.9.7-4.el9_7.1.x86_64
+RHSA-2025:20954 Important/Sec. libsss_nss_idmap-2.9.7-4.el9_7.1.x86_64
+RHSA-2025:20954 Important/Sec. libsss_sudo-2.9.7-4.el9_7.1.x86_64
+RHSA-2025:1346  Moderate/Sec.  libstdc++-11.5.0-5.el9_5.x86_64
+RHSA-2025:7077  Moderate/Sec.  libtasn1-4.16.0-9.el9.x86_64
+RHSA-2025:10699 Important/Sec. libxml2-2.9.13-10.el9_6.x86_64
+RHSA-2025:12447 Important/Sec. libxml2-2.9.13-11.el9_6.x86_64
+RHSA-2025:13428 Moderate/Sec.  libxml2-2.9.13-12.el9_6.x86_64
+RHSA-2025:1350  Important/Sec. libxml2-2.9.13-6.el9_5.1.x86_64
+RHSA-2025:2679  Important/Sec. libxml2-2.9.13-6.el9_5.2.x86_64
+RHSA-2025:7043  Moderate/Sec.  microcode_ctl-4:20250211-1.el9_6.noarch
+RHSA-2025:12876 Low/Sec.       ncurses-6.2-10.20210508.el9_6.2.x86_64
+RHSA-2025:12876 Low/Sec.       ncurses-base-6.2-10.20210508.el9_6.2.noarch
+RHSA-2025:12876 Low/Sec.       ncurses-libs-6.2-10.20210508.el9_6.2.x86_64
+RHSA-2025:6993  Moderate/Sec.  openssh-8.7p1-45.el9.x86_64
+RHSA-2025:6993  Moderate/Sec.  openssh-clients-8.7p1-45.el9.x86_64
+RHSA-2025:6993  Moderate/Sec.  openssh-server-8.7p1-45.el9.x86_64
+RHSA-2025:1330  Important/Sec. openssl-1:3.2.2-6.el9_5.1.x86_64
+RHSA-2025:21255 Moderate/Sec.  openssl-1:3.5.1-4.el9_7.x86_64
+RHSA-2025:1330  Important/Sec. openssl-libs-1:3.2.2-6.el9_5.1.x86_64
+RHSA-2025:21255 Moderate/Sec.  openssl-libs-1:3.5.1-4.el9_7.x86_64
+RHSA-2024:11250 Moderate/Sec.  pam-1.5.1-21.el9_5.x86_64
+RHSA-2024:10244 Important/Sec. pam-1.5.1-22.el9_5.x86_64
+RHSA-2025:9526  Important/Sec. pam-1.5.1-25.el9_6.x86_64
+RHSA-2025:15099 Important/Sec. pam-1.5.1-26.el9_6.x86_64
+RHSA-2024:9468  Moderate/Sec.  python-unversioned-command-3.9.19-8.el9_5.1.noarch
+RHSA-2024:10983 Moderate/Sec.  python-unversioned-command-3.9.21-1.el9_5.noarch
+RHSA-2025:6977  Moderate/Sec.  python-unversioned-command-3.9.21-2.el9.noarch
+RHSA-2025:10136 Important/Sec. python-unversioned-command-3.9.21-2.el9_6.1.noarch
+RHSA-2025:15019 Moderate/Sec.  python-unversioned-command-3.9.21-2.el9_6.2.noarch
+RHSA-2024:9468  Moderate/Sec.  python3-3.9.19-8.el9_5.1.x86_64
+RHSA-2024:10983 Moderate/Sec.  python3-3.9.21-1.el9_5.x86_64
+RHSA-2025:6977  Moderate/Sec.  python3-3.9.21-2.el9.x86_64
+RHSA-2025:10136 Important/Sec. python3-3.9.21-2.el9_6.1.x86_64
+RHSA-2025:15019 Moderate/Sec.  python3-3.9.21-2.el9_6.2.x86_64
+RHSA-2024:9468  Moderate/Sec.  python3-libs-3.9.19-8.el9_5.1.x86_64
+RHSA-2024:10983 Moderate/Sec.  python3-libs-3.9.21-1.el9_5.x86_64
+RHSA-2025:6977  Moderate/Sec.  python3-libs-3.9.21-2.el9.x86_64
+RHSA-2025:10136 Important/Sec. python3-libs-3.9.21-2.el9_6.1.x86_64
+RHSA-2025:15019 Moderate/Sec.  python3-libs-3.9.21-2.el9_6.2.x86_64
+RHSA-2025:12519 Moderate/Sec.  python3-requests-2.25.1-10.el9_6.noarch
+RHSA-2025:7049  Moderate/Sec.  python3-requests-2.25.1-9.el9.noarch
+RHSA-2025:10407 Moderate/Sec.  python3-setuptools-53.0.0-13.el9_6.1.noarch
+RHSA-2025:10407 Moderate/Sec.  python3-setuptools-wheel-53.0.0-13.el9_6.1.noarch
+RHSA-2024:10759 Low/Sec.       rhc-1:0.2.5-1.el9_5.x86_64
+RHSA-2025:7326  Moderate/Sec.  rhc-1:0.2.6-3.el9_6.x86_64
+RHSA-2025:20559 Low/Sec.       shadow-utils-2:4.9-15.el9.x86_64
+RHSA-2025:11992 Important/Sec. sqlite-libs-3.34.1-8.el9_6.x86_64
+RHSA-2025:20936 Important/Sec. sqlite-libs-3.34.1-9.el9_7.x86_64
+RHSA-2025:20954 Important/Sec. sssd-client-2.9.7-4.el9_7.1.x86_64
+RHSA-2025:20954 Important/Sec. sssd-common-2.9.7-4.el9_7.1.x86_64
+RHSA-2025:20954 Important/Sec. sssd-kcm-2.9.7-4.el9_7.1.x86_64
+RHSA-2025:9978  Important/Sec. sudo-1.9.5p2-10.el9_6.1.x86_64
+RHSA-2025:17742 Moderate/Sec.  vim-minimal-2:8.2.2637-22.el9_6.1.x86_64
+RHSA-2025:7440  Low/Sec.       vim-minimal-2:8.2.2637-22.el9_6.x86_64
+RHSA-2025:20945 Moderate/Sec.  vim-minimal-2:8.2.2637-23.el9_7.x86_64</pre>
+
+<h3>Aplicación de actualizaciones</h3>
+<pre>Updating Subscription Management repositories.
+Last metadata expiration check: 0:46:05 ago on Fri 14 Nov 2025 03:20:21 PM EST.
+Dependencies resolved.
+===================================================================================================
+ Package                      Arch    Version               Repository                         Size
+===================================================================================================
+Installing:
+ kernel                       x86_64  5.14.0-611.7.1.el9_7  rhel-9-for-x86_64-baseos-rpms     1.1 M
+Upgrading:
+ NetworkManager               x86_64  1:1.54.0-3.el9_7      rhel-9-for-x86_64-baseos-rpms     2.4 M
+ NetworkManager-libnm         x86_64  1:1.54.0-3.el9_7      rhel-9-for-x86_64-baseos-rpms     1.9 M
+ NetworkManager-team          x86_64  1:1.54.0-3.el9_7      rhel-9-for-x86_64-baseos-rpms      37 k
+ NetworkManager-tui           x86_64  1:1.54.0-3.el9_7      rhel-9-for-x86_64-baseos-rpms     247 k
+ bind-libs                    x86_64  32:9.16.23-34.el9_7.1 rhel-9-for-x86_64-appstream-rpms  1.2 M
+ bind-license                 noarch  32:9.16.23-34.el9_7.1 rhel-9-for-x86_64-appstream-rpms   13 k
+ bind-utils                   x86_64  32:9.16.23-34.el9_7.1 rhel-9-for-x86_64-appstream-rpms  206 k
+ bzip2-libs                   x86_64  1.0.8-10.el9_5        rhel-9-for-x86_64-baseos-rpms      42 k
+ expat                        x86_64  2.5.0-5.el9_6         rhel-9-for-x86_64-baseos-rpms     119 k
+ glib2                        x86_64  2.68.4-18.el9_7       rhel-9-for-x86_64-baseos-rpms     2.6 M
+ glibc                        x86_64  2.34-231.el9_7.2      rhel-9-for-x86_64-baseos-rpms     2.0 M
+ glibc-common                 x86_64  2.34-231.el9_7.2      rhel-9-for-x86_64-baseos-rpms     306 k
+ glibc-gconv-extra            x86_64  2.34-231.el9_7.2      rhel-9-for-x86_64-baseos-rpms     1.7 M
+ glibc-langpack-en            x86_64  2.34-231.el9_7.2      rhel-9-for-x86_64-baseos-rpms     660 k
+ gnutls                       x86_64  3.8.3-9.el9           rhel-9-for-x86_64-baseos-rpms     1.1 M
+ grub2-common                 noarch  1:2.06-114.el9_7      rhel-9-for-x86_64-baseos-rpms     916 k
+ grub2-pc                     x86_64  1:2.06-114.el9_7      rhel-9-for-x86_64-baseos-rpms      13 k
+ grub2-pc-modules             noarch  1:2.06-114.el9_7      rhel-9-for-x86_64-baseos-rpms     987 k
+ grub2-tools                  x86_64  1:2.06-114.el9_7      rhel-9-for-x86_64-baseos-rpms     1.8 M
+ grub2-tools-minimal          x86_64  1:2.06-114.el9_7      rhel-9-for-x86_64-baseos-rpms     614 k
+ iputils                      x86_64  20210202-15.el9_7     rhel-9-for-x86_64-baseos-rpms     174 k
+ jq                           x86_64  1.6-19.el9            rhel-9-for-x86_64-baseos-rpms     187 k
+ kernel-tools                 x86_64  5.14.0-611.7.1.el9_7  rhel-9-for-x86_64-baseos-rpms     1.4 M
+ kernel-tools-libs            x86_64  5.14.0-611.7.1.el9_7  rhel-9-for-x86_64-baseos-rpms     1.1 M
+ krb5-libs                    x86_64  1.21.1-8.el9_6        rhel-9-for-x86_64-baseos-rpms     766 k
+ libarchive                   x86_64  3.5.3-6.el9_6         rhel-9-for-x86_64-baseos-rpms     387 k
+ libgcc                       x86_64  11.5.0-11.el9         rhel-9-for-x86_64-baseos-rpms      85 k
+ libgomp                      x86_64  11.5.0-11.el9         rhel-9-for-x86_64-baseos-rpms     257 k
+ libssh                       x86_64  0.10.4-15.el9_7       rhel-9-for-x86_64-baseos-rpms     214 k
+ libssh-config                noarch  0.10.4-15.el9_7       rhel-9-for-x86_64-baseos-rpms     7.8 k
+ libsss_certmap               x86_64  2.9.7-4.el9_7.1       rhel-9-for-x86_64-baseos-rpms      88 k
+ libsss_idmap                 x86_64  2.9.7-4.el9_7.1       rhel-9-for-x86_64-baseos-rpms      39 k
+ libsss_nss_idmap             x86_64  2.9.7-4.el9_7.1       rhel-9-for-x86_64-baseos-rpms      43 k
+ libsss_sudo                  x86_64  2.9.7-4.el9_7.1       rhel-9-for-x86_64-baseos-rpms      33 k
+ libstdc++                    x86_64  11.5.0-11.el9         rhel-9-for-x86_64-baseos-rpms     742 k
+ libtasn1                     x86_64  4.16.0-9.el9          rhel-9-for-x86_64-baseos-rpms      77 k
+ libxml2                      x86_64  2.9.13-12.el9_6       rhel-9-for-x86_64-baseos-rpms     747 k
+ microcode_ctl                noarch  4:20250812-1.el9      rhel-9-for-x86_64-baseos-rpms      14 M
+ ncurses                      x86_64  6.2-12.20210508.el9   rhel-9-for-x86_64-baseos-rpms     406 k
+ ncurses-base                 noarch  6.2-12.20210508.el9   rhel-9-for-x86_64-baseos-rpms      96 k
+ ncurses-libs                 x86_64  6.2-12.20210508.el9   rhel-9-for-x86_64-baseos-rpms     328 k
+ nettle                       x86_64  3.10.1-1.el9          rhel-9-for-x86_64-baseos-rpms     568 k
+ openssh                      x86_64  8.7p1-46.el9          rhel-9-for-x86_64-baseos-rpms     458 k
+ openssh-clients              x86_64  8.7p1-46.el9          rhel-9-for-x86_64-baseos-rpms     713 k
+ openssh-server               x86_64  8.7p1-46.el9          rhel-9-for-x86_64-baseos-rpms     457 k
+ openssl                      x86_64  1:3.5.1-4.el9_7       rhel-9-for-x86_64-baseos-rpms     1.5 M
+ openssl-fips-provider        x86_64  3.0.7-8.el9           rhel-9-for-x86_64-baseos-rpms     9.2 k
+ openssl-fips-provider-so     x86_64  3.0.7-8.el9           rhel-9-for-x86_64-baseos-rpms     576 k
+ openssl-libs                 x86_64  1:3.5.1-4.el9_7       rhel-9-for-x86_64-baseos-rpms     2.3 M
+ pam                          x86_64  1.5.1-26.el9_6        rhel-9-for-x86_64-baseos-rpms     622 k
+ python-unversioned-command   noarch  3.9.23-2.el9          rhel-9-for-x86_64-appstream-rpms  9.0 k
+ python3                      x86_64  3.9.23-2.el9          rhel-9-for-x86_64-baseos-rpms      26 k
+ python3-libs                 x86_64  3.9.23-2.el9          rhel-9-for-x86_64-baseos-rpms     8.1 M
+ python3-requests             noarch  2.25.1-10.el9_6       rhel-9-for-x86_64-baseos-rpms     126 k
+ python3-setuptools           noarch  53.0.0-15.el9         rhel-9-for-x86_64-baseos-rpms     936 k
+ python3-setuptools-wheel     noarch  53.0.0-15.el9         rhel-9-for-x86_64-baseos-rpms     468 k
+ rhc                          x86_64  1:0.2.7-1.el9_6       rhel-9-for-x86_64-appstream-rpms   11 M
+ shadow-utils                 x86_64  2:4.9-15.el9          rhel-9-for-x86_64-baseos-rpms     1.2 M
+ sqlite-libs                  x86_64  3.34.1-9.el9_7        rhel-9-for-x86_64-baseos-rpms     642 k
+ sssd-client                  x86_64  2.9.7-4.el9_7.1       rhel-9-for-x86_64-baseos-rpms     165 k
+ sssd-common                  x86_64  2.9.7-4.el9_7.1       rhel-9-for-x86_64-baseos-rpms     1.6 M
+ sssd-kcm                     x86_64  2.9.7-4.el9_7.1       rhel-9-for-x86_64-baseos-rpms     107 k
+ sudo                         x86_64  1.9.5p2-13.el9        rhel-9-for-x86_64-baseos-rpms     1.0 M
+ vim-minimal                  x86_64  2:8.2.2637-23.el9_7   rhel-9-for-x86_64-baseos-rpms     669 k
+Installing dependencies:
+ freetype                     x86_64  2.10.4-10.el9_5       rhel-9-for-x86_64-baseos-rpms     389 k
+ graphite2                    x86_64  1.3.14-9.el9          rhel-9-for-x86_64-baseos-rpms      98 k
+ grub2-tools-efi              x86_64  1:2.06-114.el9_7      rhel-9-for-x86_64-baseos-rpms     547 k
+ grub2-tools-extra            x86_64  1:2.06-114.el9_7      rhel-9-for-x86_64-baseos-rpms     855 k
+ harfbuzz                     x86_64  2.7.4-10.el9          rhel-9-for-x86_64-baseos-rpms     629 k
+ kernel-core                  x86_64  5.14.0-611.7.1.el9_7  rhel-9-for-x86_64-baseos-rpms      17 M
+ kernel-modules               x86_64  5.14.0-611.7.1.el9_7  rhel-9-for-x86_64-baseos-rpms      40 M
+ kernel-modules-core          x86_64  5.14.0-611.7.1.el9_7  rhel-9-for-x86_64-baseos-rpms      31 M
+ libpng                       x86_64  2:1.6.37-12.el9       rhel-9-for-x86_64-baseos-rpms     119 k
+
+Transaction Summary
+===================================================================================================
+Install  10 Packages
+Upgrade  64 Packages
+
+Total download size: 165 M
+--------------------------------------------------------------------------------
+Transaction check succeeded.
+Transaction test succeeded.
+Installed products updated.
+
+Upgraded:
+  NetworkManager-1:1.54.0-3.el9_7.x86_64                                        
+  NetworkManager-libnm-1:1.54.0-3.el9_7.x86_64                                  
+  NetworkManager-team-1:1.54.0-3.el9_7.x86_64                                   
+  NetworkManager-tui-1:1.54.0-3.el9_7.x86_64                                    
+  bind-libs-32:9.16.23-34.el9_7.1.x86_64                                        
+  bind-license-32:9.16.23-34.el9_7.1.noarch                                     
+  bind-utils-32:9.16.23-34.el9_7.1.x86_64                                       
+  bzip2-libs-1.0.8-10.el9_5.x86_64                                              
+  expat-2.5.0-5.el9_6.x86_64                                                    
+  glib2-2.68.4-18.el9_7.x86_64                                                  
+  glibc-2.34-231.el9_7.2.x86_64                                                 
+  glibc-common-2.34-231.el9_7.2.x86_64                                          
+  glibc-gconv-extra-2.34-231.el9_7.2.x86_64                                     
+  glibc-langpack-en-2.34-231.el9_7.2.x86_64                                     
+  gnutls-3.8.3-9.el9.x86_64                                                     
+  grub2-common-1:2.06-114.el9_7.noarch                                          
+  grub2-pc-1:2.06-114.el9_7.x86_64                                              
+  grub2-pc-modules-1:2.06-114.el9_7.noarch                                      
+  grub2-tools-1:2.06-114.el9_7.x86_64                                           
+  grub2-tools-minimal-1:2.06-114.el9_7.x86_64                                   
+  iputils-20210202-15.el9_7.x86_64                                              
+  jq-1.6-19.el9.x86_64                                                          
+  kernel-tools-5.14.0-611.7.1.el9_7.x86_64                                      
+  kernel-tools-libs-5.14.0-611.7.1.el9_7.x86_64                                 
+  krb5-libs-1.21.1-8.el9_6.x86_64                                               
+  libarchive-3.5.3-6.el9_6.x86_64                                               
+  libgcc-11.5.0-11.el9.x86_64                                                   
+  libgomp-11.5.0-11.el9.x86_64                                                  
+  libssh-0.10.4-15.el9_7.x86_64                                                 
+  libssh-config-0.10.4-15.el9_7.noarch                                          
+  libsss_certmap-2.9.7-4.el9_7.1.x86_64                                         
+  libsss_idmap-2.9.7-4.el9_7.1.x86_64                                           
+  libsss_nss_idmap-2.9.7-4.el9_7.1.x86_64                                       
+  libsss_sudo-2.9.7-4.el9_7.1.x86_64                                            
+  libstdc++-11.5.0-11.el9.x86_64                                                
+  libtasn1-4.16.0-9.el9.x86_64                                                  
+  libxml2-2.9.13-12.el9_6.x86_64                                                
+  microcode_ctl-4:20250812-1.el9.noarch                                         
+  ncurses-6.2-12.20210508.el9.x86_64                                            
+  ncurses-base-6.2-12.20210508.el9.noarch                                       
+  ncurses-libs-6.2-12.20210508.el9.x86_64                                       
+  nettle-3.10.1-1.el9.x86_64                                                    
+  openssh-8.7p1-46.el9.x86_64                                                   
+  openssh-clients-8.7p1-46.el9.x86_64                                           
+  openssh-server-8.7p1-46.el9.x86_64                                            
+  openssl-1:3.5.1-4.el9_7.x86_64                                                
+  openssl-fips-provider-3.0.7-8.el9.x86_64                                      
+  openssl-fips-provider-so-3.0.7-8.el9.x86_64                                   
+  openssl-libs-1:3.5.1-4.el9_7.x86_64                                           
+  pam-1.5.1-26.el9_6.x86_64                                                     
+  python-unversioned-command-3.9.23-2.el9.noarch                                
+  python3-3.9.23-2.el9.x86_64                                                   
+  python3-libs-3.9.23-2.el9.x86_64                                              
+  python3-requests-2.25.1-10.el9_6.noarch                                       
+  python3-setuptools-53.0.0-15.el9.noarch                                       
+  python3-setuptools-wheel-53.0.0-15.el9.noarch                                 
+  rhc-1:0.2.7-1.el9_6.x86_64                                                    
+  shadow-utils-2:4.9-15.el9.x86_64                                              
+  sqlite-libs-3.34.1-9.el9_7.x86_64                                             
+  sssd-client-2.9.7-4.el9_7.1.x86_64                                            
+  sssd-common-2.9.7-4.el9_7.1.x86_64                                            
+  sssd-kcm-2.9.7-4.el9_7.1.x86_64                                               
+  sudo-1.9.5p2-13.el9.x86_64                                                    
+  vim-minimal-2:8.2.2637-23.el9_7.x86_64                                        
+Installed:
+  freetype-2.10.4-10.el9_5.x86_64                                               
+  graphite2-1.3.14-9.el9.x86_64                                                 
+  grub2-tools-efi-1:2.06-114.el9_7.x86_64                                       
+  grub2-tools-extra-1:2.06-114.el9_7.x86_64                                     
+  harfbuzz-2.7.4-10.el9.x86_64                                                  
+  kernel-5.14.0-611.7.1.el9_7.x86_64                                            
+  kernel-core-5.14.0-611.7.1.el9_7.x86_64                                       
+  kernel-modules-5.14.0-611.7.1.el9_7.x86_64                                    
+  kernel-modules-core-5.14.0-611.7.1.el9_7.x86_64                               
+  libpng-2:1.6.37-12.el9.x86_64                                                 
+
+Complete!</pre>
+</div>
+
+<div class="host-block">
+<h2>Host: srvsuga2-idiger-local</h2>
+<ul>
+  <li><b>Virtualización:</b> microsoft</li>
+  <li><b>Sistema Operativo:</b> Red Hat Enterprise Linux 8.6 (Ootpa)</li>
+  <li><b>Kernel:</b> Linux 4.18.0-553.64.1.el8_10.x86_64</li>
+  <li><b>Arquitectura:</b> x86-64</li>
+</ul>
+
+<h3>Información Memoria</h3>
+<pre>=== Informacion de memoria ===
+              total        used        free      shared  buff/cache   available
+Mem:          3.6Gi       1.9Gi       576Mi        21Mi       1.1Gi       1.4Gi
+Swap:         4.0Gi        36Mi       3.9Gi</pre>
+<p>Memoria okey</p>
+
+<h3>Información espacio Disco</h3>
+<pre>Correcto Todos los fylesystems estan por debajo del 85%</pre>
+
+<h3>Información Red </h3>
+<pre>GENERAL.DEVICE:                         eth0
+GENERAL.TYPE:                           ethernet
+GENERAL.STATE:                          100 (connected)
+IP4.ADDRESS[1]:                         172.16.25.220/22
+
+GENERAL.DEVICE:                         virbr0
+GENERAL.TYPE:                           bridge
+GENERAL.STATE:                          100 (connected (externally))
+IP4.ADDRESS[1]:                         192.168.122.1/24
+
+GENERAL.DEVICE:                         lo
+GENERAL.TYPE:                           loopback
+GENERAL.STATE:                          10 (unmanaged)
+IP4.ADDRESS[1]:                         127.0.0.1/8</pre>
+
+<h3>Actualizaciones de seguridad</h3>
+<pre>Updating Subscription Management repositories.
+Last metadata expiration check: 0:05:37 ago on Fri 14 Nov 2025 04:03:32 PM -05.
+RHSA-2025:19835 Important/Sec. bind-export-libs-32:9.11.36-16.el8_10.6.x86_64
+RHSA-2025:19835 Important/Sec. bind-libs-32:9.11.36-16.el8_10.6.x86_64
+RHSA-2025:19835 Important/Sec. bind-libs-lite-32:9.11.36-16.el8_10.6.x86_64
+RHSA-2025:19835 Important/Sec. bind-license-32:9.11.36-16.el8_10.6.noarch
+RHSA-2025:19835 Important/Sec. bind-utils-32:9.11.36-16.el8_10.6.x86_64
+RHSA-2025:12752 Important/Sec. bpftool-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  bpftool-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. bpftool-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  bpftool-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  bpftool-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. bpftool-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. bpftool-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  bpftool-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  bpftool-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  bpftool-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  bpftool-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  bpftool-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  bpftool-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  bpftool-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  bpftool-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:15904 Important/Sec. buildah-2:1.33.12-2.module+el8.10.0+23498+f7d19d48.x86_64
+RHSA-2025:21232 Important/Sec. buildah-2:1.33.12-2.module+el8.10.0+23647+cfd78660.x86_64
+RHSA-2025:15904 Important/Sec. cockpit-podman-84.1-1.module+el8.10.0+23498+f7d19d48.noarch
+RHSA-2025:21232 Important/Sec. cockpit-podman-84.1-1.module+el8.10.0+23647+cfd78660.noarch
+RHSA-2025:15904 Important/Sec. conmon-3:2.1.10-1.module+el8.10.0+23498+f7d19d48.x86_64
+RHSA-2025:21232 Important/Sec. conmon-3:2.1.10-1.module+el8.10.0+23647+cfd78660.x86_64
+RHSA-2025:15904 Important/Sec. container-selinux-2:2.229.0-2.module+el8.10.0+23498+f7d19d48.noarch
+RHSA-2025:21232 Important/Sec. container-selinux-2:2.229.0-2.module+el8.10.0+23647+cfd78660.noarch
+RHSA-2025:15904 Important/Sec. containernetworking-plugins-1:1.4.0-6.module+el8.10.0+23498+f7d19d48.x86_64
+RHSA-2025:21232 Important/Sec. containernetworking-plugins-1:1.4.0-6.module+el8.10.0+23647+cfd78660.x86_64
+RHSA-2025:15904 Important/Sec. containers-common-2:1-82.module+el8.10.0+23498+f7d19d48.x86_64
+RHSA-2025:21232 Important/Sec. containers-common-2:1-82.module+el8.10.0+23647+cfd78660.x86_64
+RHSA-2025:15904 Important/Sec. criu-3.18-5.module+el8.10.0+23498+f7d19d48.x86_64
+RHSA-2025:21232 Important/Sec. criu-3.18-5.module+el8.10.0+23647+cfd78660.x86_64
+RHSA-2025:15702 Important/Sec. cups-1:2.2.6-63.el8_10.x86_64
+RHSA-2025:15702 Important/Sec. cups-client-1:2.2.6-63.el8_10.x86_64
+RHSA-2025:15702 Important/Sec. cups-filesystem-1:2.2.6-63.el8_10.noarch
+RHSA-2025:15702 Important/Sec. cups-ipptool-1:2.2.6-63.el8_10.x86_64
+RHSA-2025:15702 Important/Sec. cups-libs-1:2.2.6-63.el8_10.x86_64
+RHSA-2025:14442 Important/Sec. firefox-128.14.0-2.el8_10.x86_64
+RHSA-2025:16260 Important/Sec. firefox-140.3.0-1.el8_10.x86_64
+RHSA-2025:18285 Important/Sec. firefox-140.4.0-3.el8_10.x86_64
+RHSA-2025:15904 Important/Sec. fuse-overlayfs-1.13-1.module+el8.10.0+23498+f7d19d48.x86_64
+RHSA-2025:21232 Important/Sec. fuse-overlayfs-1.13-1.module+el8.10.0+23647+cfd78660.x86_64
+RHSA-2025:13315 Moderate/Sec.  gdk-pixbuf2-2.36.12-7.el8_10.x86_64
+RHSA-2025:13315 Moderate/Sec.  gdk-pixbuf2-modules-2.36.12-7.el8_10.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-common-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-gconv-extra-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-langpack-en-2.28-251.el8_10.25.x86_64
+RHSA-2025:12980 Moderate/Sec.  glibc-langpack-es-2.28-251.el8_10.25.x86_64
+RHSA-2025:17415 Moderate/Sec.  gnutls-3.6.16-8.el8_10.4.x86_64
+RHSA-2025:17415 Moderate/Sec.  gnutls-dane-3.6.16-8.el8_10.4.x86_64
+RHSA-2025:17415 Moderate/Sec.  gnutls-utils-3.6.16-8.el8_10.4.x86_64
+RHSA-2025:15123 Moderate/Sec.  httpd-2.4.37-65.module+el8.10.0+23369+11a81384.5.x86_64
+RHSA-2025:15123 Moderate/Sec.  httpd-filesystem-2.4.37-65.module+el8.10.0+23369+11a81384.5.noarch
+RHSA-2025:15123 Moderate/Sec.  httpd-tools-2.4.37-65.module+el8.10.0+23369+11a81384.5.x86_64
+RHSA-2025:18815 Moderate/Sec.  java-1.8.0-openjdk-1:1.8.0.472.b08-1.el8.x86_64
+RHSA-2025:18815 Moderate/Sec.  java-1.8.0-openjdk-headless-1:1.8.0.472.b08-1.el8.x86_64
+RHSA-2025:12752 Important/Sec. kernel-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-core-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-core-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-core-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-core-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-core-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-core-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-core-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-core-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-core-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-core-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-core-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-core-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-core-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-core-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-core-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-modules-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-modules-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-modules-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-modules-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-modules-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-modules-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-modules-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-modules-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-modules-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-modules-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-modules-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-modules-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-modules-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-modules-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-modules-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-tools-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-tools-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-tools-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-tools-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-tools-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-tools-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-tools-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-tools-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-tools-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-tools-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-tools-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-tools-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-tools-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-tools-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-tools-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:12752 Important/Sec. kernel-tools-libs-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  kernel-tools-libs-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. kernel-tools-libs-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  kernel-tools-libs-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  kernel-tools-libs-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. kernel-tools-libs-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. kernel-tools-libs-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  kernel-tools-libs-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  kernel-tools-libs-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  kernel-tools-libs-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  kernel-tools-libs-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  kernel-tools-libs-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  kernel-tools-libs-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  kernel-tools-libs-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  kernel-tools-libs-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:14135 Important/Sec. libarchive-3.3.3-6.el8_10.x86_64
+RHSA-2025:19610 Important/Sec. libipa_hbac-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:15904 Important/Sec. libslirp-4.4.0-2.module+el8.10.0+23498+f7d19d48.x86_64
+RHSA-2025:21232 Important/Sec. libslirp-4.4.0-2.module+el8.10.0+23647+cfd78660.x86_64
+RHSA-2025:19714 Important/Sec. libsoup-2.62.3-10.el8_10.x86_64
+RHSA-2025:18286 Moderate/Sec.  libssh-0.9.6-15.el8_10.x86_64
+RHSA-2025:18286 Moderate/Sec.  libssh-config-0.9.6-15.el8_10.noarch
+RHSA-2025:19610 Important/Sec. libsss_autofs-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. libsss_certmap-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. libsss_idmap-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. libsss_nss_idmap-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. libsss_sudo-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19276 Important/Sec. libtiff-4.0.9-35.el8_10.x86_64
+RHSA-2025:20034 Important/Sec. libtiff-4.0.9-36.el8_10.x86_64
+RHSA-2025:12527 Moderate/Sec.  libtpms-0.9.1-3.20211126git1ff6fe1f43.module+el8.10.0+23348+204cfc70.x86_64
+RHSA-2025:15017 Important/Sec. libudisks2-2.9.0-16.el8_10.1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-client-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-config-network-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-interface-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-network-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-nodedev-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-nwfilter-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-qemu-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-secret-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-core-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-disk-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-gluster-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-iscsi-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-iscsi-direct-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-logical-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-mpath-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-rbd-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-driver-storage-scsi-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-daemon-kvm-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:12527 Moderate/Sec.  libvirt-libs-8.0.0-23.4.module+el8.10.0+23205+d8da55c1.x86_64
+RHSA-2025:13203 Moderate/Sec.  libxml2-2.9.7-21.el8_10.3.x86_64
+RHSA-2025:15123 Moderate/Sec.  mod_http2-1.15.7-10.module+el8.10.0+23369+11a81384.4.x86_64
+RHSA-2025:17509 Important/Sec. open-vm-tools-12.3.5-2.el8_10.1.x86_64
+RHSA-2025:17509 Important/Sec. open-vm-tools-desktop-12.3.5-2.el8_10.1.x86_64
+RHSA-2025:16823 Moderate/Sec.  openssh-8.0p1-26.el8_10.x86_64
+RHSA-2025:16823 Moderate/Sec.  openssh-askpass-8.0p1-26.el8_10.x86_64
+RHSA-2025:16823 Moderate/Sec.  openssh-clients-8.0p1-26.el8_10.x86_64
+RHSA-2025:16823 Moderate/Sec.  openssh-server-8.0p1-26.el8_10.x86_64
+RHSA-2025:14557 Important/Sec. pam-1.3.1-38.el8_10.x86_64
+RHSA-2025:14560 Moderate/Sec.  platform-python-3.6.8-71.el8_10.x86_64
+RHSA-2025:15904 Important/Sec. podman-4:4.9.4-23.module+el8.10.0+23498+f7d19d48.x86_64
+RHSA-2025:21232 Important/Sec. podman-4:4.9.4-23.module+el8.10.0+23647+cfd78660.x86_64
+RHSA-2025:15904 Important/Sec. podman-catatonit-4:4.9.4-23.module+el8.10.0+23498+f7d19d48.x86_64
+RHSA-2025:21232 Important/Sec. podman-catatonit-4:4.9.4-23.module+el8.10.0+23647+cfd78660.x86_64
+RHSA-2025:15904 Important/Sec. podman-gvproxy-4:4.9.4-23.module+el8.10.0+23498+f7d19d48.x86_64
+RHSA-2025:21232 Important/Sec. podman-gvproxy-4:4.9.4-23.module+el8.10.0+23647+cfd78660.x86_64
+RHSA-2025:15904 Important/Sec. podman-plugins-4:4.9.4-23.module+el8.10.0+23498+f7d19d48.x86_64
+RHSA-2025:21232 Important/Sec. podman-plugins-4:4.9.4-23.module+el8.10.0+23647+cfd78660.x86_64
+RHSA-2025:19835 Important/Sec. python3-bind-32:9.11.36-16.el8_10.6.noarch
+RHSA-2025:14553 Moderate/Sec.  python3-cryptography-3.2.1-8.el8_10.x86_64
+RHSA-2025:14560 Moderate/Sec.  python3-libs-3.6.8-71.el8_10.x86_64
+RHSA-2025:13203 Moderate/Sec.  python3-libxml2-2.9.7-21.el8_10.3.x86_64
+RHSA-2025:12752 Important/Sec. python3-perf-4.18.0-553.66.1.el8_10.x86_64
+RHSA-2025:13589 Moderate/Sec.  python3-perf-4.18.0-553.69.1.el8_10.x86_64
+RHSA-2025:13960 Important/Sec. python3-perf-4.18.0-553.70.1.el8_10.x86_64
+RHSA-2025:14438 Moderate/Sec.  python3-perf-4.18.0-553.71.1.el8_10.x86_64
+RHSA-2025:15008 Moderate/Sec.  python3-perf-4.18.0-553.72.1.el8_10.x86_64
+RHSA-2025:15471 Important/Sec. python3-perf-4.18.0-553.74.1.el8_10.x86_64
+RHSA-2025:15785 Important/Sec. python3-perf-4.18.0-553.75.1.el8_10.x86_64
+RHSA-2025:16372 Moderate/Sec.  python3-perf-4.18.0-553.76.1.el8_10.x86_64
+RHSA-2025:16919 Moderate/Sec.  python3-perf-4.18.0-553.77.1.el8_10.x86_64
+RHSA-2025:17397 Moderate/Sec.  python3-perf-4.18.0-553.78.1.el8_10.x86_64
+RHSA-2025:17797 Moderate/Sec.  python3-perf-4.18.0-553.79.1.el8_10.x86_64
+RHSA-2025:18297 Moderate/Sec.  python3-perf-4.18.0-553.80.1.el8_10.x86_64
+RHSA-2025:19102 Moderate/Sec.  python3-perf-4.18.0-553.81.1.el8_10.x86_64
+RHSA-2025:19447 Moderate/Sec.  python3-perf-4.18.0-553.82.1.el8_10.x86_64
+RHSA-2025:19931 Moderate/Sec.  python3-perf-4.18.0-553.83.1.el8_10.x86_64
+RHSA-2025:13234 Moderate/Sec.  python3-requests-2.20.0-6.el8_10.noarch
+RHSA-2025:19610 Important/Sec. python3-sssdconfig-2.9.4-5.el8_10.3.noarch
+RHSA-2025:12527 Moderate/Sec.  qemu-guest-agent-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-img-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-block-curl-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-block-gluster-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-block-iscsi-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-block-rbd-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-block-ssh-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-common-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-core-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-docs-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-hw-usbredir-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-ui-opengl-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:12527 Moderate/Sec.  qemu-kvm-ui-spice-15:6.2.0-53.module+el8.10.0+23081+c18b1ee3.4.x86_64
+RHSA-2025:15904 Important/Sec. runc-1:1.1.12-6.module+el8.10.0+23498+f7d19d48.x86_64
+RHSA-2025:21232 Important/Sec. runc-4:1.2.5-2.module+el8.10.0+23647+cfd78660.x86_64
+RHSA-2025:15904 Important/Sec. slirp4netns-1.2.3-1.module+el8.10.0+23498+f7d19d48.x86_64
+RHSA-2025:21232 Important/Sec. slirp4netns-1.2.3-1.module+el8.10.0+23647+cfd78660.x86_64
+RHSA-2025:19610 Important/Sec. sssd-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. sssd-ad-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. sssd-client-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. sssd-common-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. sssd-common-pac-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. sssd-ipa-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. sssd-kcm-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. sssd-krb5-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. sssd-krb5-common-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. sssd-ldap-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. sssd-nfs-idmap-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19610 Important/Sec. sssd-proxy-2.9.4-5.el8_10.3.x86_64
+RHSA-2025:19909 Important/Sec. tigervnc-license-1.15.0-8.el8_10.noarch
+RHSA-2025:19909 Important/Sec. tigervnc-server-minimal-1.15.0-8.el8_10.x86_64
+RHSA-2025:15017 Important/Sec. udisks2-2.9.0-16.el8_10.1.x86_64
+RHSA-2025:15017 Important/Sec. udisks2-iscsi-2.9.0-16.el8_10.1.x86_64
+RHSA-2025:15017 Important/Sec. udisks2-lvm2-2.9.0-16.el8_10.1.x86_64
+RHSA-2025:17715 Moderate/Sec.  vim-common-2:8.0.1763-21.el8_10.x86_64
+RHSA-2025:17715 Moderate/Sec.  vim-enhanced-2:8.0.1763-21.el8_10.x86_64
+RHSA-2025:17715 Moderate/Sec.  vim-filesystem-2:8.0.1763-21.el8_10.noarch
+RHSA-2025:17715 Moderate/Sec.  vim-minimal-2:8.0.1763-21.el8_10.x86_64
+RHSA-2025:13780 Important/Sec. webkit2gtk3-2.48.5-1.el8_10.x86_64
+RHSA-2025:17802 Important/Sec. webkit2gtk3-2.50.0-1.el8_10.x86_64
+RHSA-2025:18070 Important/Sec. webkit2gtk3-2.50.1-1.el8_10.x86_64
+RHSA-2025:13780 Important/Sec. webkit2gtk3-jsc-2.48.5-1.el8_10.x86_64
+RHSA-2025:17802 Important/Sec. webkit2gtk3-jsc-2.50.0-1.el8_10.x86_64
+RHSA-2025:18070 Important/Sec. webkit2gtk3-jsc-2.50.1-1.el8_10.x86_64
+RHSA-2025:19434 Moderate/Sec.  xorg-x11-server-Xorg-1.20.11-27.el8_10.x86_64
+RHSA-2025:19432 Moderate/Sec.  xorg-x11-server-Xwayland-21.1.3-19.el8_10.x86_64
+RHSA-2025:19434 Moderate/Sec.  xorg-x11-server-common-1.20.11-27.el8_10.x86_64</pre>
+
+<h3>Aplicación de actualizaciones</h3>
+<pre>Updating Subscription Management repositories.
+Last metadata expiration check: 0:05:48 ago on Fri 14 Nov 2025 04:03:32 PM -05.
+Error: 
+ Problem 1: cannot install both nss-3.112.0-4.el8_10.x86_64 and nss-3.101.0-11.el8_8.x86_64
+  - package firefox-140.4.0-3.el8_10.x86_64 requires libnss3.so(NSS_3.107)(64bit), but none of the providers can be installed
+  - cannot install the best update candidate for package nss-3.101.0-11.el8_8.x86_64
+  - cannot install the best update candidate for package firefox-128.13.0-1.el8_10.x86_64
+ Problem 2: samba-client-libs-4.19.4-12.el8_10.i686 has inferior architecture
+  - package sssd-ad-2.9.4-5.el8_10.3.x86_64 requires samba-client-libs >= 4.19.4-12.el8_10, but none of the providers can be installed
+  - cannot install both samba-client-libs-4.19.4-12.el8_10.x86_64 and samba-client-libs-4.19.4-3.el8.x86_64
+  - cannot install the best update candidate for package sssd-ad-2.9.4-3.el8_10.x86_64
+  - cannot install the best update candidate for package samba-client-libs-4.19.4-3.el8.x86_64
+ Problem 3: package sssd-ad-2.9.4-5.el8_10.3.x86_64 requires samba-client-libs >= 4.19.4-12.el8_10, but none of the providers can be installed
+  - package samba-client-libs-4.19.4-12.el8_10.i686 requires libwbclient = 4.19.4-12.el8_10, but none of the providers can be installed
+  - package samba-client-libs-4.19.4-12.el8_10.x86_64 requires libwbclient = 4.19.4-12.el8_10, but none of the providers can be installed
+  - libwbclient-4.19.4-12.el8_10.i686 has inferior architecture
+  - package sssd-2.9.4-5.el8_10.3.x86_64 requires sssd-ad = 2.9.4-5.el8_10.3, but none of the providers can be installed
+  - cannot install both libwbclient-4.19.4-12.el8_10.x86_64 and libwbclient-4.19.4-3.el8.x86_64
+  - cannot install the best update candidate for package sssd-2.9.4-3.el8_10.x86_64
+  - cannot install the best update candidate for package libwbclient-4.19.4-3.el8.x86_64
+ Problem 4: package sssd-ad-2.9.4-5.el8_10.3.x86_64 requires samba-client-libs >= 4.19.4-12.el8_10, but none of the providers can be installed
+  - package samba-client-libs-4.19.4-12.el8_10.i686 requires samba-common-libs = 4.19.4-12.el8_10, but none of the providers can be installed
+  - package samba-client-libs-4.19.4-12.el8_10.x86_64 requires samba-common-libs = 4.19.4-12.el8_10, but none of the providers can be installed
+  - problem with installed package sssd-ad-2.9.4-3.el8_10.x86_64
+  - samba-common-libs-4.19.4-12.el8_10.i686 has inferior architecture
+  - package sssd-ad-2.9.4-3.el8_10.x86_64 requires sssd-common = 2.9.4-3.el8_10, but none of the providers can be installed
+  - package sssd-ad-2.9.4-4.el8_10.x86_64 requires sssd-common = 2.9.4-4.el8_10, but none of the providers can be installed
+  - package sssd-ad-2.9.4-5.el8_10.1.x86_64 requires sssd-common = 2.9.4-5.el8_10.1, but none of the providers can be installed
+  - package sssd-ad-2.9.4-5.el8_10.2.x86_64 requires sssd-common = 2.9.4-5.el8_10.2, but none of the providers can be installed
+  - cannot install both samba-common-libs-4.19.4-12.el8_10.x86_64 and samba-common-libs-4.19.4-3.el8.x86_64
+  - package libsss_autofs-2.9.4-5.el8_10.3.x86_64 conflicts with sssd-common < 2.9.4-5.el8_10.3 provided by sssd-common-2.9.4-3.el8_10.x86_64
+  - package libsss_autofs-2.9.4-5.el8_10.3.x86_64 conflicts with sssd-common < 2.9.4-5.el8_10.3 provided by sssd-common-2.9.4-4.el8_10.x86_64
+  - package libsss_autofs-2.9.4-5.el8_10.3.x86_64 conflicts with sssd-common < 2.9.4-5.el8_10.3 provided by sssd-common-2.9.4-5.el8_10.1.x86_64
+  - package libsss_autofs-2.9.4-5.el8_10.3.x86_64 conflicts with sssd-common < 2.9.4-5.el8_10.3 provided by sssd-common-2.9.4-5.el8_10.2.x86_64
+  - cannot install the best update candidate for package samba-common-libs-4.19.4-3.el8.x86_64
+  - cannot install the best update candidate for package libsss_autofs-2.9.4-3.el8_10.x86_64
+ Problem 5: package libsmbclient-4.19.4-3.el8.x86_64 requires samba-common = 4.19.4-3.el8, but none of the providers can be installed
+  - cannot install both samba-common-4.19.4-12.el8_10.noarch and samba-common-4.19.4-3.el8.noarch
+  - package sssd-ad-2.9.4-5.el8_10.3.x86_64 requires samba-client-libs >= 4.19.4-12.el8_10, but none of the providers can be installed
+  - package samba-client-libs-4.19.4-12.el8_10.i686 requires samba-common = 4.19.4-12.el8_10, but none of the providers can be installed
+  - package samba-client-libs-4.19.4-12.el8_10.x86_64 requires samba-common = 4.19.4-12.el8_10, but none of the providers can be installed
+  - package sssd-2.9.4-5.el8_10.3.x86_64 requires sssd-ad = 2.9.4-5.el8_10.3, but none of the providers can be installed
+  - problem with installed package sssd-2.9.4-3.el8_10.x86_64
+  - package sssd-2.9.4-3.el8_10.x86_64 requires sssd-common = 2.9.4-3.el8_10, but none of the providers can be installed
+  - package sssd-2.9.4-4.el8_10.x86_64 requires sssd-common = 2.9.4-4.el8_10, but none of the providers can be installed
+  - package sssd-2.9.4-5.el8_10.1.x86_64 requires sssd-common = 2.9.4-5.el8_10.1, but none of the providers can be installed
+  - package sssd-2.9.4-5.el8_10.2.x86_64 requires sssd-common = 2.9.4-5.el8_10.2, but none of the providers can be installed
+  - package libsss_certmap-2.9.4-5.el8_10.3.x86_64 conflicts with sssd-common < 2.9.4-5.el8_10.3 provided by sssd-common-2.9.4-3.el8_10.x86_64
+  - package libsss_certmap-2.9.4-5.el8_10.3.x86_64 conflicts with sssd-common < 2.9.4-5.el8_10.3 provided by sssd-common-2.9.4-4.el8_10.x86_64
+  - package libsss_certmap-2.9.4-5.el8_10.3.x86_64 conflicts with sssd-common < 2.9.4-5.el8_10.3 provided by sssd-common-2.9.4-5.el8_10.1.x86_64
+  - package libsss_certmap-2.9.4-5.el8_10.3.x86_64 conflicts with sssd-common < 2.9.4-5.el8_10.3 provided by sssd-common-2.9.4-5.el8_10.2.x86_64
+  - cannot install the best update candidate for package libsss_certmap-2.9.4-3.el8_10.x86_64
+  - cannot install the best update candidate for package libsmbclient-4.19.4-3.el8.x86_64
+(try to add '--allowerasing' to command line to replace conflicting packages or '--skip-broken' to skip uninstallable packages or '--nobest' to use not only best candidate packages)</pre>
+</div>
+
+<div class="host-block">
+<h2>Host: VLRHPXROA01</h2>
+<ul>
+  <li><b>Virtualización:</b> microsoft</li>
+  <li><b>Sistema Operativo:</b> Red Hat Enterprise Linux 9.5 (Plow)</li>
+  <li><b>Kernel:</b> Linux 5.14.0-570.30.1.el9_6.x86_64</li>
+  <li><b>Arquitectura:</b> x86-64</li>
+</ul>
+
+<h3>Información Memoria</h3>
+<pre>=== Informacion de memoria ===
+               total        used        free      shared  buff/cache   available
+Mem:           7.5Gi       505Mi       6.7Gi        15Mi       566Mi       7.0Gi
+Swap:          8.0Gi          0B       8.0Gi</pre>
+<p>Memoria okey</p>
+
+<h3>Información espacio Disco</h3>
+<pre>Correcto Todos los fylesystems estan por debajo del 85%</pre>
+
+<h3>Información Red </h3>
+<pre>GENERAL.DEVICE:                         eth0
+GENERAL.TYPE:                           ethernet
+GENERAL.STATE:                          100 (connected)
+IP4.ADDRESS[1]:                         172.16.24.220/22
+
+GENERAL.DEVICE:                         lo
+GENERAL.TYPE:                           loopback
+GENERAL.STATE:                          100 (connected (externally))
+IP4.ADDRESS[1]:                         127.0.0.1/8</pre>
+
+<h3>Actualizaciones de seguridad</h3>
+<pre>Updating Subscription Management repositories.
+Last metadata expiration check: 1:46:42 ago on Fri 14 Nov 2025 02:22:56 PM EST.
+RHSA-2025:12748 Moderate/Sec.  glibc-2.34-168.el9_6.23.x86_64
+RHSA-2025:12748 Moderate/Sec.  glibc-common-2.34-168.el9_6.23.x86_64
+RHSA-2025:12748 Moderate/Sec.  glibc-gconv-extra-2.34-168.el9_6.23.x86_64
+RHSA-2025:12748 Moderate/Sec.  glibc-langpack-en-2.34-168.el9_6.23.x86_64
+RHSA-2025:16116 Moderate/Sec.  gnutls-3.8.3-6.el9_6.2.x86_64
+RHSA-2025:20532 Moderate/Sec.  grub2-common-1:2.06-114.el9_7.noarch
+RHSA-2025:20532 Moderate/Sec.  grub2-pc-1:2.06-114.el9_7.x86_64
+RHSA-2025:20532 Moderate/Sec.  grub2-pc-modules-1:2.06-114.el9_7.noarch
+RHSA-2025:20532 Moderate/Sec.  grub2-tools-1:2.06-114.el9_7.x86_64
+RHSA-2025:20532 Moderate/Sec.  grub2-tools-efi-1:2.06-114.el9_7.x86_64
+RHSA-2025:20532 Moderate/Sec.  grub2-tools-extra-1:2.06-114.el9_7.x86_64
+RHSA-2025:20532 Moderate/Sec.  grub2-tools-minimal-1:2.06-114.el9_7.x86_64
+RHSA-2025:17558 Moderate/Sec.  iputils-20210202-11.el9_6.3.x86_64
+RHSA-2025:12746 Important/Sec. kernel-5.14.0-570.32.1.el9_6.x86_64
+RHSA-2025:13602 Moderate/Sec.  kernel-5.14.0-570.33.2.el9_6.x86_64
+RHSA-2025:13962 Important/Sec. kernel-5.14.0-570.35.1.el9_6.x86_64
+RHSA-2025:14420 Important/Sec. kernel-5.14.0-570.37.1.el9_6.x86_64
+RHSA-2025:15011 Important/Sec. kernel-5.14.0-570.39.1.el9_6.x86_64
+RHSA-2025:15429 Important/Sec. kernel-5.14.0-570.41.1.el9_6.x86_64
+RHSA-2025:15661 Important/Sec. kernel-5.14.0-570.42.2.el9_6.x86_64
+RHSA-2025:15740 Moderate/Sec.  kernel-5.14.0-570.44.1.el9_6.x86_64
+RHSA-2025:16398 Moderate/Sec.  kernel-5.14.0-570.46.1.el9_6.x86_64
+RHSA-2025:16880 Moderate/Sec.  kernel-5.14.0-570.49.1.el9_6.x86_64
+RHSA-2025:17377 Moderate/Sec.  kernel-5.14.0-570.51.1.el9_6.x86_64
+RHSA-2025:17760 Moderate/Sec.  kernel-5.14.0-570.52.1.el9_6.x86_64
+RHSA-2025:18281 Moderate/Sec.  kernel-5.14.0-570.55.1.el9_6.x86_64
+RHSA-2025:19105 Moderate/Sec.  kernel-5.14.0-570.58.1.el9_6.x86_64
+RHSA-2025:19409 Moderate/Sec.  kernel-5.14.0-570.60.1.el9_6.x86_64
+RHSA-2025:19930 Moderate/Sec.  kernel-5.14.0-570.62.1.el9_6.x86_64
+RHSA-2025:20518 Moderate/Sec.  kernel-5.14.0-611.5.1.el9_7.x86_64
+RHSA-2025:21112 Moderate/Sec.  kernel-5.14.0-611.7.1.el9_7.x86_64
+RHSA-2025:12746 Important/Sec. kernel-core-5.14.0-570.32.1.el9_6.x86_64
+RHSA-2025:13602 Moderate/Sec.  kernel-core-5.14.0-570.33.2.el9_6.x86_64
+RHSA-2025:13962 Important/Sec. kernel-core-5.14.0-570.35.1.el9_6.x86_64
+RHSA-2025:14420 Important/Sec. kernel-core-5.14.0-570.37.1.el9_6.x86_64
+RHSA-2025:15011 Important/Sec. kernel-core-5.14.0-570.39.1.el9_6.x86_64
+RHSA-2025:15429 Important/Sec. kernel-core-5.14.0-570.41.1.el9_6.x86_64
+RHSA-2025:15661 Important/Sec. kernel-core-5.14.0-570.42.2.el9_6.x86_64
+RHSA-2025:15740 Moderate/Sec.  kernel-core-5.14.0-570.44.1.el9_6.x86_64
+RHSA-2025:16398 Moderate/Sec.  kernel-core-5.14.0-570.46.1.el9_6.x86_64
+RHSA-2025:16880 Moderate/Sec.  kernel-core-5.14.0-570.49.1.el9_6.x86_64
+RHSA-2025:17377 Moderate/Sec.  kernel-core-5.14.0-570.51.1.el9_6.x86_64
+RHSA-2025:17760 Moderate/Sec.  kernel-core-5.14.0-570.52.1.el9_6.x86_64
+RHSA-2025:18281 Moderate/Sec.  kernel-core-5.14.0-570.55.1.el9_6.x86_64
+RHSA-2025:19105 Moderate/Sec.  kernel-core-5.14.0-570.58.1.el9_6.x86_64
+RHSA-2025:19409 Moderate/Sec.  kernel-core-5.14.0-570.60.1.el9_6.x86_64
+RHSA-2025:19930 Moderate/Sec.  kernel-core-5.14.0-570.62.1.el9_6.x86_64
+RHSA-2025:20518 Moderate/Sec.  kernel-core-5.14.0-611.5.1.el9_7.x86_64
+RHSA-2025:21112 Moderate/Sec.  kernel-core-5.14.0-611.7.1.el9_7.x86_64
+RHSA-2025:12746 Important/Sec. kernel-modules-5.14.0-570.32.1.el9_6.x86_64
+RHSA-2025:13602 Moderate/Sec.  kernel-modules-5.14.0-570.33.2.el9_6.x86_64
+RHSA-2025:13962 Important/Sec. kernel-modules-5.14.0-570.35.1.el9_6.x86_64
+RHSA-2025:14420 Important/Sec. kernel-modules-5.14.0-570.37.1.el9_6.x86_64
+RHSA-2025:15011 Important/Sec. kernel-modules-5.14.0-570.39.1.el9_6.x86_64
+RHSA-2025:15429 Important/Sec. kernel-modules-5.14.0-570.41.1.el9_6.x86_64
+RHSA-2025:15661 Important/Sec. kernel-modules-5.14.0-570.42.2.el9_6.x86_64
+RHSA-2025:15740 Moderate/Sec.  kernel-modules-5.14.0-570.44.1.el9_6.x86_64
+RHSA-2025:16398 Moderate/Sec.  kernel-modules-5.14.0-570.46.1.el9_6.x86_64
+RHSA-2025:16880 Moderate/Sec.  kernel-modules-5.14.0-570.49.1.el9_6.x86_64
+RHSA-2025:17377 Moderate/Sec.  kernel-modules-5.14.0-570.51.1.el9_6.x86_64
+RHSA-2025:17760 Moderate/Sec.  kernel-modules-5.14.0-570.52.1.el9_6.x86_64
+RHSA-2025:18281 Moderate/Sec.  kernel-modules-5.14.0-570.55.1.el9_6.x86_64
+RHSA-2025:19105 Moderate/Sec.  kernel-modules-5.14.0-570.58.1.el9_6.x86_64
+RHSA-2025:19409 Moderate/Sec.  kernel-modules-5.14.0-570.60.1.el9_6.x86_64
+RHSA-2025:19930 Moderate/Sec.  kernel-modules-5.14.0-570.62.1.el9_6.x86_64
+RHSA-2025:20518 Moderate/Sec.  kernel-modules-5.14.0-611.5.1.el9_7.x86_64
+RHSA-2025:21112 Moderate/Sec.  kernel-modules-5.14.0-611.7.1.el9_7.x86_64
+RHSA-2025:12746 Important/Sec. kernel-modules-core-5.14.0-570.32.1.el9_6.x86_64
+RHSA-2025:13602 Moderate/Sec.  kernel-modules-core-5.14.0-570.33.2.el9_6.x86_64
+RHSA-2025:13962 Important/Sec. kernel-modules-core-5.14.0-570.35.1.el9_6.x86_64
+RHSA-2025:14420 Important/Sec. kernel-modules-core-5.14.0-570.37.1.el9_6.x86_64
+RHSA-2025:15011 Important/Sec. kernel-modules-core-5.14.0-570.39.1.el9_6.x86_64
+RHSA-2025:15429 Important/Sec. kernel-modules-core-5.14.0-570.41.1.el9_6.x86_64
+RHSA-2025:15661 Important/Sec. kernel-modules-core-5.14.0-570.42.2.el9_6.x86_64
+RHSA-2025:15740 Moderate/Sec.  kernel-modules-core-5.14.0-570.44.1.el9_6.x86_64
+RHSA-2025:16398 Moderate/Sec.  kernel-modules-core-5.14.0-570.46.1.el9_6.x86_64
+RHSA-2025:16880 Moderate/Sec.  kernel-modules-core-5.14.0-570.49.1.el9_6.x86_64
+RHSA-2025:17377 Moderate/Sec.  kernel-modules-core-5.14.0-570.51.1.el9_6.x86_64
+RHSA-2025:17760 Moderate/Sec.  kernel-modules-core-5.14.0-570.52.1.el9_6.x86_64
+RHSA-2025:18281 Moderate/Sec.  kernel-modules-core-5.14.0-570.55.1.el9_6.x86_64
+RHSA-2025:19105 Moderate/Sec.  kernel-modules-core-5.14.0-570.58.1.el9_6.x86_64
+RHSA-2025:19409 Moderate/Sec.  kernel-modules-core-5.14.0-570.60.1.el9_6.x86_64
+RHSA-2025:19930 Moderate/Sec.  kernel-modules-core-5.14.0-570.62.1.el9_6.x86_64
+RHSA-2025:20518 Moderate/Sec.  kernel-modules-core-5.14.0-611.5.1.el9_7.x86_64
+RHSA-2025:21112 Moderate/Sec.  kernel-modules-core-5.14.0-611.7.1.el9_7.x86_64
+RHSA-2025:12746 Important/Sec. kernel-tools-5.14.0-570.32.1.el9_6.x86_64
+RHSA-2025:13602 Moderate/Sec.  kernel-tools-5.14.0-570.33.2.el9_6.x86_64
+RHSA-2025:13962 Important/Sec. kernel-tools-5.14.0-570.35.1.el9_6.x86_64
+RHSA-2025:14420 Important/Sec. kernel-tools-5.14.0-570.37.1.el9_6.x86_64
+RHSA-2025:15011 Important/Sec. kernel-tools-5.14.0-570.39.1.el9_6.x86_64
+RHSA-2025:15429 Important/Sec. kernel-tools-5.14.0-570.41.1.el9_6.x86_64
+RHSA-2025:15661 Important/Sec. kernel-tools-5.14.0-570.42.2.el9_6.x86_64
+RHSA-2025:15740 Moderate/Sec.  kernel-tools-5.14.0-570.44.1.el9_6.x86_64
+RHSA-2025:16398 Moderate/Sec.  kernel-tools-5.14.0-570.46.1.el9_6.x86_64
+RHSA-2025:16880 Moderate/Sec.  kernel-tools-5.14.0-570.49.1.el9_6.x86_64
+RHSA-2025:17377 Moderate/Sec.  kernel-tools-5.14.0-570.51.1.el9_6.x86_64
+RHSA-2025:17760 Moderate/Sec.  kernel-tools-5.14.0-570.52.1.el9_6.x86_64
+RHSA-2025:18281 Moderate/Sec.  kernel-tools-5.14.0-570.55.1.el9_6.x86_64
+RHSA-2025:19105 Moderate/Sec.  kernel-tools-5.14.0-570.58.1.el9_6.x86_64
+RHSA-2025:19409 Moderate/Sec.  kernel-tools-5.14.0-570.60.1.el9_6.x86_64
+RHSA-2025:19930 Moderate/Sec.  kernel-tools-5.14.0-570.62.1.el9_6.x86_64
+RHSA-2025:20518 Moderate/Sec.  kernel-tools-5.14.0-611.5.1.el9_7.x86_64
+RHSA-2025:21112 Moderate/Sec.  kernel-tools-5.14.0-611.7.1.el9_7.x86_64
+RHSA-2025:12746 Important/Sec. kernel-tools-libs-5.14.0-570.32.1.el9_6.x86_64
+RHSA-2025:13602 Moderate/Sec.  kernel-tools-libs-5.14.0-570.33.2.el9_6.x86_64
+RHSA-2025:13962 Important/Sec. kernel-tools-libs-5.14.0-570.35.1.el9_6.x86_64
+RHSA-2025:14420 Important/Sec. kernel-tools-libs-5.14.0-570.37.1.el9_6.x86_64
+RHSA-2025:15011 Important/Sec. kernel-tools-libs-5.14.0-570.39.1.el9_6.x86_64
+RHSA-2025:15429 Important/Sec. kernel-tools-libs-5.14.0-570.41.1.el9_6.x86_64
+RHSA-2025:15661 Important/Sec. kernel-tools-libs-5.14.0-570.42.2.el9_6.x86_64
+RHSA-2025:15740 Moderate/Sec.  kernel-tools-libs-5.14.0-570.44.1.el9_6.x86_64
+RHSA-2025:16398 Moderate/Sec.  kernel-tools-libs-5.14.0-570.46.1.el9_6.x86_64
+RHSA-2025:16880 Moderate/Sec.  kernel-tools-libs-5.14.0-570.49.1.el9_6.x86_64
+RHSA-2025:17377 Moderate/Sec.  kernel-tools-libs-5.14.0-570.51.1.el9_6.x86_64
+RHSA-2025:17760 Moderate/Sec.  kernel-tools-libs-5.14.0-570.52.1.el9_6.x86_64
+RHSA-2025:18281 Moderate/Sec.  kernel-tools-libs-5.14.0-570.55.1.el9_6.x86_64
+RHSA-2025:19105 Moderate/Sec.  kernel-tools-libs-5.14.0-570.58.1.el9_6.x86_64
+RHSA-2025:19409 Moderate/Sec.  kernel-tools-libs-5.14.0-570.60.1.el9_6.x86_64
+RHSA-2025:19930 Moderate/Sec.  kernel-tools-libs-5.14.0-570.62.1.el9_6.x86_64
+RHSA-2025:20518 Moderate/Sec.  kernel-tools-libs-5.14.0-611.5.1.el9_7.x86_64
+RHSA-2025:21112 Moderate/Sec.  kernel-tools-libs-5.14.0-611.7.1.el9_7.x86_64
+RHSA-2025:14130 Important/Sec. libarchive-3.5.3-6.el9_6.x86_64
+RHSA-2025:18275 Moderate/Sec.  libssh-0.10.4-15.el9_6.x86_64
+RHSA-2025:20943 Moderate/Sec.  libssh-0.10.4-15.el9_7.x86_64
+RHSA-2025:18275 Moderate/Sec.  libssh-config-0.10.4-15.el9_6.noarch
+RHSA-2025:20943 Moderate/Sec.  libssh-config-0.10.4-15.el9_7.noarch
+RHSA-2025:20954 Important/Sec. libsss_certmap-2.9.7-4.el9_7.1.x86_64
+RHSA-2025:20954 Important/Sec. libsss_idmap-2.9.7-4.el9_7.1.x86_64
+RHSA-2025:20954 Important/Sec. libsss_nss_idmap-2.9.7-4.el9_7.1.x86_64
+RHSA-2025:20954 Important/Sec. libsss_sudo-2.9.7-4.el9_7.1.x86_64
+RHSA-2025:13428 Moderate/Sec.  libxml2-2.9.13-12.el9_6.x86_64
+RHSA-2025:12876 Low/Sec.       ncurses-6.2-10.20210508.el9_6.2.x86_64
+RHSA-2025:12876 Low/Sec.       ncurses-base-6.2-10.20210508.el9_6.2.noarch
+RHSA-2025:12876 Low/Sec.       ncurses-libs-6.2-10.20210508.el9_6.2.x86_64
+RHSA-2025:21255 Moderate/Sec.  openssl-1:3.5.1-4.el9_7.x86_64
+RHSA-2025:21255 Moderate/Sec.  openssl-libs-1:3.5.1-4.el9_7.x86_64
+RHSA-2025:15099 Important/Sec. pam-1.5.1-26.el9_6.x86_64
+RHSA-2025:15019 Moderate/Sec.  python-unversioned-command-3.9.21-2.el9_6.2.noarch
+RHSA-2025:15019 Moderate/Sec.  python3-3.9.21-2.el9_6.2.x86_64
+RHSA-2025:15019 Moderate/Sec.  python3-libs-3.9.21-2.el9_6.2.x86_64
+RHSA-2025:12519 Moderate/Sec.  python3-requests-2.25.1-10.el9_6.noarch
+RHSA-2025:20559 Low/Sec.       shadow-utils-2:4.9-15.el9.x86_64
+RHSA-2025:20936 Important/Sec. sqlite-libs-3.34.1-9.el9_7.x86_64
+RHSA-2025:20954 Important/Sec. sssd-client-2.9.7-4.el9_7.1.x86_64
+RHSA-2025:20954 Important/Sec. sssd-common-2.9.7-4.el9_7.1.x86_64
+RHSA-2025:20954 Important/Sec. sssd-kcm-2.9.7-4.el9_7.1.x86_64
+RHSA-2025:17742 Moderate/Sec.  vim-minimal-2:8.2.2637-22.el9_6.1.x86_64
+RHSA-2025:20945 Moderate/Sec.  vim-minimal-2:8.2.2637-23.el9_7.x86_64</pre>
+
+<h3>Aplicación de actualizaciones</h3>
+<pre>Updating Subscription Management repositories.
+Last metadata expiration check: 1:46:47 ago on Fri 14 Nov 2025 02:22:56 PM EST.
+Dependencies resolved.
+===================================================================================================
+ Package                      Arch    Version               Repository                         Size
+===================================================================================================
+Installing:
+ kernel                       x86_64  5.14.0-611.7.1.el9_7  rhel-9-for-x86_64-baseos-rpms     1.1 M
+Upgrading:
+ glibc                        x86_64  2.34-231.el9_7.2      rhel-9-for-x86_64-baseos-rpms     2.0 M
+ glibc-common                 x86_64  2.34-231.el9_7.2      rhel-9-for-x86_64-baseos-rpms     306 k
+ glibc-gconv-extra            x86_64  2.34-231.el9_7.2      rhel-9-for-x86_64-baseos-rpms     1.7 M
+ glibc-langpack-en            x86_64  2.34-231.el9_7.2      rhel-9-for-x86_64-baseos-rpms     660 k
+ gnutls                       x86_64  3.8.3-9.el9           rhel-9-for-x86_64-baseos-rpms     1.1 M
+ grub2-common                 noarch  1:2.06-114.el9_7      rhel-9-for-x86_64-baseos-rpms     916 k
+ grub2-pc                     x86_64  1:2.06-114.el9_7      rhel-9-for-x86_64-baseos-rpms      13 k
+ grub2-pc-modules             noarch  1:2.06-114.el9_7      rhel-9-for-x86_64-baseos-rpms     987 k
+ grub2-tools                  x86_64  1:2.06-114.el9_7      rhel-9-for-x86_64-baseos-rpms     1.8 M
+ grub2-tools-efi              x86_64  1:2.06-114.el9_7      rhel-9-for-x86_64-baseos-rpms     547 k
+ grub2-tools-extra            x86_64  1:2.06-114.el9_7      rhel-9-for-x86_64-baseos-rpms     855 k
+ grub2-tools-minimal          x86_64  1:2.06-114.el9_7      rhel-9-for-x86_64-baseos-rpms     614 k
+ iputils                      x86_64  20210202-15.el9_7     rhel-9-for-x86_64-baseos-rpms     174 k
+ kernel-tools                 x86_64  5.14.0-611.7.1.el9_7  rhel-9-for-x86_64-baseos-rpms     1.4 M
+ kernel-tools-libs            x86_64  5.14.0-611.7.1.el9_7  rhel-9-for-x86_64-baseos-rpms     1.1 M
+ libarchive                   x86_64  3.5.3-6.el9_6         rhel-9-for-x86_64-baseos-rpms     387 k
+ libssh                       x86_64  0.10.4-15.el9_7       rhel-9-for-x86_64-baseos-rpms     214 k
+ libssh-config                noarch  0.10.4-15.el9_7       rhel-9-for-x86_64-baseos-rpms     7.8 k
+ libsss_certmap               x86_64  2.9.7-4.el9_7.1       rhel-9-for-x86_64-baseos-rpms      88 k
+ libsss_idmap                 x86_64  2.9.7-4.el9_7.1       rhel-9-for-x86_64-baseos-rpms      39 k
+ libsss_nss_idmap             x86_64  2.9.7-4.el9_7.1       rhel-9-for-x86_64-baseos-rpms      43 k
+ libsss_sudo                  x86_64  2.9.7-4.el9_7.1       rhel-9-for-x86_64-baseos-rpms      33 k
+ libxml2                      x86_64  2.9.13-12.el9_6       rhel-9-for-x86_64-baseos-rpms     747 k
+ ncurses                      x86_64  6.2-12.20210508.el9   rhel-9-for-x86_64-baseos-rpms     406 k
+ ncurses-base                 noarch  6.2-12.20210508.el9   rhel-9-for-x86_64-baseos-rpms      96 k
+ ncurses-libs                 x86_64  6.2-12.20210508.el9   rhel-9-for-x86_64-baseos-rpms     328 k
+ openssl                      x86_64  1:3.5.1-4.el9_7       rhel-9-for-x86_64-baseos-rpms     1.5 M
+ openssl-fips-provider        x86_64  3.0.7-8.el9           rhel-9-for-x86_64-baseos-rpms     9.2 k
+ openssl-fips-provider-so     x86_64  3.0.7-8.el9           rhel-9-for-x86_64-baseos-rpms     576 k
+ openssl-libs                 x86_64  1:3.5.1-4.el9_7       rhel-9-for-x86_64-baseos-rpms     2.3 M
+ pam                          x86_64  1.5.1-26.el9_6        rhel-9-for-x86_64-baseos-rpms     622 k
+ python-unversioned-command   noarch  3.9.23-2.el9          rhel-9-for-x86_64-appstream-rpms  9.0 k
+ python3                      x86_64  3.9.23-2.el9          rhel-9-for-x86_64-baseos-rpms      26 k
+ python3-libs                 x86_64  3.9.23-2.el9          rhel-9-for-x86_64-baseos-rpms     8.1 M
+ python3-requests             noarch  2.25.1-10.el9_6       rhel-9-for-x86_64-baseos-rpms     126 k
+ shadow-utils                 x86_64  2:4.9-15.el9          rhel-9-for-x86_64-baseos-rpms     1.2 M
+ sqlite-libs                  x86_64  3.34.1-9.el9_7        rhel-9-for-x86_64-baseos-rpms     642 k
+ sssd-client                  x86_64  2.9.7-4.el9_7.1       rhel-9-for-x86_64-baseos-rpms     165 k
+ sssd-common                  x86_64  2.9.7-4.el9_7.1       rhel-9-for-x86_64-baseos-rpms     1.6 M
+ sssd-kcm                     x86_64  2.9.7-4.el9_7.1       rhel-9-for-x86_64-baseos-rpms     107 k
+ vim-minimal                  x86_64  2:8.2.2637-23.el9_7   rhel-9-for-x86_64-baseos-rpms     669 k
+Installing dependencies:
+ kernel-core                  x86_64  5.14.0-611.7.1.el9_7  rhel-9-for-x86_64-baseos-rpms      17 M
+ kernel-modules               x86_64  5.14.0-611.7.1.el9_7  rhel-9-for-x86_64-baseos-rpms      40 M
+ kernel-modules-core          x86_64  5.14.0-611.7.1.el9_7  rhel-9-for-x86_64-baseos-rpms      31 M
+Removing:
+ kernel                       x86_64  5.14.0-503.11.1.el9_5 @anaconda                           0  
+ kernel-core                  x86_64  5.14.0-503.11.1.el9_5 @anaconda                          66 M
+ kernel-modules               x86_64  5.14.0-503.11.1.el9_5 @anaconda                          33 M
+ kernel-modules-core          x86_64  5.14.0-503.11.1.el9_5 @anaconda                          27 M
+
+Transaction Summary
+===================================================================================================
+Install   4 Packages
+Upgrade  41 Packages
+Remove    4 Packages
+
+Total download size: 123 M
+--------------------------------------------------------------------------------
+Transaction check succeeded.
+Transaction test succeeded.
+  Erasing          : kernel-5.14.0-503.11.1.el9_5.x86_64                  47/90 
+  Erasing          : kernel-modules-5.14.0-503.11.1.el9_5.x86_64          48/90 
+  Erasing          : kernel-modules-core-5.14.0-503.11.1.el9_5.x86_64     49/90 
+/usr/sbin/weak-modules: line 1086: cd: /lib/modules/5.14.0-503.11.1.el9_5.x86_64/weak-updates: No such file or directory
+
+  Erasing          : kernel-core-5.14.0-503.11.1.el9_5.x86_64             50/90 
+Installed products updated.
+
+Upgraded:
+  glibc-2.34-231.el9_7.2.x86_64                                                 
+  glibc-common-2.34-231.el9_7.2.x86_64                                          
+  glibc-gconv-extra-2.34-231.el9_7.2.x86_64                                     
+  glibc-langpack-en-2.34-231.el9_7.2.x86_64                                     
+  gnutls-3.8.3-9.el9.x86_64                                                     
+  grub2-common-1:2.06-114.el9_7.noarch                                          
+  grub2-pc-1:2.06-114.el9_7.x86_64                                              
+  grub2-pc-modules-1:2.06-114.el9_7.noarch                                      
+  grub2-tools-1:2.06-114.el9_7.x86_64                                           
+  grub2-tools-efi-1:2.06-114.el9_7.x86_64                                       
+  grub2-tools-extra-1:2.06-114.el9_7.x86_64                                     
+  grub2-tools-minimal-1:2.06-114.el9_7.x86_64                                   
+  iputils-20210202-15.el9_7.x86_64                                              
+  kernel-tools-5.14.0-611.7.1.el9_7.x86_64                                      
+  kernel-tools-libs-5.14.0-611.7.1.el9_7.x86_64                                 
+  libarchive-3.5.3-6.el9_6.x86_64                                               
+  libssh-0.10.4-15.el9_7.x86_64                                                 
+  libssh-config-0.10.4-15.el9_7.noarch                                          
+  libsss_certmap-2.9.7-4.el9_7.1.x86_64                                         
+  libsss_idmap-2.9.7-4.el9_7.1.x86_64                                           
+  libsss_nss_idmap-2.9.7-4.el9_7.1.x86_64                                       
+  libsss_sudo-2.9.7-4.el9_7.1.x86_64                                            
+  libxml2-2.9.13-12.el9_6.x86_64                                                
+  ncurses-6.2-12.20210508.el9.x86_64                                            
+  ncurses-base-6.2-12.20210508.el9.noarch                                       
+  ncurses-libs-6.2-12.20210508.el9.x86_64                                       
+  openssl-1:3.5.1-4.el9_7.x86_64                                                
+  openssl-fips-provider-3.0.7-8.el9.x86_64                                      
+  openssl-fips-provider-so-3.0.7-8.el9.x86_64                                   
+  openssl-libs-1:3.5.1-4.el9_7.x86_64                                           
+  pam-1.5.1-26.el9_6.x86_64                                                     
+  python-unversioned-command-3.9.23-2.el9.noarch                                
+  python3-3.9.23-2.el9.x86_64                                                   
+  python3-libs-3.9.23-2.el9.x86_64                                              
+  python3-requests-2.25.1-10.el9_6.noarch                                       
+  shadow-utils-2:4.9-15.el9.x86_64                                              
+  sqlite-libs-3.34.1-9.el9_7.x86_64                                             
+  sssd-client-2.9.7-4.el9_7.1.x86_64                                            
+  sssd-common-2.9.7-4.el9_7.1.x86_64                                            
+  sssd-kcm-2.9.7-4.el9_7.1.x86_64                                               
+  vim-minimal-2:8.2.2637-23.el9_7.x86_64                                        
+Installed:
+  kernel-5.14.0-611.7.1.el9_7.x86_64                                            
+  kernel-core-5.14.0-611.7.1.el9_7.x86_64                                       
+  kernel-modules-5.14.0-611.7.1.el9_7.x86_64                                    
+  kernel-modules-core-5.14.0-611.7.1.el9_7.x86_64                               
+Removed:
+  kernel-5.14.0-503.11.1.el9_5.x86_64                                           
+  kernel-core-5.14.0-503.11.1.el9_5.x86_64                                      
+  kernel-modules-5.14.0-503.11.1.el9_5.x86_64                                   
+  kernel-modules-core-5.14.0-503.11.1.el9_5.x86_64                              
+
+Complete!</pre>
+</div>
+</body>
+</html>
